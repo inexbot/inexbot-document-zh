@@ -2,10 +2,10 @@
 title: "欢迎"
 description: "欢迎页面"
 author: "iNexBot"
-date: "2026-03-18"
+date: "2026-03-19"
 tags: ["欢迎页面","纳博特科技知识库"]
 category: "主页"
-version: "1.0.0"
+version: "1.0.1"
 language: "zh-CN"
 ---
 
