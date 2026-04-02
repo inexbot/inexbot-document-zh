@@ -34,7 +34,7 @@
 
 FINSTCP指令用于在运行模式下管理FINSTCP通讯连接，实现控制器与PLC之间的Fins TCP协议通讯。
 
-![FINSTCP指令概述](./assets/image1.jpeg)
+![FINSTCP指令概述](./assets-FINSTCP/image1.jpeg)
 
 ### > 1.1 打开FINSTCP连接
 
@@ -130,7 +130,7 @@ FINSTCP参数配置界面包含以下参数：
 
 ## 3 Fins TCP功能使用流程
 
-![Fins TCP功能使用流程](./assets/image3.jpeg)
+![Fins TCP功能使用流程](./assets-FINSTCP/image3.jpeg)
 
 ### > 3.1 Fins TCP功能概述
 
