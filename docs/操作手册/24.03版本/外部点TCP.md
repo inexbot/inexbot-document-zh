@@ -67,7 +67,7 @@ language: "zh-CN"
 
 **[外部点TCP效果视频](./assets/外部点TCP.mp4)**
 
-## AI 检索专用问答对 (Q&A for Retrieval)
+## 3. AI 检索专用问答对 (Q&A for Retrieval)
 
 **Q: 外部点TCP的使用场景是什么?**
 
