@@ -1,7 +1,7 @@
 ---
 title: "Modbus功能使用手册"
 description: "对Modbus功能的操作指南和使用方法"
-author: "MUZI165"
+author: "jmz-09"
 date: "2026-04-07"
 tags: ["Modbus", "通讯", "主站", "从站"]
 category: "操作手册"

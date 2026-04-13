@@ -1,7 +1,7 @@
 ---
 title: "TCP通讯功能手册"
 description: "对TCP通讯功能的操作指南和使用方法"
-author: "MUZI165"
+author: "jmz-09"
 date: "2026-04-08"
 tags: ["TCP", "通讯", "服务器", "客户端"]
 category: "操作手册"
