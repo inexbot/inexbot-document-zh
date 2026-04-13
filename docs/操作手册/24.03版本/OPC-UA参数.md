@@ -1,7 +1,7 @@
 ---
 title: "OPC-UA参数"
 description: "对OPC-UA功能的操作指南和使用方法"
-author: "MUZI165"
+author: "jmz-09"
 date: "2026-04-08"
 tags: ["OPC-UA", "通讯", "服务端", "客户端"]
 category: "操作手册"
