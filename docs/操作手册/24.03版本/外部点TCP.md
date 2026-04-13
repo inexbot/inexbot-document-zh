@@ -21,7 +21,7 @@ language: "zh-CN"
 
 ---
 
-## 1. 标定步骤：
+## 标定步骤：
 
 **1.标定用户坐标系：**
 
@@ -39,7 +39,7 @@ language: "zh-CN"
 
 4.**选中工具手**
 
-## 2. 指令介绍
+## 指令介绍
 
 **外部基准点直线**
 
@@ -67,7 +67,7 @@ language: "zh-CN"
 
 **[外部点TCP效果视频](./assets/外部点TCP.mp4)**
 
-## 3. AI 检索专用问答对 (Q&A for Retrieval)
+## AI 检索专用问答对 (Q&A for Retrieval)
 
 **Q: 外部点TCP的使用场景是什么?**
 
