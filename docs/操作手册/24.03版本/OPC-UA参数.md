@@ -1,7 +1,7 @@
 ---
 title: "OPC-UA参数"
 description: "对OPC-UA功能的操作指南和使用方法"
-author: "MUZI165"
+author: "jmz-09"
 date: "2026-04-08"
 tags: ["OPC-UA", "通讯", "服务端", "客户端"]
 category: "操作手册"
@@ -11,7 +11,7 @@ language: "zh-CN"
 
 # OPC-UA参数教程
 
-## 1 服务端
+## 服务端
 
 环境准备：
 
@@ -42,7 +42,7 @@ language: "zh-CN"
 
 ![](./assets/itodgduxzv58qmddnd_rd.png)
 
-### 1.1 OPC-UA参数
+### OPC-UA参数
 
 ![](./assets/s-tpwlkmy7poe4zrgp3ul.png)
 
@@ -54,7 +54,7 @@ IP:当前所连接的控制器IP。
 
 端口：通讯端口。
 
-## 2 读写参数
+## 读写参数
 
 控制器和UaExpert软件连接成功后将绿色标签拖入右侧进行读写，需要修改或者读取某个参数，可将对应的文件拖动置右侧区域修改。
 
@@ -66,7 +66,7 @@ IP:当前所连接的控制器IP。
 
 ![](./assets/c3iz7lqdl7xegb1fqzzrw.png)
 
-## 3 客户端
+## 客户端
 
 环境准备：
 
@@ -94,7 +94,7 @@ IP:当前所连接的控制器IP。
 
 ![](./assets/dh8eroayd-wn0ixav6zqn.png)
 
-## 4 AI 检索专用问答对 (Q&A for Retrieval)
+## AI 检索专用问答对 (Q&A for Retrieval)
 
 **Q: OPC-UA连接失败怎么办?**
 
@@ -169,7 +169,7 @@ height="2.7278127734033246in"}
 
 ---
 
-## 5 相关资源
+##  相关资源
 
 - [Modbus功能使用手册](./Modbus功能使用手册.md)
 
