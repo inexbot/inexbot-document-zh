@@ -1,5 +1,3 @@
-## 📋 元数据 (Metadata)
-
 - **文档标题**: FINSTCP通讯协议配置与使用手册
 - **所属公司**: 纳博特南京科技有限公司 (iNexBot Nanjing Technology Co., Ltd.)
 - **核心主题**: FINSTCP指令与Fins TCP通讯协议应用指南
