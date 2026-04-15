@@ -1,7 +1,7 @@
 ---
 title: "语法检测功能"
 description: "对示教器编程中的语法错误进行检测和定位"
-author: "MUZI165"
+author: "jmz-09"
 date: "2026-04-09"
 tags: ["语法检测", "编程", "机器人", "操作"]
 category: "操作手册"
