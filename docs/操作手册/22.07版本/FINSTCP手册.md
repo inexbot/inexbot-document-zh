@@ -1,32 +1,23 @@
-- **文档标题**: FINSTCP通讯协议配置与使用手册
-- **所属公司**: 纳博特南京科技有限公司 (iNexBot Nanjing Technology Co., Ltd.)
-- **核心主题**: FINSTCP指令与Fins TCP通讯协议应用指南
-- **关键标签**: #FINSTCP #Fins_TCP #PLC通讯 #欧姆龙PLC #数据交互
-- **适用场景**: 机器人与PLC通讯、欧姆龙PLC集成、数据读写操作、工业自动化控制
+---
 
+title: "FINSTCP通讯协议配置与使用手册"
+
+description: "FINSTCP指令与Fins TCP通讯协议应用指南，涵盖PLC集成、数据读写、连接配置和工业自动化控制。"
+
+author: "iNexBot"
+
+date: "2026-04-16"
+
+tags: ["FINSTCP", "Fins TCP", "PLC通讯", "欧姆龙PLC", "数据交互"]
+
+category: "操作手册"
+
+version: "1.0.0"
+
+language: "zh-CN"
 
 ---
 
-## 目录
-
-- 1 FINSTCP指令概述
-  - > 1.1 打开FINSTCP连接
-  - > 1.2 断开FINSTCP连接
-  - > 1.3 获取FINSTCP连接状态
-- 2 FINSTCP参数配置
-  - > 2.1 参数说明
-  - > 2.2 参数设置示例
-- 3 Fins TCP功能使用流程
-  - > 3.1 硬件连接
-  - > 3.2 参数设置
-  - > 3.3 CX-Programmer操作
-- 4 控制器地址映射详解
-  - > 4.1 控制器写入地址（布尔型）
-  - > 4.2 控制器写入地址（整数型）
-  - > 4.3 控制器读取地址（布尔型）
-  - > 4.4 控制器读取地址（整数型）
-
----
 
 ## 1 FINSTCP指令概述
 
