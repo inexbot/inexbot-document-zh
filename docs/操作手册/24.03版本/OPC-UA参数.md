@@ -157,7 +157,7 @@ A: 检查网络连接和IP地址设置；验证防火墙是否允许OPC-UA端口
 
        STRING.GS001 - 999         String         全局变量GS001-GS999
 
-   NRC.SystemData.GlobalSpeed      Int32               全局速度
+    NRC.SystemData.GlobalSpeed      Int32               全局速度
   ---------------------------- ------------- ----------------------------
 
 ### OPC-UA参数
