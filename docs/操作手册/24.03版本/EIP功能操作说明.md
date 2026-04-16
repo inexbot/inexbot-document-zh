@@ -214,6 +214,8 @@ language: "zh-CN"
                \"robot run\" : 2, //机器人运行状态
 
                \"robot stop" : 4  //机器人暂停状态
+    }
+}
 
 ##  AI 检索专用问答对 (Q&A for Retrieval)
 
