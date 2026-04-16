@@ -28,15 +28,11 @@ language: "zh-CN"
 
 5、配置config.json机器人模型坐标值，可使用【unity】软件
 
-[安装包](assets/TuanjieHubSetup.exe)
-
 ## 准备工作
 
 1、打开PC，确保机器人当前状态可以正常使用
 
 2、将仿真软件【virtualSimulation.zip】文件解压缩后放至PC的根目录下，即与pc的exe文件同级
-
-[安装包](assets/virtualSimulation.zip)
 
 ## 配置模型
 
