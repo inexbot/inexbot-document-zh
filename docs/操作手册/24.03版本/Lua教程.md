@@ -357,4 +357,90 @@ GP1.coord, GP1.unit, GP1.configuration, GP1.tool, GP1.user = 0,2,4,6,1
 
  nex.E[1]=E1 
 
-![示例](assets/Lua-16.png) ![示例](assets/Lua-17.png)
+![示例](assets/Lua-16.png)  ![示例](assets/Lua-17.png)
+
+12.获取关节坐标、直角坐标、工具坐标和用户坐标系下的当前位置
+
+Cur=nex.get_robot_current_pos(nex.ACS)  关节坐标系下当前位置
+
+Cur=nex.get_robot_current_pos(nex.MCS)  直角坐标系下当前位置
+
+Cur=nex.get_robot_current_pos(nex.PCS)  工具坐标系下当前位置
+
+Cur=nex.get_robot_current_pos(nex.UCS)  用户坐标系下当前位置
+
+13.获取当前机器人本体位置数据
+
+pos=Cur:pos()
+
+14.屏幕上打印当前位置数据
+
+print("pos",pos.x,pos.y,pos.z,pos.a,pos.b,pos.c) 
+
+15.屏幕上打印外部轴的当前位置数据 E1，E2，E3，E4，E5  （仅关节坐标系有外部轴数据）
+
+print("Cur ext",Cur.E1,Cur.E2,Cur.E3,Cur.E4,Cur.E5) 
+
+![示例](assets/Lua-18.png)  ![示例](assets/Lua-19.png)
+
+16.获取工具坐标值
+
+T=nex.get_tool_frame(1)  “1”代表工具编号
+
+print("tool",T.x,T.y,T.z,T.a,T.b,T.c) 
+
+![示例](assets/Lua-20.png)
+
+17.修改工具坐标值
+
+T.x,T.y,T.z,T.a,T.b,T.c = 60,20,280,10,0,0  
+
+nex.set_tool_frame(2, T)  --修改编号为2的工具坐标值
+
+![示例](assets/Lua-21.png)
+
+18.获取用户坐标值
+
+U=nex.get_user_frame(1) “1”代表用编号为1的用户坐标
+
+print("user",U.x,U.y,U.z,U.a,U.b,U.c) 
+
+![示例](assets/Lua-22.png)
+
+19.修改用户坐标值
+
+U.x,U.y,U.z,U.a,U.b,U.c = 10,20,30,40,50,60
+
+nex.set_user_frame(1, U)
+
+![示例](assets/Lua-23.png)
+
+#### 控制器开放函数
+
+![参数](assets/Lua-24.png)
+
+1.控制器状态类
+
+（1）nex.get_controller_id()  作用：获取当前控制器ID
+
+示例：A = nex.get_controller_id()  nex.log_info(A)
+
+![效果](assets/Lua-25.png)
+
+（2）nex.get_software_uptime_ms()  作用：控制器软件运行时间 
+
+示例：T=nex.get_software_uptime_ms()  nex.show_msg(nex.MsgInfo,T)
+
+![效果](assets/Lua-26.png)
+
+（3）nex.get_hardware_uptime_ms()  作用：控制器设备开机运行后的时间
+
+示例：T1=nex.get_hardware_uptime_ms()  nex.show_msg(nex.MsgInfo,T1)
+
+![效果](assets/Lua-27.png)
+
+（4）nex.get_controller_sync_version()  作用：获取同步版本号
+
+示例：Y=nex.get_controller_sync_version()  nex.show_msg(nex.MsgInfo,Y)
+
+![效果](assets/Lua-28.png)
