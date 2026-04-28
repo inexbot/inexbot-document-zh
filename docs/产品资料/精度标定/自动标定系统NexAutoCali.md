@@ -2,7 +2,7 @@
 
 NexAutoCali 是纳博特科技自主研发的机器人自动标定系统，集成激光跟踪仪测量、机器人运动控制、校准点自动规划、算法计算于一体，实现从测量点自动规划到自动运行、自动测量的全流程自动化。
 
-![NexAutoCali 产品图](https://forinexbotweb.oss-cn-shanghai.aliyuncs.com/assets/image/products/NexAutoCali/%E6%A0%87%E5%AE%9A%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A21.png)
+![NexAutoCali 产品图](assets/标定系统界面1.png)
 
 ## 产品特点
 
@@ -50,7 +50,7 @@ NexAutoCali 是纳博特科技自主研发的机器人自动标定系统，集�
 
 本系统集成了激光跟踪仪测量、机器人运动控制、校准点/测量点自动规划、校准/测试过程全自动控制、算法计算于一体。搭配上激光跟踪仪的轻巧化设计和内置电源、内置 WiFi 功能，可完成快速作业，大大提高工作效率、降低使用门槛。
 
-![标定仪测试环境](https://forinexbotweb.oss-cn-shanghai.aliyuncs.com/assets/image/products/NexAutoCali/%E6%A0%87%E5%AE%9A%E4%BB%AA%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83.png)
+![标定仪测试环境](assets/标定仪测试环境.png)
 
 ### 高灵活度
 

@@ -57,7 +57,7 @@ R4D 采用工业级设计，支持 24V DC 供电，工作温度范围 0~60°C，
 
 ## 产品外观
 
-![R4D EtherCAT IO 模块产品图](https://forinexbotweb.oss-cn-shanghai.aliyuncs.com/assets/image/products/R4D%20IO%E6%9D%BF%20%E5%AE%98%E7%BD%91%E5%9B%BE1.png)
+![R4D EtherCAT IO 模块产品图](assets/R4D IO板 官网图1.png)
 
 ## Q&A
 

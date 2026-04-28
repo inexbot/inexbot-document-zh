@@ -47,7 +47,7 @@ NWH01 手持盒设计紧凑、握持舒适，支持即插即用，可与纳博�
 
 ## 产品外观
 
-![NWH01 无线遥控手持盒产品图](https://forinexbotweb.oss-cn-shanghai.aliyuncs.com/assets/image/products/%E6%97%A0%E7%BA%BF%E6%89%8B%E6%8C%81%E7%9B%92/NWH01.png)
+![NWH01 无线遥控手持盒产品图](assets/NWH01.png)
 
 ## Q&A
 

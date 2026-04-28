@@ -49,7 +49,7 @@ R2C 采用工业级设计，支持 24V DC 供电，工作温度范围 0~60°C，
 
 ## 产品外观
 
-![R2C EtherCAT IO 模块产品图](https://forinexbotweb.oss-cn-shanghai.aliyuncs.com/assets/image/products/R2io.png)
+![R2C EtherCAT IO 模块产品图](assets/R2io.png)
 
 ## Q&A
 
