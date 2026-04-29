@@ -156,7 +156,7 @@ A: 检查网络连接和IP地址设置；验证防火墙是否允许OPC-UA端口
 
 ### OPC-UA参数
 
-![](./assets/media/ptb11j5mo9iumhmtt51fg.png){width="3.66125in"
+![](./assets/ptb11j5mo9iumhmtt51fg.png){width="3.66125in"
 height="2.7278127734033246in"}
 
 注意： 不论是客户端、服务器连接和关闭时都需要重启系统才会生效。

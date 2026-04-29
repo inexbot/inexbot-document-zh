@@ -37,7 +37,6 @@ language: "zh-CN"
 
 ![](./assets/z5lxlv8hazpgrb5yz9ea4.png)
 
-<<<<<<< HEAD
 ## 3.适用场景：
 
 一台示教器在多台控制器之间切换IP（在同一局域网内），或多台示教器和多台控制器在同一局域网内进行IP切换
