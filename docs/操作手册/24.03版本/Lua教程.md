@@ -868,4 +868,63 @@ nex.rbt[2].set_interference_zone_enable_state(5,false )
  
 示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_motor_moder_of_operation()
 
+##### 获取剩余轨迹中间点
 
+GP2,GP3 = nex.get_param()  --获取从作业文件中传递过来的参数，参数顺序为作业文件中设置的顺序
+
+GP2 = nex.GP[2]
+
+result = nex.get_current_rest_trajectory_middle_pos(GP3)  --计算剩余轨迹中间点
+
+GB1=nex.GB[1]
+
+if(result==true and GB1==false)then  --判断是否计算出中间点
+
+	nex.log_info("aaaaaaaaaaa")
+	
+else 
+
+nex.log_info("bbbbbb")
+
+end
+
+OutputPos = GP2
+
+nex.set_param(OutputPos)   --将参数传递回作业文件中，参数顺序应为作业文件中设置的顺序
+
+![效果](assets/Lua-36.png)  ![效果](assets/Lua-37.png)
+
+指令解析：
+
+1-5：正常走圆弧轨迹，直到收到信号之后走结束直到之后的指令
+
+6：调用该lua文件通过记录没有走完的轨迹，算出剩轨迹的中间点并传出到GP0002中
+
+7：记录中断的点位
+
+8：取料或者一个安全点
+
+9-11：走剩余的圆弧轨迹
+
+###### 全一：lua增加电机保护开关教程
+
+1.[函数名]：set_torq_overload_enable( )
+
+2.使用方法：
+(1) nex.set_torq_overload_enable(true) //打开当前机器人开关（false关闭，true打开）
+
+(2) nex.rbt[2].set_torq_overload_enable(true) //打开机器人2开关
+
+3.实际使用案例：
+
+（1）调用Lua语句——true为开启功能  false为关闭功能
+
+![效果](assets/Lua-38.png) 
+
+（2）调用Lua文件
+
+![效果](assets/Lua-39.png) 
+
+（3）如果需要打开指定机器人开关则使用如下：
+
+![效果](assets/Lua-40.png) 
