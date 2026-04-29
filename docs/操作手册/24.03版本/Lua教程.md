@@ -444,3 +444,428 @@ nex.set_user_frame(1, U)
 示例：Y=nex.get_controller_sync_version()  nex.show_msg(nex.MsgInfo,Y)
 
 ![效果](assets/Lua-28.png)
+
+（5）nex.get_controller_release_version() 作用：获取发布版本号
+
+示例：Y=nex.get_controller_release_version() nex.show_msg(nex.MsgInfo,Y)
+
+![效果](assets/Lua-29.png)
+
+（6）nex.get_system_bits() 作用：获取控制器linux系统位数
+
+示例：Y=nex.get_system_bits() nex.show_msg(nex.MsgInfo,Y)
+
+（7）nex.get_controller_architecture() 作用：获取控制器架构类型
+
+示例（C2200-A01）：=nex.get_controller_architecture() nex.show_msg(nex.MsgInfo,T)
+
+![效果](assets/Lua-30.png)
+
+（8）nex.pulling_out_teach_pendant() 作用：控制器与示教器主动断开连接，当示教器发现控制器断连后，会主动去连接控制器
+
+示例：nex.pulling_out_teach_pendant()--控制器与示教器主动断开连接，当示教器发现控制器断连后，会主动去连接控制器
+
+（9）nex.get_teach_pendant_connect_state() 作用：获取示教器当前6000端口连接状态
+
+示例：A=nex.get_teach_pendant_connect_state() nex.show_msg(nex.MsgInfo,A)
+
+![效果](assets/Lua-31.png)
+
+（10）nex.get_backup_teach_pendant_connect_state() 作用：查看socket通讯的6001端口连接状态
+
+示例：A=nex.get_backup_teach_pendant_connect_state() nex.show_msg(nex.MsgInfo,A)
+
+![效果](assets/Lua-32.png) ![效果](assets/Lua-33.png)
+
+（11）nex.get_host_computer_service_connect_state() 作用：查看socket通讯的7000端口连接状态
+
+示例：A=nex.get_host_computer_service_connect_state() nex.show_msg(nex.MsgInfo,A)
+
+![效果](assets/Lua-34.png) ![效果](assets/Lua-33.png)
+
+（12）nex.get_slave_type_list() 作用：连接的从站类型列表
+
+示例：local A = nex.get_slave_type_list()--获取从站列表并存入变量A
+nex.show_msg(nex.MsgInfo,A[1])--打印从站列表第一个从站的名称
+
+（13）nex.get_robot_sum() 作用：获取机器人数量
+
+示例：A=nex.get_robot_sum() Anex.show_msg(nex.MsgInfo,A)
+
+（14）nex.get_io_type_list() 作用：获取连接到的实际的io列表名称
+
+示例：local A = nex.get_io_type_list() nex.show_msg(nex.MsgInfo,A[1])
+
+（15）nex.get_simu_io_sum() 作用：获取配置了虚拟IO的个数
+
+示例：A=nex.get_simu_io_sum() nex.show_msg(nex.MsgInfo,A)
+
+（16）nex.get_current_robot_num() 作用：获取当前使用的机器人数目
+
+示例： A=nex.get_current_robot_num() nex.show_msg(nex.MsgInfo,A)
+
+（17）nex.get_current_operation_mode（）作用：获取当前系统的操作模式：示教模式、运行模式、远程模式 
+
+示例：A=nex.get_current_operation_mode() nex.show_msg(nex.MsgInfo,A)
+
+(18) nex.get_last_msg_content() 作用：获取上一次的报错内容，报错不区分消息、警告、报错等级
+
+示例： A=nex.get_last_msg_content() nex.show_msg(nex.MsgInfo,A)
+
+（19）nex.jobfile_step_reverse() 作用：获取当前的作业文件运行状态是正序或倒序
+
+示例：A=nex.jobfile_step_reverse() nex.show_msg(nex.MsgInfo,A)
+
+（20）nex.get_robot_teach_type() 作用：获取当前是点动模式还是拖拽模式
+
+示例：A=nex.get_robot_teach_type() nex.show_msg(nex.MsgInfo,A)
+
+（21）nex.get_teach_mode_speed_percentage() 作用：获取当前机器人下的示教模式下的速度百分比
+
+示例：A = nex.get_teach_mode_speed_percentage() nex.log_info(A)
+
+![效果](assets/Lua-35.png) 
+
+（22）nex.rbt[number].get_teach_mode_speed_percentage() 作用：获取某个编号机器人的当前示教模式下的速度百分比
+
+示例：A = nex.rbt[2].get_teach_mode_speed_percentage() nex.log_info(A)
+
+（23）nex.get_run_mode_speed_percentage() 作用：获取当前机器人运行模式下的运行速度的百分比
+
+示例：A = nex.get_run_mode_speed_percentage nex.show_msg(nex.MsgInfo,A)
+
+（24）nex.rbt[number].get_run_mode_speed_percentage() 作用：获取当前编号下的机器人运行模式下的运行速度的百分比
+
+示例：A = nex.rbt[3].get_run_mode_speed_percentage() nex.show_msg(nex.MsgInfo,A)
+
+（25）nex.get_jobfile_exe_state() 作用：获取当前机器人状态下程序运行状态
+
+示例：A = nex.get_jobfile_exe_state() nex.show_msg(nex.MsgInfo, A)
+
+（26）nex.rbt[number].get_jobfile_exe_state() 作用：获取具体编号下机器人的当前程序运行状态
+
+示例：A = nex.rtb[4].get_jobfile_exe_state() nex.show_msg(nex.MsgInfo, A)
+
+（26）nex.get_jobfile_target_circle_times() 作用：获取当前机器人下的运行程序目标运行次数
+
+示例：A = nex.get_jobfile_target_circle_times() nex.show_msg(nex.MsgInfo, A)
+
+（27） nex.rbt[number].get_jobfile_target_circle_times() 作用：获取当前机器人下的运行程序目标运行次数
+
+示例：A = nex.rbt[3].get_jobfile_target_circle_times() nex.show_msg(nex.MsgInfo, A)
+
+（28）nex.get_jobfile_current_circle_times() 作用：获取当前程序当前已运行次数
+
+示例：A = nex.get_jobfile_current_circle_times() nex.show_msg(nex.MsgInfo, A)
+
+（29）nex.rbt[number].get_jobfile_current_circle_times() 作用：获取当前程序当前已运行次数
+
+示例：A = nex.rbt[2].get_jobfile_current_circle_times() nex.show_msg(nex.MsgInfo, A)
+
+（30）nex.get_executing_jobfile_name() 作用：获取当前机器人前台正在执行的程序名
+
+崔A = nex.get_executing_jobfile_name() nex.show_msg(nex.MsgInfo,A)
+
+（31）nex.rbt[number].get_executing_jobfile_name() 作用：获取具体编号的机器人前台正在执行的程序名
+
+示例：A = nex.rbt[2].get_executing_jobfile_name() nex.show_msg(nex.MsgInfo,A)
+
+（32）nex.get_executing_all_jobfile_name_list() 作用：获取当前机器人从主程序到正在运行的子程序所有层级的列表
+
+示例：local A=nex.get_executing_all_jobfile_name_list() nex.show_msg(nex.MsgInfo,"初始化列表是："..table.concat(A,","))
+
+（33）nex.get_executing_jobfile_line_num() 作用：获取当前机器人当前程序执行行号
+
+示例：A = nex.get_executing_jobfile_line_num() nex.show_msg(nex.MsgInfo, A)
+
+（34）nex.rbt[number].get_executing_jobfile_line_num() 作用：获取当前机器人当前程序执行行号
+
+示例：A = nex.get_executing_jobfile_line_num() nex.show_msg(nex.MsgInfo, A)
+
+（35）nex.get_executing_jobfile_elapsed_time_s() 作用：获取当前机器人下当前执行的前台作业文件已运行的时间
+
+示例：A=nex.get_executing_jobfile_elapsed_time_s nex.show_msg(nex.MsgInfo, A)
+
+（36）nex.rbt[number].get_executing_jobfile_elapsed_time_s() 作用：获取具体编号的机器人下当前执行的前台作业文件已运行的时间
+
+示例：A=nex.rbt[2].get_executing_jobfile_elapsed_time_s nex.show_msg(nex.MsgInfo, A)
+
+（37）nex.get_main_jobfile_name() 作用：获取当前机器人设置的主程序作业文件名
+
+示例：A = nex.get_main_jobfile_name() nex.show_msg(nex.MsgInfo, A)
+
+（38）nex.rbt[1].get_main_jobfile_name() 作用：获取具体编号机器人的当前设置的主程序作业文件名
+
+示例：A = nex.rbt[2].get_main_jobfile_name() nex.show_msg(nex.MsgInfo, A)
+
+（39）nex.can_jobfile_continue_exe() 作用：获取当前程序运行的指令是否支持断点执行
+
+ 示例：A = nex.can_jobfile_continue_exe() nex.show_msg(nex.MsgInfo,A)
+
+ （40）nex.can_jobfile_current_row_exe() 作用：获取当前机器人程序运行的指令是否支持当前行执行
+
+ 示例：A = nex.can_jobfile_current_row_exe() nex.show_msg(nex.MsgInfo,A)
+
+ （41）nex.rbt[number].can_jobfile_current_row_exe() 作用：获取特定编号机器人程序运行的指令是否支持当前行执行
+
+ 示例：A=nex.rbt[2].can_jobfile_current_row_exe() nex.show_msg(nex.MsgInfo,A)
+
+ （42）nex.get_executing_global_backstage_jobfile_name_list() 作用：获取当前正在运行中的全局后台程序名列表
+
+ 示例：A = nex.get_executing_global_backstage_jobfile_name_list() nex.show_msg(nex.MsgInfo, "正在运行中的全局后台程序: "  table.concat(A))
+
+ （43）nex.get_robot_actual_end_linear_vel() 作用：获取当前机器人的当前末端线速度
+
+ 示例：A = nex.get_robot_actual_end_linear_vel() nex.show_msg(nex.MsgInfo,A)
+
+ （44）nex.rbt[B].get_robot_actual_end_linear_vel() 作用：获取特定编号机器人的当前的末端线速度
+
+ 示例：A = nex.rbt[2].get_robot_actual_end_linear_vel() nex.show_msg(nex.MsgInfo,A)
+
+ （45）nex.get_robot_target_end_linear_vel() 作用：获取的是当前机器人下系统规划的末端线速度
+
+ 示例：A=nex.get_robot_target_end_linear_vel() nex.show_msg(nex.MsgInfo,A)
+
+ （46）nex.rbt[number].get_robot_target_end_linear_vel() 作用：获取的是特定编号机器人下系统规划的末端线速度
+
+ 示例：A=nex.rbt[2].get_robot_target_end_linear_vel() nex.show_msg(nex.MsgInfo,A)
+
+ （47）nex.get_robot_servo_state() 作用：获取当前伺服的状态
+
+ 示例：A=nex.get_robot_servo_state() nex.show_msg(nex.MsgInfo,A)
+
+ （48）nex.rbt[number].get_robot_servo_state() 作用：获取当前伺服的状态
+
+ 示例：A=nex.rbt[4].get_robot_servo_state() nex.show_msg(nex.MsgInfo,A)
+
+ （49）nex.get_current_collaboration_ext_axis_num 作用：获取当前机器人当前协作的外部轴组号
+
+ 示例：A =nex.get_current_collaboration_ext_axis_num nex.show_msg(nex.MsgInfo,A)
+
+ （50）nex.rbt[number].get_current_collaboration_ext_axis_num 作用：获取特定编号下机器人当前协作的外部轴组号
+
+ 示例：A = nex.rbt[3].get_current_collaboration_ext_axis_num  nex.show_msg(nex.MsgInfo,A)
+
+ （51）nex.emergency_stop_is_enabled(string) 作用：获取当前使能键开关状态
+
+ 示例：nex.GB[1]=nex.emergency_stop_is_enabled("weld")
+
+ （52）nex.rbt[number].emergency_stop_is_enabled(string) 作用：获取当前使能键开关状态
+
+ 示例：nex.GB[1]=nex.rbt[2].emergency_stop_is_enabled("weld")
+
+ （53）nex.emergency_stop_is_triggered() 作用：获取当前紧急停止触发状态
+
+ 示例：nex.GB[1]=nex.emergency_stop_is_triggered("iostop1")
+
+ （54）nex.rbt[number].emergency_stop_is_triggered(string) 作用：获取特定编号机器人当前紧急停止触发状态
+
+ 示例：nex.GB[1]=nex.rbt[3].emergency_stop_is_triggered("iostop1")
+
+ （55）nex.emergency_stop_is_shielded(string) 作用：获取当前紧急停止屏蔽状态
+
+ 示例：nex.GB[1]=nex.emergency_stop_is_shielded("iostop1")
+
+ （56）nex.rbt[number].emergency_stop_is_shielded() 作用：获取特定编号机器人当前紧急停止屏蔽状态
+
+ 示例：nex.GB[1]=nex.rbt[4].emergency_stop_is_shielded("iostop1")
+
+ （57）nex.safe_screen_is_enabled() 作用：获取当前安全光幕使能开关状态
+
+ 示例：nex.GB[1]=nex.safe_screen_is_enabled()
+
+ （58）nex.safe_screen_is_triggered(number) 作用：将获取当前安全光幕触发状态
+
+ 示例：nex.GB[1]=nex.safe_screen_is_triggered(1)
+
+ （59）nex.rbt[number].safe_screen_is_triggered(number) 作用：将获取特定编号机器人的当前安全光幕触发状态
+
+ 示例：nex.GB[1]=nex.rbt[2].safe_screen_is_triggered(1)
+
+ （60）nex.get_encoder_value(number) 作用：获取对应端口号编码器的值
+
+ 示例：A=nex.get_encoder_value(1) nex.show_msg(nex.MsgInfo,A)
+
+ （61）nex.set_motor_overload_protection_enable_state(boolean) 作用：打开或关闭当前机器人电机过载保护使能
+
+ 示例：nex.set_motor_overload_protection_enable_state(1) 
+ 
+ nex.set_motor_overload_protection_enable_state(0)
+
+ （62）nex.get_interference_zone_range( number,string ) 作用：获取当前机器人对应编号干涉区的maxX，maxY，minX，minY的值
+
+ 示例：nex.GD[1]=nex.get_interference_zone_range(2,maxY)
+
+ （63）nex.rbt[number].get_interference_zone_range( number,string ) 作用：获取指定编号机器人的对应编号干涉区的maxX，maxY，minX，minY的值
+
+ 示例：nex.GD[1]=nex.rbt[2].get_interference_zone_range(2,maxY)
+
+ （64）nex.interference_zone_takes_effect_within_region(number) 作用：获取当前机器人指定编号的干涉区的限制区域
+
+ 示例：nex.GB[1]=nex.interference_zone_takes_effect_within_region(2)
+
+ （65）nex.rbt[number].interference_zone_takes_effect_within_region(number) 作用：获取指定机器人指定编号的干涉区的限制区域
+
+ 示例：nex.GB[1]=nex.rbt[2].interference_zone_takes_effect_within_region(2)
+
+ （66）nex.get_interference_zone_enable_state( number ) 作用：获取当前机器人指定编号的干涉区使能开关状态
+
+ 示例：nex.GB[2]=nex.get_interference_zone_enable_state(1)
+
+ （67）nex.rbt[number].get_interference_zone_enable_state( number ) 作用：获取指定机器人指定编号的干涉区使能开关状态
+
+ 示例：nex.GB[3]=nex.rbt[4].get_interference_zone_enable_state(1)
+
+ （68） nex.set_interference_zone_enable_state( number,boolean ) 作用：打开或关闭当前机器人指定干涉区编号的使能开关
+
+示例：nex.set_interference_zone_enable_state(1,true )
+
+nex.set_interference_zone_enable_state(5,false )
+
+（69） nex.rbt[number].set_interference_zone_enable_state( number,boolean ) 作用：打开或关闭指定机器人指定干涉区编号的使能开关
+
+示例：nex.rbt[1].set_interference_zone_enable_state(1,true )
+
+nex.rbt[2].set_interference_zone_enable_state(5,false )
+
+（70） nex.get_interference_zone_is_triggered( number ) 作用：获取当前机器人干涉区使能触发状态
+
+示例：nex.GD[1]=nex.body[6].get_actual_axis_vel()
+
+（71）nex.rbt[number].body[number].get_actual_axis_vel() 作用：获取指定机器人指定轴的当前轴速度
+
+示例：nex.GD[1]=nex.rbt[2].body[6].get_actual_axis_vel()
+
+（72）nex.ext[number][number].get_actual_axis_vel() 作用：获取当前机器人指定绑定的外部轴组的指定轴的轴速度
+
+示例：nex.GD[1]=nex.ext[2][2].get_actual_axis_vel()
+
+（73）nex.rbt[number].ext[number][number].get_actual_axis_vel() 作用：获取指定编号机器人的指定绑定的外部轴组的指定轴的当前轴速度
+
+示例：nex.GD[1]=nex.rbt[2].ext[2][2].get_actual_axis_vel()
+
+（74）nex.body[number].get_target_axis_vel() 作用：获取当前机器人指定轴的目标轴速度
+
+示例：nex.GD[1]=nex.body[1].get_target_axis_vel()
+
+（75）nex.rbt[number].body[number].get_target_axis_vel() 作用：获取指定编号机器人的指定轴的目标轴速度
+
+示例：nex.GD[1]=nex.rbt[2].body[1].get_target_axis_vel()
+
+（76）nex.ext[number][number].get_target_axis_vel() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的目标轴速度
+
+示例：nex.GD[1]=nex.ext[1][2].get_target_axis_vel()
+
+（77）nex.rbt[number].ext[number][number].get_target_axis_vel() 作用：获取指定机器人指定的绑定的外部轴轴组的指定轴的目标轴速度
+
+示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_target_axis_vel()
+
+（78）nex.body[num].get_actual_motor_encoder_value() 作用：获取当前机器人指定轴的电机编码器位置实际值
+
+示例：nex.GD[1]=nex.body[6].get_actual_motor_encoder_value()
+
+（79）nex.rbt[number].body[num].get_actual_motor_encoder_value() 作用：获取指定机器人指定轴的电机编码器位置实际值
+
+示例：nex.GD[1]=nex.rbt[2].body[6].get_actual_motor_encoder_value()
+
+（80）nex.ext[number][number].get_actual_motor_encoder_value() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的电机编码器位置实际值
+
+示例：nex.GD[1]=nex.ext[1][2].get_actual_motor_encoder_value()
+
+（81）nex.rbt[number].ext[number][number].get_actual_motor_encoder_value() 作用：获取指定机器人指定的绑定的外部轴轴组的指定轴的电机编码器位置实际值
+
+示例：nex.GD[1]=nex.rbt[2].ext[1][2].get_actual_motor_encoder_value()
+
+（82）nex.body[number].get_target_motor_encoder_value() 作用：获取当前机器人指定轴的电机编码器位置目标值
+
+示例：nex.GD[1]=nex.rbt[2].body[6].get_target_motor_encoder_value()
+
+（83）nex.ext[number][number].get_target_motor_encoder_value() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的电机编码器位置目标值
+
+示例：nex.GD[1]=nex.ext[1][2].get_target_motor_encoder_value()
+
+（84）nex.rbt[number].ext[number][number].get_target_motor_encoder_value() 作用：获取指定编号机器人的指定的绑定的外部轴轴组的指定轴的电机编码器位置目标值
+
+示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_target_motor_encoder_value()
+
+（85）nex.body[number].get_actual_motor_torque() 作用：获取当前机器人的指定轴的电机扭矩
+
+示例：nex.GD[1]=nex.body[6].get_actual_motor_torque()
+
+（86）nex.rbt[number].body[number].get_actual_motor_torque() 作用：获取指定机器人的指定轴的电机扭矩
+
+示例：nex.GD[1]=nex.rbt[2].body[6].get_actual_motor_torque()
+
+（87）nex.ext[number][number].get_actual_motor_torque() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的电机扭矩值
+
+示例：nex.GD[1]=nex.ext[1][2].get_actual_motor_torque()
+
+（88）nex.rbt[number].ext[number][number].get_actual_motor_torque() 作用：获取指定编号机器人的指定的绑定的外部轴轴组的指定轴的电机扭矩
+
+示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_actual_motor_torque()
+
+（89）nex.body[number].get_actual_motor_current() 作用：获取当前机器人的指定轴的电机电流
+
+示例：nex.GD[1]=nex.body[6].get_actual_motor_current()
+
+（90）nex.rbt[number].body[number].get_actual_motor_current() 作用：获取指定机器人的指定轴的电机电流
+
+示例：nex.GD[1]=nex.rbt[2].body[6].get_actual_motor_current()
+
+（91）nex.ext[number][number].get_actual_motor_current() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的电机电流值 
+
+示例：nex.GD[1]=nex.ext[1][2].get_actual_motor_current()
+
+（92）nex.rbt[number].ext[number][number].get_actual_motor_current() 作用：获取指定编号机器人的指定的绑定的外部轴轴组的指定轴的电机电流
+
+示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_actual_motor_current()
+
+（93）nex.body[number].get_actual_motor_rpm() 作用：获取当前机器人的指定轴的电机转速
+
+ 示例：nex.GD[1]=nex.body[6].get_actual_motor_rpm()
+
+ （94）nex.rbt[number].body[number].get_actual_motor_rpm() 作用：获取指定机器人的指定轴的电机转速
+
+ 示例：nex.GD[1]=nex.rbt[2].body[6].get_actual_motor_current()
+
+ （95）nex.ext[number][number].get_actual_motor_rpm() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的电机转速值
+
+ 示例：nex.GD[1]=nex.ext[1][2].get_actual_motor_rpm()
+
+ （96）nex.rbt[number].ext[number][number].get_actual_motor_rpm() 作用：获取指定编号机器人的指定的绑定的外部轴轴组的指定轴的电机转速
+
+ 示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_actual_motor_rpm()
+
+ （97）nex.body[number].get_actual_motor_overload() 作用：获取当前机器人的指定轴的电机负载
+
+ 示例：nex.GD[1]=nex.body[6].get_actual_motor_overload()
+
+ （98）nex.rbt[number].body[number].get_actual_motor_overload() 作用：获取指定机器人的指定轴的电机负载
+
+ 示例：nex.GD[1]=nex.rbt[2].body[6].get_actual_motor_overload()
+
+ （99）nex.ext[number][number].get_actual_motor_overload() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的电机负载值
+
+ 示例：nex.GD[1]=nex.ext[1][2].get_actual_motor_overload()
+
+ （100）nex.rbt[number].ext[number][number].get_actual_motor_overload() 作用：获取指定编号机器人的指定的绑定的外部轴轴组的指定轴的电机负载
+
+ 示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_actual_motor_overload()
+
+ （101）nex.body[number].get_motor_moder_of_operation() 作用：获取当前机器人的指定轴的伺服运行模式
+
+ 示例：nex.GD[1]=nex.body[6].get_motor_moder_of_operation()
+
+ （102）nex.rbt[number].body[number].get_motor_moder_of_operation() 作用：获取指定机器人的指定轴的伺服运行模式
+
+ 示例：nex.GD[1]=nex.rbt[2].body[6].get_motor_moder_of_operation()
+
+ （103）nex.ext[number][number].get_motor_moder_of_operation() 作用：获取当前机器人指定的绑定的外部轴轴组的指定轴的伺服运行模式
+
+ 示例：nex.GD[1]=nex.ext[1][2].get_motor_moder_of_operation()
+
+ （104）nex.rbt[number].ext[number][number].get_motor_moder_of_operation() 作用：获取指定编号机器人的指定的绑定的外部轴轴组的指定轴的伺服运行模式
+ 
+示例：nex.GD[1]=nex.rbt[3].ext[1][2].get_motor_moder_of_operation()
+
+
