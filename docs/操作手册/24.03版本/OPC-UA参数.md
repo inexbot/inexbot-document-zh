@@ -146,19 +146,13 @@ A: 检查网络连接和IP地址设置；验证防火墙是否允许OPC-UA端口
     Type选择Counter），也可设置为常量然后手动输入其他字符（Value
     Type选择Constat，Initial Value定义的变量值）。
 
-  ---------------------------- ------------- ----------------------------
-            节点格式             节点类型              绑定内容
-
-        BOOL.GB001 - 999          Boolean        全局变量GB001-GB999
-
-        INT.GI001 - 999            Int32         全局变量GI001-GI999
-
-       DOUBLE.GD001 - 999         Double         全局变量GD001-GD999
-
-       STRING.GS001 - 999         String         全局变量GS001-GS999
-
-    NRC.SystemData.GlobalSpeed      Int32               全局速度
-  ---------------------------- ------------- ----------------------------
+| 节点格式 | 节点类型 | 绑定内容 |
+| :--- | :--- | :--- |
+| BOOL.GB001 - 999 | Boolean | 全局变量GB001-GB999 |
+| INT.GI001 - 999 | Int32 | 全局变量GI001-GI999 |
+| DOUBLE.GD001 - 999 | Double | 全局变量GD001-GD999 |
+| STRING.GS001 - 999 | String | 全局变量GS001-GS999 |
+| NRC.SystemData.GlobalSpeed | Int32 | 全局速度 |
 
 ### OPC-UA参数
 
