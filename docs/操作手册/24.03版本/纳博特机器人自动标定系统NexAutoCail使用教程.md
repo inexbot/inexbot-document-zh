@@ -28,31 +28,26 @@ height="2.5583136482939635in"}
 
 **（连接成功，【控制器】按钮背景色为绿色，连接失败背景色为白色）**
 
-![](./assets/m1ntvlshsijo-vixx9fx2.png){width="4.983661417322835in"
-height="1.438238188976378in"}
+![](./assets/m1ntvlshsijo-vixx9fx2.png)
 
 连接上控制器会自动读取机器人DH参数以及当前位置的关机坐标及直角坐标点位信息，如下图所示：
 
-![](./assets/jp84c9rsr29ynjptog--p.png){width="4.951550743657043in"
-height="2.5909580052493437in"}
+![](./assets/jp84c9rsr29ynjptog--p.png)
 
 3、连接激光标定仪（以API为例），点击【标定仪】，点击弹窗的【连接】
 
 **（连接成功，【标定仪】按钮背景色为绿色，连接失败背景色为白色）**
 
-![](./assets/ol_gsfqujiy0lus_diooh.png){width="4.970816929133858in"
-height="1.5243842957130358in"}
+![](./assets/ol_gsfqujiy0lus_diooh.png)
 
 点击【连接】后在依次按照下图所示点击【Connect
 Tracker】、【OK】(IP不用更改，API激光标定仪默认的IP是192.168.0.168)
 
-![](./assets/kq1mjvescp7n9o7biojsd.png){width="5.0029286964129485in"
-height="1.9062248468941383in"}
+![](./assets/kq1mjvescp7n9o7biojsd.png)
 
 **成功连接标定仪后，标定仪弹窗内会有当前激光标定仪靶球位置信息，如下图所示：**
 
-![](./assets/zwgzavrxmexmd2w8ovwj5.png){width="5.022194881889764in"
-height="1.7131791338582678in"}
+![](./assets/zwgzavrxmexmd2w8ovwj5.png)
 
 （连接成功控制器和标定仪后，将激光标定仪上的靶球放置机器人抓夹处或通过"引光"方式将激光引至机器人夹爪靶球上）
 
@@ -69,12 +64,9 @@ height="1.7131791338582678in"}
 
 （以直角限位为例，在直角坐标下运动X-、X+、Y-、Y+、Z-、Z+，选择合适的位置将示教器的值填写在X、Y、Z的反限位、正限位）
 
-![](./assets/rxbpk_9tzrixdfyh5-vze.png){width="4.861639326334208in"
-height="3.905897856517935in"}
+![](./assets/rxbpk_9tzrixdfyh5-vze.png)
 
-![](./assets/pwzwi0njrsg8l2tpinmjx.png){width="3.4230555555555555in"
-height="0.6614916885389326in"}
-
+![](./assets/pwzwi0njrsg8l2tpinmjx.png)
 （测试点位生成完右下角提示）
 
 测量点生成完，点击右下角的【确定】
@@ -85,34 +77,28 @@ height="0.6614916885389326in"}
 
 单步：
 
-![](./assets/qkksfreo0k1n4nxdgg2gc.png){width="5.079995625546807in"
-height="0.44673337707786526in"}
+![](./assets/qkksfreo0k1n4nxdgg2gc.png)
 
 测试点跑完，根据勾选在校准后参数表格会生成新的校准后的参数，
 
 （下图以六轴协作为例展示校准后参数截图）
 
-![](./assets/o3vikjezhd4sffnmapdzy.png){width="5.015773184601925in"
-height="2.6047462817147857in"}
-
-![](./assets/eh9ylj4y4sl3x_hq0ytjh.png){width="5.073572834645669in"
-height="3.5955719597550306in"}
+![](./assets/o3vikjezhd4sffnmapdzy.png)
+![](./assets/eh9ylj4y4sl3x_hq0ytjh.png)
 
 **如果需要计算不同的信息，自行勾选后点击【计算】**
 
 5、上传结果至控制器，计算完成后依次点击【控制器】、【上传】\
 下载：将控制器参数同步至软件
 
-![](./assets/ro89e5rf96kfzen9gfabb.png){width="5.009350393700787in"
-height="2.650463692038495in"}
+![](./assets/ro89e5rf96kfzen9gfabb.png)
 
 6、生成测试报告，点击【文件】，点击下拉框的【生成报告】
 
 保存：将此次标定过程完整记录保存下来，生成\".necal\"文件\
 加载：将保存的necal文件在软件重新打开
 
-![](./assets/geszxyh80bejcajglyzit.png){width="4.964395231846019in"
-height="2.603248031496063in"}
+![](./assets/geszxyh80bejcajglyzit.png)
 
 ## 国标十四项测试功能
 
@@ -120,8 +106,7 @@ height="2.603248031496063in"}
 
 1、生成工作空间，确认位姿测试平面和轨迹测试平面。点击【工作空间】，如下图所示：
 
-![](./assets/fl3fd0baerb2erri4otzo.png){width="4.861639326334208in"
-height="2.547942913385827in"}
+![](./assets/fl3fd0baerb2erri4otzo.png)
 
 "位姿测试平面"的参数设置：设置C7C6、C7C8、C7C3的值，三个值的填写依据机器人大小及工作空间设定，其中C7C8的值是机器人Y方向的运动轨迹长度。在设置完三个参数后在机器人零点处点击【标记P1】、【生成测试点】
 
@@ -131,13 +116,11 @@ height="2.547942913385827in"}
 
 2、确定基座标，点击【基座标标定】，如下图所示：
 
-![](./assets/kqxquzio3p3hl0gjwc3ul.png){width="4.887327209098863in"
-height="1.8404680664916886in"}
+![](./assets/kqxquzio3p3hl0gjwc3ul.png)
 
 机器人在"零点"处时，点击【开始】（机器人处于上电状态），机器人及激光标定仪会自动进行标定，标定完成后右下角会有绿色弹窗弹出，如下图所示：
 
-![](./assets/pxr_5b9keklxsepdnr2cz.png){width="2.7101870078740156in"
-height="0.5073578302712161in"}
+![](./assets/pxr_5b9keklxsepdnr2cz.png)
 
 标定完成后可以点击【校验】，通常"校验结果"的值在1以内，标定正常。标定完成之后点击【确定】
 
@@ -145,13 +128,11 @@ height="0.5073578302712161in"}
 
 点击【轨迹准确度与重复度】，填写等待时间（默认3s）与循环次数，轨迹类型有"直线、小圆、大圆"，确认完之后点击【启动】，执行完结果自动出现在底部，如下图所示
 
-![](./assets/wr0xrd1upvpowegx2cjxm.png){width="4.932283464566929in"
-height="2.5137412510936135in"}
+![](./assets/wr0xrd1upvpowegx2cjxm.png)
 
 如果需要生成相应报告，点击文件，点击下拉框的【生成报告】
 
-![](./assets/bem1eqcpfokt0sqrslbem.png){width="4.964395231846019in"
-height="2.5857305336832894in"}
+![](./assets/bem1eqcpfokt0sqrslbem.png)
 
 ### 标定**注意事项：**
 
