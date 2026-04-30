@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2026.03-green.svg)]()
 [![Website](https://img.shields.io/badge/Website-inexbot.com-orange.svg)](https://www.inexbot.com)
+[![Docsite](https://img.shields.io/badge/Website-doc.inexbot.com-blue.svg)](https://doc.inexbot.com)
 
 > **运动繁复，化简为境 (Simplify Complexity, Master Motion)**
 >

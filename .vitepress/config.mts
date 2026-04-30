@@ -43,9 +43,12 @@ export default defineConfig({
   ignoreDeadLinks: true,
   outDir: "./dist",
   sitemap:{
-    hostname: 'https://docs.inexbot.com'
+    hostname: 'https://doc.inexbot.com'
   },
   themeConfig: {
-    sidebar: await buildSidebar(docsDir)
+    sidebar: await buildSidebar(docsDir),
+    search:{
+      provider: 'local',
+    }
   }
 })
