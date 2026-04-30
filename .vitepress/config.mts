@@ -1,9 +1,9 @@
-import { defineConfig } from 'vitepress'
+import { DefaultTheme, defineConfig } from 'vitepress'
 import { readdir, stat } from 'fs/promises'
 import { join, extname, basename } from 'path'
 
 // 递归扫描目录生成侧边栏
-async function buildSidebar(dir, prefix = '') {
+async function buildSidebar(dir: string, prefix = ''): Promise<DefaultTheme.SidebarItem[]> {
   const items = []
   const entries = await readdir(dir)
   
@@ -36,13 +36,15 @@ async function buildSidebar(dir, prefix = '') {
 // 获取 docs 目录路径
 const docsDir = join(process.cwd(), 'docs')
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "纳博特科技知识库",
   description: "纳博特科技官方知识库",
   srcDir: "./docs",
   ignoreDeadLinks: true,
-  outDir:"./dist",
+  outDir: "./dist",
+  sitemap:{
+    hostname: 'https://docs.inexbot.com'
+  },
   themeConfig: {
     sidebar: await buildSidebar(docsDir)
   }
