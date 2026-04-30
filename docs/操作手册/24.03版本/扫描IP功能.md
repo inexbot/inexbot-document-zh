@@ -17,7 +17,7 @@ language: "zh-CN"
 
 在原IP界面和插入示教的IP界面新增了IP扫描功能，可以扫描到同一局域网内（即：连接在同一个交换机/集线器/路由器上），且同一网段的控制器IP
 
-![](./assets/9qmeaoxs92-ajbnp0sryw.png)
+![](assets/9qmeaoxs92-ajbnp0sryw.png)
 
 ## 具体实现(有两个界面可以实现扫描IP功能)：
 
@@ -25,7 +25,7 @@ language: "zh-CN"
 
 点击修改IP，再点击出现的下拉框等待3-4秒，即可扫描到同一网段同一局域网内的其他控制器的IP，等待搜索完成，以IP最后一位大小进行排序显示，选中搜索出来的IP，则更新到文本框中，文本框原有输入功能不变，可以输入IP地址进行连接，其余机制保持不变。
 
-![](./assets/q9ztj-btfvqyyxydb_av4.png)
+![](assets/q9ztj-btfvqyyxydb_av4.png)
 
 ### 在插入示教器界面,点击示教器时弹出弹框
 
@@ -33,9 +33,9 @@ language: "zh-CN"
 
 2、可以点击下拉框弹窗下拉界面，会搜索示教盒网段下6002端口地址，等待搜索完成，以IP最后三位数字大小进行排序显示，选中搜索出来的IP，则更新到文本框中，点击确认之后开始连接。
 
-![](./assets/5vdoc4wwvw9wsioxl_siu.png)
+![](assets/5vdoc4wwvw9wsioxl_siu.png)
 
-![](./assets/z5lxlv8hazpgrb5yz9ea4.png)
+![](assets/z5lxlv8hazpgrb5yz9ea4.png)
 
 ## 3.适用场景：
 
@@ -49,5 +49,5 @@ language: "zh-CN"
 
 若在该界面点击取消，快捷键界面应该还是显示插入示教器
 
-![](./assets/r7exlbpvin3dusgteifv1.png)
+![](assets/r7exlbpvin3dusgteifv1.png)
 

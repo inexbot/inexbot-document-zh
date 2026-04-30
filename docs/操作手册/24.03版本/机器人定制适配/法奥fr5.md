@@ -42,7 +42,7 @@ language: "zh-CN"
 3. 上传slaveType文件
 4. 上传ENI文件
 
-![法奥机器人配置界面](./assets/hwynp0vpwjgym19qk01ca.png)
+![法奥机器人配置界面](assets/hwynp0vpwjgym19qk01ca.png)
 
 ### 2.3 常见错误
 如果报0003错误，是伺服库文件不对，需要重新上传伺服库文件。
@@ -56,12 +56,12 @@ language: "zh-CN"
 - 1路模拟IO输出
 - 1路模拟IO输入
 
-![末端连接器](./assets/pythvfviyltpfxwit-shq.png)
+![末端连接器](assets/pythvfviyltpfxwit-shq.png)
 
 ### 3.2 按钮功能定义
 其中DI1-1是拖拽按钮，DI1-2是记录点位按钮。
 
-![IO接口定义](./assets/rqdhzty5ndvpjc2q8arpm.png)
+![IO接口定义](assets/rqdhzty5ndvpjc2q8arpm.png)
 
 ## 4. 指示灯
 
@@ -81,12 +81,12 @@ language: "zh-CN"
 ### 5.1 拖拽模式设置
 设置外部触发信号为1-1，当1-1为1时就会进入拖拽模式。
 
-![拖拽模式设置](./assets/jayw2s6lcc-eds9s_ihkn.png)
+![拖拽模式设置](assets/jayw2s6lcc-eds9s_ihkn.png)
 
 ### 5.2 使能设置
 设置上使能和下使能触发端口为1-1，当1-1为1时候上电，为0的时候下电。
 
-![使能设置](./assets/jpgm7ho3gsbpy51421tkf.png)
+![使能设置](assets/jpgm7ho3gsbpy51421tkf.png)
 
 ### 5.3 拖拽操作流程
 1. 完成机器人辨识

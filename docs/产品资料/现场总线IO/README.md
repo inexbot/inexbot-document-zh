@@ -47,10 +47,10 @@ language: "zh-CN"
 
 ## 子产品文档
 
-- [R2C EtherCAT IO 模块](./R2C_EtherCAT_IO模块.md)
-- [R4C EtherCAT IO 模块](./R4C_EtherCAT_IO模块.md)
-- [R4D EtherCAT IO 模块](./R4D_EtherCAT_IO模块.md)
-- [R5B EtherCAT IO 模块](./R5B_EtherCAT_IO模块.md)
+- [R2C EtherCAT IO 模块](R2C_EtherCAT_IO模块.md)
+- [R4C EtherCAT IO 模块](R4C_EtherCAT_IO模块.md)
+- [R4D EtherCAT IO 模块](R4D_EtherCAT_IO模块.md)
+- [R5B EtherCAT IO 模块](R5B_EtherCAT_IO模块.md)
 
 ## 联系方式
 

@@ -13,7 +13,7 @@ language: "zh-CN"
 
 ## 操作流程
 
-![](./assets/k5gb6xdbmhhgrtarvckey.png)
+![](assets/k5gb6xdbmhhgrtarvckey.png)
 
 1. DXF功能建立在用户坐标下，用户坐标的原点与DXF文件中图形的原点对应。
 2. 工件与DXF文件须1：1还原，工件原点位置须与DXF文件中的图形原点对应。
@@ -23,7 +23,7 @@ language: "zh-CN"
 
 **注意：**DXF文件中图形的原点及XY轴为CAD软件中的原点及XY轴。
 
-![](./assets/n15kwq-ghddmriqgul_gf.png)
+![](assets/n15kwq-ghddmriqgul_gf.png)
 
 ## DXF功能
 
@@ -31,11 +31,11 @@ language: "zh-CN"
 
 操作步骤路径：【工艺-DXF】
 
-![](./assets/nmq2vgyf_z_zqmwmawf5x.png)
+![](assets/nmq2vgyf_z_zqmwmawf5x.png)
 
 点击进入DXF
 
-![](./assets/zh83t-yg_eswijzm5hx8m.png)
+![](assets/zh83t-yg_eswijzm5hx8m.png)
 
 | 功能 | 描述 |
 | --- | --- |
@@ -46,15 +46,15 @@ language: "zh-CN"
 | 离散点 | 打开DXF文件（样条曲线）前需要先填写离散点，离散点越高，生成的作业文件点位越多（除样条曲线外，其他支持的图元无需修改离散点，使用默认离散点即可，离散点值对其无效）。 |
 | 打开 | 需要插入U盘，默认打开目录为控制器目录，DXF文件放在U盘根目录下即可。 |
 | 速度规划 | 用于规划图中轨迹的速度。 |
-| ![](./assets/tkyjunzsbnlw2in4agi4c.png) | 用于放大画布大小。 |
-| ![](./assets/-xaomskexjqiciupvgmc1.png) | 用于缩小画布大小。 |
-| ![](./assets/ca-qrcjjen1tzdi7fwcu2.png) | 用于重置画布位置。 |
+| ![](assets/tkyjunzsbnlw2in4agi4c.png) | 用于放大画布大小。 |
+| ![](assets/-xaomskexjqiciupvgmc1.png) | 用于缩小画布大小。 |
+| ![](assets/ca-qrcjjen1tzdi7fwcu2.png) | 用于重置画布位置。 |
 
 ## 打开 DXF 文件
 
 **旧版本**
 
-![](./assets/skpnxpxepn8qey2rkgnn7.png)
+![](assets/skpnxpxepn8qey2rkgnn7.png)
 
 步 骤 ：示教器插入U盘，① 填写需要的【 离散点 】→ ② 点击【 打开 】→ ③
 选择U盘文件夹→ ④ 选中相应的DXF文件→ ⑤ 点击【 Open】 ，就可打开 文件 。
@@ -71,14 +71,14 @@ language: "zh-CN"
 
 **新版本**
 
-![](./assets/gprvrbgl5g-cx-mdjynmc.png)
+![](assets/gprvrbgl5g-cx-mdjynmc.png)
 
 步 骤 ： 示教器插入U盘 ， ① 填写需要的【 离散点 】 → ② 点击【 打开 】→ ③
 选相应的DXF文件→ ④ 点击【 确定 】 ， 就可打开文件 。
 
 打开之后预览如下
 
-![](./assets/omya8_zy9cyt28w-fjvkg.png)
+![](assets/omya8_zy9cyt28w-fjvkg.png)
 
 图形当中用虚线连接原点的点代表DXF文件中每段轨迹的起点，X代表X轴正方向，Y代表Y轴正方向。
 
@@ -86,7 +86,7 @@ language: "zh-CN"
 
 操作步骤：【工艺】-【DXF】-【速度规划】
 
-![](./assets/fpoemcrolloo3fsada4e4.png)
+![](assets/fpoemcrolloo3fsada4e4.png)
 
 | 功能             | 描述                               |
 | -------------- | -------------------------------- |
@@ -105,7 +105,7 @@ language: "zh-CN"
 
 操作步骤：【工艺】-【DXF】-【速度规划】-【程序参数】
 
-![](./assets/sgjpl-qwpagsaygjxesxx.png)
+![](assets/sgjpl-qwpagsaygjxesxx.png)
 
 | 功能      | 描述 |
 | ------- | ---------------------------------------------------------|
@@ -124,7 +124,7 @@ language: "zh-CN"
 
 ### 运行程序
 
-![](./assets/7zirmhy8xnahaw_mczvth.png)
+![](assets/7zirmhy8xnahaw_mczvth.png)
 
 程序生成后，将自动跳转到生成的作业文件中，也可以在【工程】中选择被生成的程序，再打开；示教器打到运行模式，按下【启动】按键。
 
@@ -140,33 +140,33 @@ language: "zh-CN"
 
 1. 首先，将DXF文件放入U盘内，将U盘插入示教器（最好使用FAT32类型U盘）。
 
-![](./assets/edrbpbysrak_9n00tqq1o.png)
+![](assets/edrbpbysrak_9n00tqq1o.png)
 
 1. 点击示教器【**工艺】-【DXF】。**
 
-![](./assets/o616tu2wjoiugcbxpgdmo.png)
+![](assets/o616tu2wjoiugcbxpgdmo.png)
 
 1. 先在【离散点】处输入需要的数值（仅对样条曲线生效，数值越大，生成的作业文件中的点位就会越多，数值填入需合理，过多会导致轨迹运行不流畅）。
 
-![](./assets/em2mcs0ttgy5sdzgc3zzi.png)
+![](assets/em2mcs0ttgy5sdzgc3zzi.png)
 
 1. ①点击【打开】按钮，②在弹窗内选择mnt文件夹再进入udisk文件夹，此文件夹为U盘内的文件，找到DXF文件打开，如下图所示。
 
-![](./assets/4hyd_8ncwczvad3fgvomx.png)
+![](assets/4hyd_8ncwczvad3fgvomx.png)
 
 1. 标定工具手，确定法兰中心。
 
 第一步，点击【设置】-【工具手标定】
 
-![](./assets/ld-b7rmcby4d50tff8f2m.png)
+![](assets/ld-b7rmcby4d50tff8f2m.png)
 
 第二步，在**无工具手**状态下点击【工具标定】。
 
-![](./assets/nuyvepkx7njs1a9wbdjft.png)
+![](assets/nuyvepkx7njs1a9wbdjft.png)
 
 第三步，四轴scara机器人标定工具手使用2点法。
 
-![](./assets/bxnqznqwkjzfdwkqqblrm.png)
+![](assets/bxnqznqwkjzfdwkqqblrm.png)
 
 第四步，TC1为空间内任意一点，工具手与外部工具手尖对尖点击**标定**。
 
@@ -184,23 +184,23 @@ language: "zh-CN"
 
 第一步，点击【设置】-【用户坐标标定】
 
-![](./assets/u8j4tnirudlo4cczhrqmp.png)
+![](assets/u8j4tnirudlo4cczhrqmp.png)
 
 第二步，选中需要标定的用户坐标编号。
 
 第三步，点击【用户标定】
 
-![](./assets/bndkbgeoryelsklbi5kyp.png)
+![](assets/bndkbgeoryelsklbi5kyp.png)
 
 第四步，标定用户坐标原点和XY轴方向（标定的用户坐标须在同一水平面上，即Z值须一致，若点击标记后Z轴不一致，可以点击**修改**，手动填写相同的Z值）。
 
-![](./assets/7kuzf6oxuo6shbjsndyhy.png)
+![](assets/7kuzf6oxuo6shbjsndyhy.png)
 
 第五步，点击**计算**。
 
 1. 放置工件，工件可任意摆放。放置后，在生成作业文件前需要示教起始点与结束点。
 
-![](./assets/0o-5gm5n3cvzxfr4ytigw.png)
+![](assets/0o-5gm5n3cvzxfr4ytigw.png)
 
 | 功能 | 描述 |
 | --- | --- |
@@ -209,7 +209,7 @@ language: "zh-CN"
 
 1. 点击**程序参数**，输入程序名称，选择指令类型为**外部TCP**，选择工具手编号为标定的工具手，选择用户坐标系为标定的用户坐标系。填写正确的需要使用的速度、平滑度、加速度、减速度、抬起高度、抬起速度（若使用抬起高度需要打开"是否插入抬升点"开关）。
 
-![](./assets/rbj3gypdbftuwgk8cl8zr.png)
+![](assets/rbj3gypdbftuwgk8cl8zr.png)
 
 1. 点击**生成**，生成的作业文件存放在**工程**中，打开作业文件运行。
 
@@ -217,7 +217,7 @@ language: "zh-CN"
 
 循环运行作业文件时，需手动在程序第一行或最后一行插入关节坐标下的点到点指令，回到安全位置（安全点设置好后需要运行看一下轨迹是否正确，若安全点设置不合理会导致关节超限，运行轨迹异常）。
 
-![](./assets/lnob_f5vglg8zubcari_y.png)
+![](assets/lnob_f5vglg8zubcari_y.png)
 
 ### 示例二、生成TCP
 
@@ -225,33 +225,33 @@ language: "zh-CN"
 
 1. 首先，将DXF文件放入U盘内，将U盘插入示教器（最好使用FAT32类型U盘）。
 
-![](./assets/6obgjpyyofrk0od1l5thd.png)
+![](assets/6obgjpyyofrk0od1l5thd.png)
 
 1. 点击示教器【工艺】-【DXF】。
 
-![](./assets/4gvy0otrpkqb2dwifirsx.png)
+![](assets/4gvy0otrpkqb2dwifirsx.png)
 
 1. 先在【离散点】处输入需要的数值（仅对样条曲线生效，数值越大，生成的作业文件中的点位就会越多，数值填入需合理，过多会导致轨迹运行不流畅）。
 
-![](./assets/xw_ok0ehqyed39pgrh2ou.png)
+![](assets/xw_ok0ehqyed39pgrh2ou.png)
 
 1. ①点击【打开】按钮，②在弹窗内选择mnt文件夹再进入udisk文件夹，此文件夹为U盘内的文件，找到DXF文件打开，如下图所示。
 
-![](./assets/lh3x8hmx8ibgyzs_omnpx.png)
+![](assets/lh3x8hmx8ibgyzs_omnpx.png)
 
 1. 标定工具手，确定法兰中心。
 
 第一步，点击【设置】-【工具手标定】
 
-![](./assets/cuterzdlb5xvpno5pcwhh.png)
+![](assets/cuterzdlb5xvpno5pcwhh.png)
 
 第二步，在**无工具手**状态下点击【工具标定】。
 
-![](./assets/j63wftpykra8qvoydjer4.png)
+![](assets/j63wftpykra8qvoydjer4.png)
 
 第三步，四轴scara机器人标定工具手使用2点法。
 
-![](./assets/fhkwcbldly3fmsapf4baj.png)
+![](assets/fhkwcbldly3fmsapf4baj.png)
 
 第四步，TC1为空间内任意一点，工具手与外部工具手尖对尖点击**标定**。
 
@@ -269,23 +269,23 @@ language: "zh-CN"
 
 第一步，点击【设置】-【用户坐标标定】
 
-![](./assets/nuoihv6q7q8b-1s3ktwb0.png)
+![](assets/nuoihv6q7q8b-1s3ktwb0.png)
 
 第二步，选中需要标定的用户坐标编号。
 
 第三步，点击【用户标定】
 
-![](./assets/17xahsnn08f63rhemavqm.png)
+![](assets/17xahsnn08f63rhemavqm.png)
 
 第四步，标定用户坐标原点和XY轴方向（标定的用户坐标须在同一水平面上，即Z值须一致，若点击标记后Z轴不一致，可以点击**修改**，手动填写相同的Z值）。
 
-![](./assets/y7jzk2yg6jkfuehefonxr.png)
+![](assets/y7jzk2yg6jkfuehefonxr.png)
 
 第五步，点击**计算**。
 
 1. 点击**程序参数**，输入程序名称，选择指令类型为**TCP**，选择工具手编号为标定的工具手，选择用户坐标系为标定的用户坐标系。填写正确的需要使用的速度、平滑度、加速度、减速度、抬起高度、抬起速度（若使用抬起高度需要打开"是否插入抬升点"开关）。
 
-![](./assets/me4vjyeuar74a4k1xsjr9.png)
+![](assets/me4vjyeuar74a4k1xsjr9.png)
 
 1. 点击**生成**，生成的作业文件存放在**工程**中，打开作业文件运行。
 
@@ -293,7 +293,7 @@ language: "zh-CN"
 
 循环运行作业文件时，需手动在程序第一行或最后一行插入关节坐标下的点到点指令，回到安全位置（安全点设置好后需要运行看一下轨迹是否正确，若安全点设置不合理会导致关节超限，运行轨迹异常）。
 
-![](./assets/xxfvlp11hbmlnyadlgoti.png)
+![](assets/xxfvlp11hbmlnyadlgoti.png)
 
 **注：**
 
@@ -301,17 +301,17 @@ language: "zh-CN"
 
 使用**外部TCP**生成整圆轨迹时，轨迹的结束点是起始点相对于圆心进行中心对称的位置，如下图。
 
-![](./assets/_mogz8hhesleldjmbnq4u.png)
+![](assets/_mogz8hhesleldjmbnq4u.png)
 
 使用**外部TCP**生成整圆或圆弧轨迹时，由于移动距离小，姿态变化大，运行速度会过快，需要手动修改指令速度。生成圆弧轨迹时，若出现动态限位超限报错，可手动在【变量】中将用户坐标修改为关节坐标，如下图。
 
-![](./assets/r202uoz1pmxhyqa81jx-8.png)
+![](assets/r202uoz1pmxhyqa81jx-8.png)
 
-![](./assets/1uberqk5rls8yp9rvrzjw.png)
+![](assets/1uberqk5rls8yp9rvrzjw.png)
 
 若CAD绘制的DXF图形中有直角，建议在直角两边插入距离较近的点，如下图。
 
-![](./assets/ll7lhtkjfbo7pdmc7j65u.png)
+![](assets/ll7lhtkjfbo7pdmc7j65u.png)
 
 ## CAD使用注意事项
 
@@ -319,9 +319,9 @@ language: "zh-CN"
 2. 使用CAD制图时，可以使用直线、圆弧、多线段、样条曲线、整圆等图元，但一个文件尽量使用同一个图元绘制**一段**完整的轨迹。
 3. 若分段绘制会对机器人运行轨迹造成影响（分段绘制，机器人按照DXF文件中图形的描画顺序运行每一段）。
 
-![](./assets/snitva3wsax__drnlhqb6.png)
+![](assets/snitva3wsax__drnlhqb6.png)
 
-![](./assets/nrtfxdaqjpqr3sieh2-o5.png)
+![](assets/nrtfxdaqjpqr3sieh2-o5.png)
 
 如上图所示，若生成作业文件时填写了抬升高度，机器人将先抬升-运行直线①-再次抬升-运行圆弧②-再次抬升-运行多段线③-再次抬升-运行圆弧④。
 
@@ -331,7 +331,7 @@ language: "zh-CN"
 3. <br />
    1. 在QCAD中，使用圆弧或者圆图元绘制时，圆弧和圆的轨迹运行都为逆时针。若使用多个图元绘制，需注意每段轨迹的起始点，上一段轨迹的终点应与下一段轨迹的起点为同一个点，圆弧的起点为该段圆弧轨迹逆时针的开始点。
 
-![](./assets/eteoiou725fjypio4utqi.png)
+![](assets/eteoiou725fjypio4utqi.png)
 
 ## AI 检索专用问答对 (Q&A for Retrieval)
 
@@ -410,11 +410,11 @@ A:
 
 ## 相关资源
 
-- [外部点TCP](./外部点TCP.md)
+- [外部点TCP](外部点TCP.md)
 
-- [用户坐标标定](./用户坐标标定手册.md)
+- [用户坐标标定](用户坐标标定手册.md)
 
-- [工具手标定手册](./工具手标定手册.md)
+- [工具手标定手册](工具手标定手册.md)
 
 ## 版本历史
 

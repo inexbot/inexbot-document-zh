@@ -70,7 +70,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 参考零点
 
-![七轴机器人参考零点](./assets/h9dqimfz7wa8_mxmahbrg.png)
+![七轴机器人参考零点](assets/h9dqimfz7wa8_mxmahbrg.png)
 
 ### 杆长参数
 
@@ -115,7 +115,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 参考零点
 
-![六轴机器人参考零点](./assets/wfqpnjjefinuj_ms6h2nm.png)
+![六轴机器人参考零点](assets/wfqpnjjefinuj_ms6h2nm.png)
 
 ### 杆长参数
 
@@ -151,7 +151,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 参考零点
 
-![六轴协作参考零点](./assets/p2nj4yaajcm58jd2dviir.png)
+![六轴协作参考零点](assets/p2nj4yaajcm58jd2dviir.png)
 
 ### 杆长参数
 
@@ -192,7 +192,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 参考零点
 
-![六轴喷涂参考零点](./assets/o3lt-o9u0uvcix715f711.png)
+![六轴喷涂参考零点](assets/o3lt-o9u0uvcix715f711.png)
 
 ### 杆长参数
 
@@ -230,7 +230,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 参考零点
 
-![六轴异形二参考零点](./assets/stgght0krmrwfg3wvw46a.png)
+![六轴异形二参考零点](assets/stgght0krmrwfg3wvw46a.png)
 
 ### 杆长参数
 
@@ -266,7 +266,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 参考零点
 
-![五轴串联多关节参考零点](./assets/_p5uha63zzowfm27bc9r8.png)
+![五轴串联多关节参考零点](assets/_p5uha63zzowfm27bc9r8.png)
 
 ### 杆长参数
 
@@ -306,7 +306,7 @@ DH参数是机器人运动学建模的标准方法，由Denavit和Hartenberg于1
 
 ### 结构特点
 
-![SCARA机器人结构](./assets/okebvsn_lv5jlbnk_qkkk.png)
+![SCARA机器人结构](assets/okebvsn_lv5jlbnk_qkkk.png)
 
 SCARA（Selective Compliance Assembly Robot Arm）机器人具有4个轴，其中前两个轴为旋转轴，第三个轴为移动轴，第四个轴为旋转轴。
 
@@ -343,7 +343,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴SCARA异型1参考零点](./assets/zqprzeabirnyjpv63nhro.png)
+![四轴SCARA异型1参考零点](assets/zqprzeabirnyjpv63nhro.png)
 
 ### 杆长参数
 
@@ -378,7 +378,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴连杆码垛参考零点](./assets/tay9jqgcdpm9jebg_o_u7.png)
+![四轴连杆码垛参考零点](assets/tay9jqgcdpm9jebg_o_u7.png)
 
 ### 杆长参数
 
@@ -416,7 +416,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴码垛丝杆参考零点](./assets/cuqmu5ly5mqkcyketiqym.png)
+![四轴码垛丝杆参考零点](assets/cuqmu5ly5mqkcyketiqym.png)
 
 ### 杆长参数
 
@@ -453,7 +453,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴串联参考零点](./assets/4abhalldz3r2n58_7a6sg.png)
+![四轴串联参考零点](assets/4abhalldz3r2n58_7a6sg.png)
 
 ### 杆长参数
 
@@ -484,7 +484,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴串联参考零点](./assets/pnc89ubal4llf31kjyzn5.png)
+![四轴串联参考零点](assets/pnc89ubal4llf31kjyzn5.png)
 
 ### 参数说明
 
@@ -523,7 +523,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![三轴直角机器人参考零点](./assets/5xhewcnqx9h375lcvnhv6.png)
+![三轴直角机器人参考零点](assets/5xhewcnqx9h375lcvnhv6.png)
 
 ### 参数说明
 
@@ -559,7 +559,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![三轴串联-CCZ参考零点](./assets/okebvsn_lv5jlbnk_qkkk.png)
+![三轴串联-CCZ参考零点](assets/okebvsn_lv5jlbnk_qkkk.png)
 
 ### 参数说明
 
@@ -593,7 +593,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![三轴直角-XYZ参考零点](./assets/qriqa4ak1jv-y0e65dwyy.png)
+![三轴直角-XYZ参考零点](assets/qriqa4ak1jv-y0e65dwyy.png)
 
 ### 参数说明
 
@@ -629,7 +629,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![五轴串联-XYZAB参考零点](./assets/mmdw2x7jsjjmcdqybawm5.png)
+![五轴串联-XYZAB参考零点](assets/mmdw2x7jsjjmcdqybawm5.png)
 
 ### 参数说明
 
@@ -670,7 +670,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![五轴直角-XYZAC参考零点](./assets/fpypbustfgzi2e9gj2uvq.png)
+![五轴直角-XYZAC参考零点](assets/fpypbustfgzi2e9gj2uvq.png)
 
 ### 参数说明
 
@@ -711,7 +711,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![二轴串联-CC参考零点](./assets/kuqkxe6bnuakdesiayh1k.png)
+![二轴串联-CC参考零点](assets/kuqkxe6bnuakdesiayh1k.png)
 
 ### 参数说明
 
@@ -737,7 +737,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴直角-CC参考零点](./assets/fu32swzde9ejlavcye65r.png)
+![四轴直角-CC参考零点](assets/fu32swzde9ejlavcye65r.png)
 
 ### 参数说明
 
@@ -775,7 +775,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![六轴串联-XYZCAC参考零点](./assets/tbehilavq8cpahvxjgipq.png)
+![六轴串联-XYZCAC参考零点](assets/tbehilavq8cpahvxjgipq.png)
 
 ### 参数说明
 
@@ -818,7 +818,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![五轴混联机参考零点](./assets/5eehh_vrada6y6bnxefpk.png)
+![五轴混联机参考零点](assets/5eehh_vrada6y6bnxefpk.png)
 
 ### 参数说明
 
@@ -850,7 +850,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![四轴串联-XCZC参考零点](./assets/vqymx1nrn2ojnqjnhybau.png)
+![四轴串联-XCZC参考零点](assets/vqymx1nrn2ojnqjnhybau.png)
 
 ### 参数说明
 
@@ -888,7 +888,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![六轴串联-CBBCBA参考零点](./assets/b75cgx2_wy0ocw6ipugfo.png)
+![六轴串联-CBBCBA参考零点](assets/b75cgx2_wy0ocw6ipugfo.png)
 
 ### 参数说明
 
@@ -923,7 +923,7 @@ SCARA机器人的3轴是控制丝杆上下运动，控制丝杆的旋转轴转�
 
 ### 参考零点
 
-![三轴串联-CCA参考零点](./assets/j_2ozxrkek0z6fn4uz4xb.png)
+![三轴串联-CCA参考零点](assets/j_2ozxrkek0z6fn4uz4xb.png)
 
 ### 参数说明
 
@@ -951,7 +951,7 @@ Delta并联机器人采用3个并联运动链结构，具有高速、高精度�
 
 ### 参考零点
 
-![Delta并联机器人参考零点](./assets/screhot_20hhhh-04-14_17-20-28.png)
+![Delta并联机器人参考零点](assets/screhot_20hhhh-04-14_17-20-28.png)
 
 ### 参数说明
 
@@ -982,7 +982,7 @@ Delta并联机器人采用3个并联运动链结构，具有高速、高精度�
 
 ### 参考零点
 
-![五轴串联-XYZBC参考零点](./assets/nhdyibeot_20iiii-_pppp-54.png)
+![五轴串联-XYZBC参考零点](assets/nhdyibeot_20iiii-_pppp-54.png)
 
 ### 参数说明
 
@@ -1023,7 +1023,7 @@ Delta并联机器人采用3个并联运动链结构，具有高速、高精度�
 
 ### 参考零点
 
-![三轴串联-BBB参考零点](./assets/huieheg-98hydgeuqgg-77.png)
+![三轴串联-BBB参考零点](assets/huieheg-98hydgeuqgg-77.png)
 
 ### 参数说明
 
@@ -1047,7 +1047,7 @@ Delta并联机器人采用3个并联运动链结构，具有高速、高精度�
 
 ### 结构特点
 
-![Delta并联机器人](./assets/ghyethhyj-uuuu-8656gdggd.png)
+![Delta并联机器人](assets/ghyethhyj-uuuu-8656gdggd.png)
 
 并联机器人具有3个或4个并联运动链，末端执行器通过多个连杆与底座相连，具有高速、高精度的特点。
 
@@ -1076,7 +1076,7 @@ Delta并联机器人采用3个并联运动链结构，具有高速、高精度�
 
 ### 参考零点
 
-![Tricept机器人参考零点](./assets/thyjyew-88-eufrgyddchfd.png)
+![Tricept机器人参考零点](assets/thyjyew-88-eufrgyddchfd.png)
 
 ---
 
@@ -1084,7 +1084,7 @@ Delta并联机器人采用3个并联运动链结构，具有高速、高精度�
 
 ### 参考零点
 
-![单轴直角机器人参考零点](./assets/gtrcgdugfg-9-dgeygey.png)
+![单轴直角机器人参考零点](assets/gtrcgdugfg-9-dgeygey.png)
 
 ---
 
@@ -1206,5 +1206,5 @@ A: 机器人结构特点决定了DH参数的数量和类型。例如，全旋转
 
 ## 相关资源
 
-- [系统功能调试手册](./系统功能调试手册.md)
-- [运动控制类指令](./运动控制类指令.md)
+- [系统功能调试手册](系统功能调试手册.md)
+- [运动控制类指令](运动控制类指令.md)
