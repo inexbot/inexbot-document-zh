@@ -27,7 +27,7 @@ language: "zh-CN"
 
 (2)利用putty进入控制器后台，依次输入以下命令：将local.tar.gz文件复制至/home/inexbot路径下并解压
 
-![命令](assets/Lua-1.png)
+![命令](assets/lua-1.png)
 
 (3)在/etc/init.d/rc.local 文件，增加自启动环境变量 :/home/inexbot/local/bin
 
