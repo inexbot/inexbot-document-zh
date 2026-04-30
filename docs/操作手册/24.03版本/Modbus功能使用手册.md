@@ -15,7 +15,7 @@ language: "zh-CN"
 
 ### MODBUS_OPEN---打开MODBUS连接
 
-![](./assets/pq4gc4wcyxwsi22hv7kli.png)
+![](assets/pq4gc4wcyxwsi22hv7kli.png)
 格式：MODBUS_OPEN【指令名称】Type=Master、Slave【主站、从站】ID【工艺号】。
 
 功能：打开Modbus通讯连接。
@@ -28,7 +28,7 @@ language: "zh-CN"
 
 ### MODBUS_CLOSE---断开MODBUS连接
 
-![](./assets/tajld7ofig7f0byqsls9w.png)
+![](assets/tajld7ofig7f0byqsls9w.png)
 
 格式：MODBUS_CLOSE【指令名称】Type=Master、Slave【主站、从站】ID【工艺号】。
 
@@ -48,9 +48,9 @@ language: "zh-CN"
 
 参数：
 
-| 主站/从站         | 选择主站，执行指令后将获取主站的连接状态<br>选择从站，执行指令后将获取从站的连接状态                                                                                                          |
+| 主站/从站         | 选择主站，执行指令后将获取主站的连接状态<br>选择从站，执行指令后将获取从站的连接状态      |
 | :--- | :--- |
-| 工艺号            | 选择从站时无工艺号<br>选择主站工艺号支持1---9                                                                                                                           |
+| 工艺号            | 选择从站时无工艺号<br>选择主站工艺号支持1---9   |
 | 状态存入变量名    | 将获取到的状态存入到变量<br>例如：Modbus从站连接，选择的变量是GB001，首先执行打开Modbus连接指令，再执行获取Modbus连接指令，如果Modbus从站连接成功的话GB001=1，连接失败GB001=0 |
 
 ### MODBUS_READ---MODBUS读指令
@@ -95,11 +95,11 @@ language: "zh-CN"
 
 例如：如下图执行Modbus读指令，将Modbus地址1---地址10的值读取到变量GI001-GI010。
 
-![](./assets/t7-pr30uel84ftlcnnsqw.png)
+![](assets/t7-pr30uel84ftlcnnsqw.png)
 
-![](./assets/2xuf3qszdlvwgvnvvyrki.png)
+![](assets/2xuf3qszdlvwgvnvvyrki.png)
 
-![](./assets/ilbicqxkbmjmg2l6ersrx.png)
+![](assets/ilbicqxkbmjmg2l6ersrx.png)
 
 **示例说明2:**地址类型3X-bit，数据存放的首个变量为GI001从站首地址1，读从站地址个数16。
 
@@ -109,11 +109,11 @@ language: "zh-CN"
 
 数据存放的首个变量为GI001,则将259转为二进制码后按从右往左的顺序将每个数存入GI001---GI016中。
 
-![](./assets/scfynuhhtxk6l8iglkc1z.png)
+![](assets/scfynuhhtxk6l8iglkc1z.png)
 
-![](./assets/4iqvhmfwnfdpbjxevlwua.png)
+![](assets/4iqvhmfwnfdpbjxevlwua.png)
 
-![](./assets/ck-w3ulslphw094taqu5g.png)
+![](assets/ck-w3ulslphw094taqu5g.png)
 
 **示例说明3:**地址类型3X-bit，数据存放的首个变量为I001从站首地址1，读从站地址个数8。
 
@@ -123,9 +123,9 @@ Modbus地址1中所存值为259，则用二进制16位表示为0000 0001 0000
 数据存放的首个变量为I001,则将259转为二进制码后按从右往左的顺序将读取到的8个值（0000
 0011）存入I001---I008中。
 
-![](./assets/gjivmbrblymwb1dzwi3ug.png)
+![](assets/gjivmbrblymwb1dzwi3ug.png)
 
-![](./assets/d9xufiprucrup8zqiq7xi.png)
+![](assets/d9xufiprucrup8zqiq7xi.png)
 
 注意事项：
 
@@ -139,17 +139,17 @@ Modbus地址1中所存值为259，则用二进制16位表示为0000 0001 0000
 
 例：如下图所示0X和1X只有"0"，"1"两种状态，Value选择On时表示1，选择Off时表示0，执行modbus读指令后将读取的对应地址状态存入到变量。
 
-![](./assets/awwc4jauz3zfhximxrhys.png)
+![](assets/awwc4jauz3zfhximxrhys.png)
 
-![](./assets/pdvig4ej0kkjs6p4yufby.png)
+![](assets/pdvig4ej0kkjs6p4yufby.png)
 
 **示例说明5：**地址类型3X，数据存放的首个变量为S001，从站首地址1，读从站地址个数5。
 
-![](./assets/gtxiqbgyiqbt5v4pdiifa.png)
+![](assets/gtxiqbgyiqbt5v4pdiifa.png)
 
-![](./assets/bhlyah9yii-5aj7vmydfy.png)
+![](assets/bhlyah9yii-5aj7vmydfy.png)
 
-![](./assets/74ksd-hyvhag_u6uunvvr.png)
+![](assets/74ksd-hyvhag_u6uunvvr.png)
 
 执行效果：执行指令后将读取到的主站地址1-地址5的值存入变量S001，超过读取地址个位数的地址是无法读取。
 
@@ -167,11 +167,11 @@ Modbus地址1中所存值为259，则用二进制16位表示为0000 0001 0000
 
 **示例说明6：**地址类型3X，数据存放的首个变量为D001，从站首地址1，读从站地址个数10。
 
-![](./assets/qygn8a-d1sthftvopdgay.png)
+![](assets/qygn8a-d1sthftvopdgay.png)
 
-![](./assets/otc0bfregm3gdar6u9qzk.png)
+![](assets/otc0bfregm3gdar6u9qzk.png)
 
-![](./assets/tvutggqxtz4hlb0am_kwh.png)
+![](assets/tvutggqxtz4hlb0am_kwh.png)
 
 执行效果：执行Modbus读指令将读取到的浮点型数字存入D001-D005。
 
@@ -181,9 +181,9 @@ Modbus地址1中所存值为259，则用二进制16位表示为0000 0001 0000
 
 Modbus设置-Modbus参数，从站和主站界面都增加对浮点数的读取与写入大小端交换的设置选项，如图所示：
 
-![](./assets/4fuueld9-3x169g8tlefn.png)
+![](assets/4fuueld9-3x169g8tlefn.png)
 
-![](./assets/d1b1ahjbf3mnmhb77psk9.png)
+![](assets/d1b1ahjbf3mnmhb77psk9.png)
 
 Float大小端选项有四个，分别是：
 
@@ -203,7 +203,7 @@ AB CD \CD AB \BA DC \DC BA
 
 如果示教器端选择了 CD AB 模式，那么这意味着数据是以小端模式存储的。在这种情况下，为了保证数据的正确传输和解析，**modbus poll** 软件也需要设置为相同的 Float CD AB 格式来读写、修改相应的地址。
 
-![](./assets/dkpcoyna1v8jsl8syl-_o.png)
+![](assets/dkpcoyna1v8jsl8syl-_o.png)
 
 #### 注意事项：
 
@@ -240,9 +240,9 @@ AB CD \CD AB \BA DC \DC BA
 
 注意事项：当MODBUS_WRITE指令"数据存放的首个变量"。
 
-![](./assets/9q7ebhhd0cart6oc_b6oz.png)
+![](assets/9q7ebhhd0cart6oc_b6oz.png)
 
-![](./assets/epamp1kh_18hptfkqfexi.png)
+![](assets/epamp1kh_18hptfkqfexi.png)
 
 **示例说明2：**地址类型4X-bit，数据存放的首个变量为I001,从站首地址1，写从站地址个数10。
 
@@ -251,9 +251,9 @@ AB CD \CD AB \BA DC \DC BA
 因此I001-I010所赋的值用二进制表示（从左往右）为00 0111 1011，00 0111
 1011转为十进制为123。
 
-![](./assets/pnvcs6bbjp53uur1ukdqp.png)
+![](assets/pnvcs6bbjp53uur1ukdqp.png)
 
-![](./assets/16rz_c-ouvhoc2eqnpggo.png)
+![](assets/16rz_c-ouvhoc2eqnpggo.png)
 
 注意事项：
 
@@ -263,9 +263,9 @@ AB CD \CD AB \BA DC \DC BA
 
 **示例说明3：**地址类型4X，数据存放的首个变量为GS001,从站首地址1，写从站地址个数5。
 
-![](./assets/kclzgi8lhtu4u-gukgsk3.png)
+![](assets/kclzgi8lhtu4u-gukgsk3.png)
 
-![](./assets/2xoxlkrpyyyc1i0j_d46q.png)
+![](assets/2xoxlkrpyyyc1i0j_d46q.png)
 
 执行效果：执行Modbus写指令将字符变量GS001的值写入到地址。
 
@@ -285,7 +285,7 @@ AB CD \CD AB \BA DC \DC BA
 
 ## Modbus从站
 
-![](./assets/0jz8cxyh6a65wq6u99nzl.png)
+![](assets/0jz8cxyh6a65wq6u99nzl.png)
 
 连接：打开连接使能开关后连接Modbus，不打开使能Modbus无法连接成功。
 
@@ -313,7 +313,7 @@ Modbus:监测Modbus连接状态。
 
 #### TCP协议
 
-![](./assets/ddovc7bn3ki6mp5fcjxbq.png)
+![](assets/ddovc7bn3ki6mp5fcjxbq.png)
 
 1.  点击设置-Modbus设置-Modbus参数，进入Modbus参数界面，打开连接开关。
 
@@ -321,7 +321,7 @@ Modbus:监测Modbus连接状态。
 
 3.  打开软件后点击 Connection，选择Connect,进入Concection Setup 界面。
 
-![](./assets/gdy-obagfhfvm6hsspey3.png)
+![](assets/gdy-obagfhfvm6hsspey3.png)
 
 4.  connection选择ModbusTCP/IP，IP Address为当前连接的控制器IP。
 
@@ -329,7 +329,7 @@ Modbus:监测Modbus连接状态。
 
 注：IP地址是当前连接控制器的IP,选择TCP协议时主机的IP网段需要和控制IP网段一致。
 
-![](./assets/8guvfr0szha_keqwietxa.png)
+![](assets/8guvfr0szha_keqwietxa.png)
 
 5.  示教器页面显示已连接，如在Modbus参数界面显示已连接和未连接闪烁画面，需要在Setup------Read/Write
     Definition将Scan Rate参数的1000ms改为100ms。
@@ -346,14 +346,14 @@ Modbus:监测Modbus连接状态。
 
 1.  点击Setup-Read/Write Definition。
 
-![](./assets/hdin7r2fau6grcp9pt6jk.png)
+![](assets/hdin7r2fau6grcp9pt6jk.png)
 
 2.  进入Read/Write
     Definition界面，选择地址类型为4X，设置起始地址Address、地址个数Quantity，勾选PLC
     Addresses （Base
     1），设置好参数之后点击OK就可以在对应的地址码输入数值。
 
-![](./assets/u7i1ra2hhuo-nzaprqqmw.png)
+![](assets/u7i1ra2hhuo-nzaprqqmw.png)
 
 3.  双击对应的地址，填写相关地址码：
 
@@ -361,13 +361,13 @@ Modbus:监测Modbus连接状态。
 
 地址码29，Value写2，伺服状态切换为伺服停止。
 
-![](./assets/kovp-fgbl7bxxblduygkp.png)
+![](assets/kovp-fgbl7bxxblduygkp.png)
 
 #### RTU协议
 
 **232通讯**
 
-![](./assets/siqvs1ukxc4wx5fou0qe2.png)
+![](assets/siqvs1ukxc4wx5fou0qe2.png)
 
 232通讯接线：
 
@@ -381,17 +381,17 @@ Modbus:监测Modbus连接状态。
 
 点击 Connection，选择Connect,进入Concection Setup 界面，如下图所示：
 
-![](./assets/h9zpettmz6efkrf7kq8fy.png)
+![](assets/h9zpettmz6efkrf7kq8fy.png)
 
 7.  connection选择Serial Port，Serial Setting 选择识别到的串口。
 
 号，设置好参数（图片填写参数仅为示例），点击ok。
 
-![](./assets/cvvj7fkxl22niougkyhmv.png)
+![](assets/cvvj7fkxl22niougkyhmv.png)
 
 8.  Modbus连接成功。
 
-![](./assets/gvedd5ehtzkwgexaw41de.png)
+![](assets/gvedd5ehtzkwgexaw41de.png)
 
 9.  Modbus
     连接成功后就可以通过地址码控制机器人，具体功能的地址码可以在《Modbus地址码列表》查看。
@@ -408,17 +408,17 @@ Modbus:监测Modbus连接状态。
 
 2.  点击 Connection，选择Connect,进入Concection Setup 界面。
 
-![](./assets/n4_zsvoiylpgghm66tkkn.png)
+![](assets/n4_zsvoiylpgghm66tkkn.png)
 
 3.  connection选择Serial Port，Serial Setting 选择识别到的串口。
 
 号，设置好参数（图片填写参数仅为示例），点击ok。
 
-![](./assets/p3jdckvj0v39w_xc9qrl6.png)
+![](assets/p3jdckvj0v39w_xc9qrl6.png)
 
 4.  Modbus连接成功。
 
-![](./assets/bpbsowbm_azxebmtc-4z9.png)
+![](assets/bpbsowbm_azxebmtc-4z9.png)
 
 说明：
 
@@ -426,7 +426,7 @@ Modbus:监测Modbus连接状态。
 
 ## Modbus主站
 
-![](./assets/7oilh0le_2v0j3i8qzoqp.png)
+![](assets/7oilh0le_2v0j3i8qzoqp.png)
 
 工艺号：主站连接时的工艺号，支持1-9个工艺号。
 
@@ -446,27 +446,27 @@ Modbus：监测Modbus主站连接状态。
 
 如下图所示，TCP通讯时的IP地址为当前主机地址，不是当前所连接的控制器IP。
 
-![](./assets/upnyamsvajkizua3u818y.png)
+![](assets/upnyamsvajkizua3u818y.png)
 
 1.  Modbus主站参数界面设置参数。
 
 2.  新建工程，插入modbus指令。
 
-![](./assets/l0ju6ie-eq2es-j27fvii.png)
+![](assets/l0ju6ie-eq2es-j27fvii.png)
 
 3.  打开Modbus Slave软件。
 
 4.  打开软件后点击 Connection，选择Connect,进入Concection Setup 界面。
 
-![](./assets/pinixkwju0w81ndwvgyyw.png)
+![](assets/pinixkwju0w81ndwvgyyw.png)
 
 5.  Connection选择ModbusTCP/IP，Port端口号需要和Modbus参数界面设置的端口号一致，点击ok。
 
-![](./assets/ypl7ftaajvc0haa8ffmhb.png)
+![](assets/ypl7ftaajvc0haa8ffmhb.png)
 
 6.  执行第2步工程界面打开MODBUS连接指令,Modbus主站连接成功。
 
-![](./assets/_ycld6pybl6w2hc6sknow.png)
+![](assets/_ycld6pybl6w2hc6sknow.png)
 
 #### RTU协议
 
@@ -476,9 +476,9 @@ Modbus：监测Modbus主站连接状态。
 
 功能：将Modbus地址里的参数读取到变量。
 
-![](./assets/gq_hlgjmbxf1oyxootzcv.png)
+![](assets/gq_hlgjmbxf1oyxootzcv.png)
 
-![](./assets/l0eclqxsym6xfd1xedseg.png)
+![](assets/l0eclqxsym6xfd1xedseg.png)
 示例说明：
 
 1.  打开Modbus主站通讯；
@@ -494,9 +494,9 @@ Modbus：监测Modbus主站连接状态。
 
 功能：将赋值的变量值写入到对应的地址，如下为示意图。
 
-![](./assets/kqx0lci6t68akgj60eyxr.png)
+![](assets/kqx0lci6t68akgj60eyxr.png)
 
-![](./assets/ttc8phnt2uotfegc46p-d.png)
+![](assets/ttc8phnt2uotfegc46p-d.png)
 
 示例说明：
 
@@ -516,30 +516,30 @@ Modbus：监测Modbus主站连接状态。
 
 2.  在导出的配置文件中找到modbusAddr.json文件。
 
-![](./assets/cvufpczx-wt6uuqahpqo1.png)
+![](assets/cvufpczx-wt6uuqahpqo1.png)
 
 3.  使用Notepad++等文本编辑软件打开
 
-![](./assets/jr2jrjwz8h-ibaiwaiadg.png)
+![](assets/jr2jrjwz8h-ibaiwaiadg.png)
 
 4.  打开后可以看到一个{
     }中包含一组地址码参数（系统会自动生成一份原始地址码）。
 
-![](./assets/27xtvkfndj_f3lvfihbyi.png)
+![](assets/27xtvkfndj_f3lvfihbyi.png)
 
 5.  修改地址直接更改addr后的数字，数字为0时，该地址码功能无效。
 
-![](./assets/fti3qw0mrgzbwgzctxqdb.png)
+![](assets/fti3qw0mrgzbwgzctxqdb.png)
 
 注意事项：修改的地址码不能和其它地址码一样，否则会影响其它功能的使用。
 
 6.  修改完成后点击保存。
 
-![](./assets/pbymdpgllmp39tzem2tvb.png)
+![](assets/pbymdpgllmp39tzem2tvb.png)
 
 7.  然后重新导入修改完参数的配置文件，重启生效。
 
-![](./assets/1b4tk0ywa5yvni1jkhw0w.png)
+![](assets/1b4tk0ywa5yvni1jkhw0w.png)
 
 ## Modbus配置地址码工具使用说明
 
@@ -547,39 +547,39 @@ Modbus配置地址码工具使用说明：
 
 打开软件1导入地址码配置文件（modbusAddr），2打开配置文件
 
-![](./assets/bbrtx80a_oa0v7ellsq7t.png)
+![](assets/bbrtx80a_oa0v7ellsq7t.png)
 
 进入配置界面，软件左侧是功能分类
 
-![](./assets/6bn7vsnk3iv_a6janvv1l.png)
+![](assets/6bn7vsnk3iv_a6janvv1l.png)
 
 如下图所示选择对应功能软件这边会显示每个功能对应的功能名称，地址类型等信息，左侧1取消勾选，则对应地址码信息也会在2里面取消显示。
 
-![](./assets/tdtxpzruppe0mkjiyllsr.png)
+![](assets/tdtxpzruppe0mkjiyllsr.png)
 
 说明：用户可以自己修改对应功能的地址码（修改的地址码不能和其它功能地址码冲突，否则会导致其它功能无法使用）
 
 点击删除会将这个功能在此配置文件删除掉，谨慎操作。
 
-![](./assets/wbscm6ms58hcop8l18zd1.png)
+![](assets/wbscm6ms58hcop8l18zd1.png)
 
 整个文件都修改结束后点击主页，进入到界面2
 
-![](./assets/jibcbmp1j1tedkzjtenkl.png)
+![](assets/jibcbmp1j1tedkzjtenkl.png)
 
-![](./assets/ebnpgio2htrcflyel41jr.png)
+![](assets/ebnpgio2htrcflyel41jr.png)
 
 点击次按钮可以将配置文件导出
 
-![](./assets/76e9ddrsy-s-xfcmemw_x.png)
+![](assets/76e9ddrsy-s-xfcmemw_x.png)
 
-![](./assets/g1xtrzorpyfsikktbkz99.png)
+![](assets/g1xtrzorpyfsikktbkz99.png)
 
 说明：软件里所有功能的划分是根据modbus地址码列表（新）来定义的
 
-![](./assets/7wxvkkuexaetdxul7nuj_.png)
+![](assets/7wxvkkuexaetdxul7nuj_.png)
 
-![](./assets/qislyehbg4ahf99bv4kpd.png)
+![](assets/qislyehbg4ahf99bv4kpd.png)
 
 ## Modbus的使用
 
@@ -595,13 +595,13 @@ Modbus程序如何运行请看《示教与运行》手册。
 
 如下图2004地址码写0，变量类型为GP。
 
-![](./assets/g-zevfw5m-pkkoxvlbez_.png)
+![](assets/g-zevfw5m-pkkoxvlbez_.png)
 
 3.  4X类型2000地址码写的数值表示选中的变量编号，编号为1-9999。
 
 如下图2000地址码写1，选中GP0001变量：
 
-![](./assets/8chtbytxgz6b8qqic334o.png)
+![](assets/8chtbytxgz6b8qqic334o.png)
 
 4.  修改机器人点位：地址码2017-2028。
 
@@ -609,7 +609,7 @@ Modbus程序如何运行请看《示教与运行》手册。
 
 如图修改GP0001变量机器人点位为（34，45，23，23，34，56），地址码从2017开始包括2017，每2个地址码代表机器人一个轴的值，即2017、2018表示1轴坐标，2019、2020表示2轴坐标，2021、2022表示3轴坐标，2023、2024表示4轴坐标，2025、2026表示5轴坐标，2027、2028表示6轴坐标。
 
-![](./assets/nio9icxb87zfahjfqhejw.png)
+![](assets/nio9icxb87zfahjfqhejw.png)
 
 5.  修改外部轴点位：地址码2031-2036，且仅支持3个外部轴。
 
@@ -617,13 +617,13 @@ Modbus程序如何运行请看《示教与运行》手册。
 
 Modbus地址码从2031开始，包括2031。2031、2032表示O1坐标、2033、2034表示O2坐标、2035、2036表示O3坐标。
 
-![](./assets/nxngcdq2yxapkgba7z_k6.png)
+![](assets/nxngcdq2yxapkgba7z_k6.png)
 
 6.  修改完参数后地址码2003写1，表示将修改完的值写入变量，即保存。
 
-![](./assets/-z6f5piztkbeecxt4wj7d.png)
+![](assets/-z6f5piztkbeecxt4wj7d.png)
 
-![](./assets/eqfcuik1cczig2epwsgvb.png)
+![](assets/eqfcuik1cczig2epwsgvb.png)
 
 #### Modbus写入读取100个位置
 
@@ -637,23 +637,70 @@ Modbus地址码从2031开始，包括2031。2031、2032表示O1坐标、2033、2
 
 地址码3014、3015表示GP0002的坐标，形态，地址码3016-3027表示GP0002坐标轴点位，依次类推。
 
-![](./assets/w49di_jvbfedrrgg5o7od.png)
+![](assets/w49di_jvbfedrrgg5o7od.png)
 
 说明：每个轴位置的地址码Format为FloatCD AB。
 
 ## Modbus多主站连接
 
-1.  将电脑与一个或多个触摸板通过交换机连接到控制器上。
+### 功能介绍
 
-2.  控制器作为从站，Modbus poll和触摸板作为主站，Modbus
-    poll可以多开作为多个主站，目前最多支持同时连接9个主站。
+Modbus多主站连接功能允许多个主站设备同时连接到控制器，实现对机器人的协同控制。控制器作为从站，支持最多9个主站设备同时连接，包括Modbus Poll软件、触摸屏等。
 
-![](./assets/1m306gopgv0fbhkameoqy.png)
+### 环境要求
 
-3.  Modbus
-    poll点击connection选择connect，连接类型选TCP,IP地址与端口号与示教盒保持一致，扫描周期与示教盒一致。
+- **硬件设备**：
+  - 控制器（支持Modbus功能）
+  - 电脑（安装Modbus Poll软件）
+  - 触摸屏（支持Modbus协议）
+  - 交换机（用于连接控制器、电脑和触摸屏）
+  - 网线
 
-4.  Modbus Poll与触摸板可以同时控制机器人。
+- **软件要求**：
+  - Modbus Poll软件（用于测试多主站连接）
+  - 控制器固件（支持Modbus多主站功能）
+
+### 连接步骤
+
+1. **硬件连接**：
+   - 将电脑、触摸屏通过交换机连接到控制器
+   - 确保所有设备在同一网络网段
+
+2. **控制器设置**：
+   - 在Modbus参数界面，选择协议为TCP
+   - 设置控制器作为从站
+   - 打开连接使能开关
+   - 记录控制器的IP地址和端口号
+
+3. **Modbus Poll连接**：
+   - 打开Modbus Poll软件
+   - 点击Connection → Connect
+   - 连接类型选择ModbusTCP/IP
+   - 输入控制器的IP地址和端口号
+   - 设置扫描周期与示教盒一致
+   - 点击OK完成连接
+
+4. **触摸屏连接**：
+   - 在触摸屏上配置Modbus TCP连接
+   - 输入控制器的IP地址和端口号
+   - 保存配置并建立连接
+
+### 多主站控制
+
+- **最多支持9个主站**：可以同时连接多个Modbus Poll实例和触摸屏
+- **并行控制**：不同主站可以同时向控制器发送指令
+- **IP地址管理**：确保所有主站设备的IP地址不冲突
+- **扫描周期**：所有主站的扫描周期应设置合理，避免网络拥塞
+
+![](assets/naozscy2poifpwpxcpoq0.png)
+
+### 注意事项
+
+1. **网络配置**：确保所有设备在同一网络网段，IP地址不冲突
+2. **扫描周期**：设置合理的扫描周期，避免网络拥塞
+3. **连接数量**：最多支持9个主站同时连接，超过可能导致连接失败
+4. **优先级**：当多个主站同时发送指令时，控制器会按照接收顺序处理
+5. **通讯稳定性**：确保网络连接稳定，避免断线情况
 
 ## Modbus与IO优先级
 
@@ -661,7 +708,7 @@ Modbus地址码从2031开始，包括2031。2031、2032表示O1坐标、2033、2
 
 2.  打开ModbusAddr.json。
 
-![](./assets/5gqlwso4ohuronxcfocw3.png)
+![](assets/5gqlwso4ohuronxcfocw3.png)
 
 3.  coexistIOControl：false表示Modbus与IO不共用；Modbus连接上时IO不能控制机器人。
 
@@ -680,7 +727,7 @@ Modbus默认优先级高且Modbus连接上时IO不能控制。
 表示
 modbus和IO共用且IO优先级高，即Modbus和IO可以同时控制机器人，modbus和IO的断点与当前行运行逻辑根据示教盒上设置的执行。
 
-![](./assets/7belt2swtzkmtgcbcgwuf.png)
+![](assets/7belt2swtzkmtgcbcgwuf.png)
 
 7.  当coexistIOControl：true，modbusPriorityHigh：true。
 
@@ -705,9 +752,9 @@ modbus和IO共用且IO优先级高，即Modbus和IO可以同时控制机器人�
 
 在"设置-Modbus设置-Modbus参数"中设置协议为TCP，控制器作为主/从站设置为从站，IP不修改，端口设置为502，打开连接使能；重启控制器后生效。
 
-![](./assets/s7a6w9inhntzvq6ixtgz2.png)
+![](assets/s7a6w9inhntzvq6ixtgz2.png)
 
-![](./assets/wsidcw-apybovoa8clcmg.png)
+![](assets/wsidcw-apybovoa8clcmg.png)
 
 Modbus参数说明
 
@@ -745,11 +792,11 @@ RTU参数**：**
 
 触摸屏连接控制器IP：192.168.1.13，端口：502。
 
-![](./assets/ako_blatg4h6xekgk9l46.png)
+![](assets/ako_blatg4h6xekgk9l46.png)
 
 触摸屏程序编辑好后运行，示教盒远程界面Modbus未连接变为Modbus已连接。如图：
 
-![](./assets/ru1fncykxlc5p552-b7qf.png)
+![](assets/ru1fncykxlc5p552-b7qf.png)
 
 3.  选择程序
 
@@ -839,6 +886,6 @@ A: 点击删除会将这个功能在此配置文件中删除掉，这是一个�
 
 ##  相关资源
 
-- [TCP通讯功能手册](./TCP通讯功能手册.md)
+- [TCP通讯功能手册](TCP通讯功能手册.md)
 
-- [系统功能调试手册](./系统功能调试手册.md)
+- [系统功能调试手册](系统功能调试手册.md)

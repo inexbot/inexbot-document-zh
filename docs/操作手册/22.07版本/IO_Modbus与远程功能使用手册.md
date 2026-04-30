@@ -1,16 +1,19 @@
-标题: "IO、Modbus 与远程功能使用手册"
+---
 
-内容: "本手册覆盖机器人系统中 IO、Modbus 与远程功能的基础指令、配置方法与使用流程。"
+title: "IO、Modbus 与远程功能使用手册"
 
-描述: "针对 22.07 版本机器人系统，详细说明 IO 输入输出、IO 安全设置、远程模式控制以及 Modbus 通信的使用方法。"
+description: "针对22.07版本机器人系统，详细说明 IO 输入输出、远程模式控制及 Modbus 通信配置与使用方法。"
 
-标签:
-- "IO"
-- "Modbus"
-- "远程功能"
-- "机器人控制"
+author: "iNexBot"
 
-分类: "操作手册"
+date: "2026-04-16"
+
+tags: ["IO", "Modbus", "远程功能", "机器人控制"]
+category: "操作手册"
+
+version: "1.0.0"
+
+language: "zh-CN"
 
 ---
 
@@ -20,7 +23,7 @@
 
 ### 1.1.1 DIN-IO输入
 
-![DIN指令示例](./assets-ModbusManual/image3.png)
+![DIN指令示例](assets-ModbusManual/image3.png)
 
 该指令用于将数字输入状态读入一个变量中，该变量可以为局部整型变量、全局整型变量（INT、GINT）或局部布尔变量、全局布尔变量（B、GB）。
 
@@ -69,7 +72,7 @@
 
 ### 1.1.2 DOUT-IO输出
 
-![DOUT指令示例](./assets-ModbusManual/image4.png)
+![DOUT指令示例](assets-ModbusManual/image4.png)
 
 该指令用于通过数字IO板输出数字信号。
 
@@ -152,7 +155,7 @@
 }
 ```
 
-![controller.json配置](./assets-ModbusManual/image5.png)
+![controller.json配置](assets-ModbusManual/image5.png)
 
 找到"IO"-"pulse"内的参数：
 - **exist参数**，改为true/false
@@ -174,9 +177,9 @@
 
 在状态提示设置界面中，可以设置开机提示、机器人运行状态、报错提示、使能、模式状态、紧急停止等功能所对应的I/O 端口与该端口对应的电平。
 
-![状态提示设置界面1](./assets-ModbusManual/image6.png)
+![状态提示设置界面1](assets-ModbusManual/image6.png)
 
-![状态提示设置界面2](./assets-ModbusManual/image7.png)
+![状态提示设置界面2](assets-ModbusManual/image7.png)
 
 **功能说明：**
 
@@ -205,7 +208,7 @@
 
 **注意：** IO紧急停止被解除后，需先点击清错按钮清错，然后才可进行其他操作。
 
-![安全设置界面](./assets-ModbusManual/image8.png)
+![安全设置界面](assets-ModbusManual/image8.png)
 
 **功能说明：**
 
@@ -221,7 +224,7 @@
 
 当程序运行停止或报错时，IO复位功能能使IO的输出端口恢复到初始状态。IO复位分为IO复位、切模式停止、程序报错停止三种。
 
-![IO复位界面](./assets-ModbusManual/image9.png)
+![IO复位界面](assets-ModbusManual/image9.png)
 
 **复位类型说明：**
 
@@ -249,13 +252,13 @@
 
 此时输入框为灰色且不能输入数值。
 
-![IO配置界面](./assets-ModbusManual/image10.png)
+![IO配置界面](assets-ModbusManual/image10.png)
 
 点击修改后，修改按钮变成保存，虚拟IO板数量下拉框选择需要的虚拟IO。
 
 **注：** 虚拟IO仅供程序调试及程序演示使用，并没有任何IO信号接入。
 
-![IO配置修改](./assets-ModbusManual/image11.png)
+![IO配置修改](assets-ModbusManual/image11.png)
 
 点击保存，重启生效，修改成功。
 
@@ -267,7 +270,7 @@
 
 打开此功能后，示教盒使能按钮失效，不可使用。
 
-![使能IO界面](./assets-ModbusManual/image12.png)
+![使能IO界面](assets-ModbusManual/image12.png)
 
 使能端口1为上电使能，使能端口2为下电使能。上电只需要打开使能端口1，在任何情况下，只要使能端口2打开，均会下电。
 
@@ -277,15 +280,15 @@
 
 此功能可以自定义IO输入输出端口报警内容，报警信息优先级高于其他类型IO报警信息。
 
-![报警消息界面](./assets-ModbusManual/image13.png)
+![报警消息界面](assets-ModbusManual/image13.png)
 
 **使用示例：**
 
 设置IO紧急停止信号端口为15用于接防碰撞IO, 1触发、0解除；则触发DIN1会报"机器人1IO紧急停止被触发"；此时在报警消息界面找到DIN1，消息栏输入"触发防碰撞"，则再次触发DIN15时报错"触发防碰撞"，不会在报"机器人1IO紧急停止被触发"。
 
-![报警消息设置示例1](./assets-ModbusManual/image14.png)
+![报警消息设置示例1](assets-ModbusManual/image14.png)
 
-![报警消息设置示例2](./assets-ModbusManual/image15.png)
+![报警消息设置示例2](assets-ModbusManual/image15.png)
 
 ---
 
@@ -293,13 +296,13 @@
 
 端口名称最大支持输入5个汉字或者10个英文，设置成功后在使用IO端口相关下拉框选项时会自动显示该名称。
 
-![端口名称设置界面](./assets-ModbusManual/image16.png)
+![端口名称设置界面](assets-ModbusManual/image16.png)
 
 **使用示例：**
 
 如设置DIN1-1 名称为"使能端口"，则在【状态】的【输入输出】中，会显示DIN1名称"使能端口"。
 
-![端口名称显示](./assets-ModbusManual/image17.png)
+![端口名称显示](assets-ModbusManual/image17.png)
 
 ---
 
@@ -368,7 +371,7 @@ IO功能设置成功后请前往状态-IO功能状态查看是否设置成功或
 **复位点设置：**
 复位点功能支持关节、直线运动到安全点，或者使用复位程序指令自定义复位轨迹和位置。
 
-![复位点设置界面](./assets-ModbusManual/image19.png)
+![复位点设置界面](assets-ModbusManual/image19.png)
 
 **参数说明：**
 
@@ -402,9 +405,9 @@ IO功能设置成功后请前往状态-IO功能状态查看是否设置成功或
 
 在"远程程序设置-远程IO功能"中，可以设置远程IO控制启动、停止、暂停、急停、清除报警等功能所对应的I/O端口与该端口对应的电平，可以设置I/O模块远程控制所运行的程序。
 
-![远程IO功能设置界面1](./assets-ModbusManual/image20.png)
+![远程IO功能设置界面1](assets-ModbusManual/image20.png)
 
-![远程IO功能设置界面2](./assets-ModbusManual/image21.png)
+![远程IO功能设置界面2](assets-ModbusManual/image21.png)
 
 **功能说明：**
 - 设置的I/O模块的程序只能选择在"远程程序设置"界面中已设定的程序
@@ -415,7 +418,7 @@ IO功能设置成功后请前往状态-IO功能状态查看是否设置成功或
 
 ### 4.3.2 远程程序设置
 
-![远程程序设置界面](./assets-ModbusManual/image22.png)
+![远程程序设置界面](assets-ModbusManual/image22.png)
 
 **功能说明：**
 - 远程程序设置界面中可以设置触摸屏与I/O控制模块所使用的程序
@@ -430,7 +433,7 @@ IO功能设置成功后请前往状态-IO功能状态查看是否设置成功或
 
 在"设置/操作参数"中：
 
-![预约模式设置](./assets-ModbusManual/image23.png)
+![预约模式设置](assets-ModbusManual/image23.png)
 
 **功能说明：**
 - **打开预约模式使能后**：触发远程IO程序信号，程序预约成功，触发启动信号，机器人运行
@@ -514,7 +517,7 @@ IO功能中的IO功能设置为：
 
 清除当前运行程序的运行总次数，只可以清除运行总数，不能清除运行次数。
 
-![远程模式界面](./assets-ModbusManual/image24.png)
+![远程模式界面](assets-ModbusManual/image24.png)
 
 ---
 
@@ -538,7 +541,7 @@ IO功能中的IO功能设置为：
 
 该指令用于读取Modbus中对应位置的地址码，可以设置地址类型有3x、4x-bit、3x-bit、0x。
 
-![Modbus读操作示例1](./assets-ModbusManual/image26.png)
+![Modbus读操作示例1](assets-ModbusManual/image26.png)
 
 **参数说明：**
 
@@ -554,9 +557,9 @@ IO功能中的IO功能设置为：
 
 地址码2中所存值为555，指令会从首个地址开始读取输入的读取地址个数，依次存入输入的变量中。即从地址2开始读读3个地址码分别存入I001，I002，I003中。
 
-![Modbus读操作示例2](./assets-ModbusManual/image29.png)
+![Modbus读操作示例2](assets-ModbusManual/image29.png)
 
-![Modbus读操作示例3](./assets-ModbusManual/image30.png)
+![Modbus读操作示例3](assets-ModbusManual/image30.png)
 
 #### 4x地址类型
 
@@ -584,11 +587,11 @@ IO功能中的IO功能设置为：
 
 **注意：** 第16位（第16个变量）为符号位0表示正数1表示负数。
 
-![Modbus 3x-bit操作示例1](./assets-ModbusManual/image27.png)
+![Modbus 3x-bit操作示例1](assets-ModbusManual/image27.png)
 
-![Modbus 3x-bit操作示例2](./assets-ModbusManual/image28.png)
+![Modbus 3x-bit操作示例2](assets-ModbusManual/image28.png)
 
-![Modbus 3x-bit操作示例3](./assets-ModbusManual/image29.png)
+![Modbus 3x-bit操作示例3](assets-ModbusManual/image29.png)
 
 #### 4x-bit地址类型
 
@@ -609,7 +612,7 @@ IO功能中的IO功能设置为：
 | 写从站地址个数 | 写从站地址个数[0-123] |
 | 示例 | MODBUS WRITE ID=1 4x B001 2 400) |
 
-![Modbus写操作示例1](./assets-ModbusManual/image32.png)
+![Modbus写操作示例1](assets-ModbusManual/image32.png)
 
 #### 4x地址类型
 
@@ -619,7 +622,7 @@ IO功能中的IO功能设置为：
 
 I001=555，I002=444，指令将按顺序依次将写入从站地址个数的变量里的值写入输入的开始地址码中。
 
-![Modbus写操作示例2](./assets-ModbusManual/image33.png)
+![Modbus写操作示例2](assets-ModbusManual/image33.png)
 
 #### 4x-bit地址类型
 
@@ -641,7 +644,7 @@ I001=1，I002=1，I003=0，I004=1，首个变量为I001，寄存器首个地址�
 
 作为从站的时候可以设置心跳检测，确认跟主站的通讯状态，以及通讯断开时，是否停机。协议可以选择 RTU和TCP，以及其对应的端口设置。
 
-![Modbus从站设置界面](./assets-ModbusManual/image34.png)
+![Modbus从站设置界面](assets-ModbusManual/image34.png)
 
 **参数说明：**
 
@@ -662,9 +665,9 @@ I001=1，I002=1，I003=0，I004=1，首个变量为I001，寄存器首个地址�
 
 在主站协议设置为RTU时，需要设置检验位、数据位、停止位。
 
-![Modbus主站TCP设置界面](./assets-ModbusManual/image35.png)
+![Modbus主站TCP设置界面](assets-ModbusManual/image35.png)
 
-![Modbus主站RTU设置界面](./assets-ModbusManual/image36.png)
+![Modbus主站RTU设置界面](assets-ModbusManual/image36.png)
 
 ---
 
@@ -676,27 +679,27 @@ I001=1，I002=1，I003=0，I004=1，首个变量为I001，寄存器首个地址�
 
 2. **找到配置文件**modbusAddr.json，在配置文件configFile+日期文件夹中
 
-![配置文件目录](./assets-ModbusManual/image37.png)
+![配置文件目录](assets-ModbusManual/image37.png)
 
 3. **使用Notepad++等文本编辑软件打开**
 
-![modbusAddr.json文件内容](./assets-ModbusManual/image38.png)
+![modbusAddr.json文件内容](assets-ModbusManual/image38.png)
 
 4. **打开后**可以看到一个{ }中包含一组地址码参数（系统会自动生成一份原始地址码）
 
-![地址码参数结构](./assets-ModbusManual/image39.png)
+![地址码参数结构](assets-ModbusManual/image39.png)
 
 5. **修改地址**直接更改addr后的数字，数字为0时，该地址码功能无效
 
-![修改地址码示例](./assets-ModbusManual/image40.png)
+![修改地址码示例](assets-ModbusManual/image40.png)
 
 6. **修改完成后点击保存**
 
-![保存修改](./assets-ModbusManual/image41.png)
+![保存修改](assets-ModbusManual/image41.png)
 
 7. **然后把该参数重新导入控制器**，重启生效
 
-![导入配置](./assets-ModbusManual/image42.png)
+![导入配置](assets-ModbusManual/image42.png)
 
 8. **修改参数后重启或者重新打开连接后生效**（导入配置文件会自动重启）
 
@@ -719,29 +722,29 @@ Modbus有示教、运行两种模式。地址码可详见《MODBUS地址码列�
 
 1. **点开设置/modbus设置/modbus参数**，打开连接开关
 
-![Modbus参数设置](./assets-ModbusManual/image43.png)
+![Modbus参数设置](assets-ModbusManual/image43.png)
 
 2. **在设置/modbus设置/modbus程序界面**，选择程序
 
-![Modbus程序选择](./assets-ModbusManual/image44.png)
+![Modbus程序选择](assets-ModbusManual/image44.png)
 
 3. **打开ModbusPoll软件**
 
 4. **打开软件后我们需要进行连接及设置** Connection——Concection Setup ，设置好需要的参数（图片填写参数仅为示例），点击ok按钮后，示教器页面显示已连接，如显示已连接和未连接闪烁画面，需要在Setup——Read/Write Definition将Scan Rate参数的1000ms改为100ms
 
-![Modbus Poll连接](./assets-ModbusManual/image45.png)
+![Modbus Poll连接](assets-ModbusManual/image45.png)
 
-![Connection Setup对话框](./assets-ModbusManual/image46.png)
+![Connection Setup对话框](assets-ModbusManual/image46.png)
 
 5. **设置Setup→Read/Write Definition参数**（图片填写参数仅作示例）：如遇填写地址码不生效可排查：将起始地址改为1，勾选PLC Addresses选项，点击OK
 
-![Read/Write Definition对话框](./assets-ModbusManual/image47.png)
+![Read/Write Definition对话框](assets-ModbusManual/image47.png)
 
 6. **双击寄存器数据**，填写相关地址码
 
-![寄存器数据填写](./assets-ModbusManual/image48.png)
+![寄存器数据填写](assets-ModbusManual/image48.png)
 
-![Write Single Register对话框](./assets-ModbusManual/image49.png)
+![Write Single Register对话框](assets-ModbusManual/image49.png)
 
 ---
 
@@ -749,15 +752,15 @@ Modbus有示教、运行两种模式。地址码可详见《MODBUS地址码列�
 
 1. **根据Modbus地址2004**选择所需读取的全局类型，0位GP点1位GE点
 
-![地址2004设置](./assets-ModbusManual/image50.png)
+![地址2004设置](assets-ModbusManual/image50.png)
 
 2. **根据Modbus地址2000**选择读取全局点位的编号，编号为1-999
 
-![地址2000设置](./assets-ModbusManual/image52.png)
+![地址2000设置](assets-ModbusManual/image52.png)
 
 3. **将2017-2028和2031-2036的Format改为FloatCD AB**
 
-![Format设置](./assets-ModbusManual/image53.png)
+![Format设置](assets-ModbusManual/image53.png)
 
 
 
@@ -767,7 +770,7 @@ Modbus有示教、运行两种模式。地址码可详见《MODBUS地址码列�
 
 2. **控制器作为从站**，Modbus poll和触摸板作为主站，Modbus poll可以多开作为多个主站，目前最多支持同时连接9个主站
 
-![Modbus多主站设置](./assets-ModbusManual/image54.png)
+![Modbus多主站设置](assets-ModbusManual/image54.png)
 
 3. **Modbus poll点击connection**，选择connect，连接类型选TCP,IP地址与端口号与示教盒保持一致，扫描周期与示教盒一致
 
@@ -789,7 +792,7 @@ Modbus有示教、运行两种模式。地址码可详见《MODBUS地址码列�
 }
 ```
 
-![ModbusAddr.json配置](./assets-ModbusManual/image55.jpeg)
+![ModbusAddr.json配置](assets-ModbusManual/image55.jpeg)
 
 3. **coexistIOControl**：
    - `false` 表示Modbus与IO不共用，即当Modbus连接上时IO不能控制机器人
@@ -820,13 +823,13 @@ Modbus有示教、运行两种模式。地址码可详见《MODBUS地址码列�
 
 在"设置-Modbus设置-Modbus程序"中设置好程序，设置成功会已选程序列表会显示该程序名称，共可以设置1000个程序。
 
-![Modbus程序设置](./assets-ModbusManual/image56.png)
+![Modbus程序设置](assets-ModbusManual/image56.png)
 
 #### (3) 设置Modbus参数
 
 在"设置-Modbus设置-Modbus参数"中设置协议为TCP，控制器作为主/从站设置为从站，IP不修改，端口设置为502，打开连接使能；重启控制器后生效。
 
-![Modbus TCP参数设置](./assets-ModbusManual/image57.png)
+![Modbus TCP参数设置](assets-ModbusManual/image57.png)
 
 #### (4) 切换到远程模式
 
@@ -840,11 +843,11 @@ Modbus有示教、运行两种模式。地址码可详见《MODBUS地址码列�
 
 触摸屏连接控制器IP：192.168.1.13，端口：502。
 
-![触摸屏设备属性设置](./assets-ModbusManual/image58.png)
+![触摸屏设备属性设置](assets-ModbusManual/image58.png)
 
 触摸屏程序编辑好后运行，示教盒远程界面modbus未连接变为modbus已连接。
 
-![远程模式Modbus连接状态](./assets-ModbusManual/image59.png)
+![远程模式Modbus连接状态](assets-ModbusManual/image59.png)
 
 #### (6) 选择程序
 

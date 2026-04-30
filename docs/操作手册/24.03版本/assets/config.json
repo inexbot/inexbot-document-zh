@@ -1,0 +1,62 @@
+{
+  "robotName": "1400",
+  "modelPath": "inexbot/1400/model",
+  "scale": 0.007,
+  "defaultRotation": [-90, 0, 0],
+  "joints": [
+    {
+      "name": "base",
+      "parent": "",
+      "mesh": "base.obj",
+      "color": [1, 1, 0],
+      "pivot": [0, 0, 0],
+      "axis": "Z"
+    },
+    {
+      "name": "joint1",
+      "parent": "base",
+      "mesh": "joint1.obj",
+      "color": [1, 1, 0],
+      "pivot": [0, 0, 0],
+      "axis": "Z"
+    },
+    {
+      "name": "joint2",
+      "parent": "joint1",
+      "mesh": "joint2.obj",
+      "color": [1, 1, 0],
+      "pivot": [155, 0, 460],
+      "axis": "Y"
+    },
+    {
+      "name": "joint3",
+      "parent": "joint2",
+      "mesh": "joint3.obj",
+      "color": [1, 1, 0],
+      "pivot": [155,0,1075],
+      "axis": "Y"
+    },
+    {
+      "name": "joint4",
+      "parent": "joint3",
+      "mesh": "joint4.obj",
+      "color": [1, 1, 0],
+      "pivot": [430, 0, 1275],
+      "axis": "X"
+    },
+    {
+      "name": "joint5",
+      "parent": "joint4",
+      "mesh": "joint5.obj",
+      "color": [1, 1, 0],
+      "pivot": [795, 0, 1275],
+      "axis": "Y",
+      "isLastRotJoint": true
+    }
+  ],
+  "endEffector": {
+    "name": "joint5",
+    "parent": "joint4",
+    "offset": [900, 0, 1275]
+  }
+}

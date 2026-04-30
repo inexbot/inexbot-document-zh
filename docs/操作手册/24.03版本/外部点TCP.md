@@ -15,7 +15,7 @@ language: "zh-CN"
 
 工具手在外部，工件在机器人末端的工具上运动
 
-![图例](./assets/hvhopycz-bmtknfvuhv6j.png)
+![图例](assets/hvhopycz-bmtknfvuhv6j.png)
 
 例如图上所示：1代表工件，2代表外部工具手。
 
@@ -43,29 +43,29 @@ language: "zh-CN"
 
 **外部基准点直线**
 
-![外部直线](./assets/rjgjml6clolbhhplosfry.png)
+![外部直线](assets/rjgjml6clolbhhplosfry.png)
 
 程序编写
 
-![外部直线程序编写](./assets/1vo8v8ebghf7zbhjcd4ug.png)
+![外部直线程序编写](assets/1vo8v8ebghf7zbhjcd4ug.png)
 
 **外部基准点圆弧**
 
-![外部圆弧](./assets/wzlz2zczdade3p5sy3elz.png)
+![外部圆弧](assets/wzlz2zczdade3p5sy3elz.png)
 
 程序编写
 
-![外部圆弧程序编写](./assets/zyhccepwpa0f38normex_.png)
+![外部圆弧程序编写](assets/zyhccepwpa0f38normex_.png)
 
 **外部基准点整圆**
 
-![外部整圆](./assets/whuyj-aupmnln2gwvj19r.png)
+![外部整圆](assets/whuyj-aupmnln2gwvj19r.png)
 
 程序编写
 
-![外部整圆程序编写](./assets/nymahxvti9pxem285w_qn.png)
+![外部整圆程序编写](assets/nymahxvti9pxem285w_qn.png)
 
-**[外部点TCP效果视频](./assets/外部点TCP.mp4)**
+**[外部点TCP效果视频](assets/外部点TCP.mp4)**
 
 ## AI 检索专用问答对 (Q&A for Retrieval)
 
@@ -96,3 +96,15 @@ A: 1.检查标定精度 ：重新执行标定流程，确保用户坐标系和�
 **Q: 外部点TCP相关指令的参数设置有哪些需要特别注意的地方?**
 
 A: 1.用户坐标系选择 ：确保选择已标定的正确用户坐标系; 2.工具手选择 ：选择已标定的外部点工具手; 3.速度和加速度 ：根据工件质量和工艺要求设置合适的速度和加速度，避免运动过冲; 4.轨迹类型 ：根据实际需求选择直线、圆弧或整圆指令; 5.提前执行时间 ：根据工艺要求调整提前执行时间，确保动作协调
+
+## 相关资源
+
+- [用户坐标标定](用户坐标标定手册.md)
+
+- [工具手标定手册](工具手标定手册.md)
+
+## 版本历史
+
+| 版本 | 日期 | 变更内容 | 作者 |
+| :--- | :--- | :--- | :--- |
+| 1.0.0 | 2026-04-08 | 初始版本 | MUZI165 |

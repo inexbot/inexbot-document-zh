@@ -13,7 +13,7 @@ language: "zh-CN"
 
 ## EIP主界面
 
-![](./assets/ck3i2b5zh2bb0swo4qdlj.png)
+![](assets/ck3i2b5zh2bb0swo4qdlj.png)
 
 **连接开关：**打开开关后，控制器可被plc扫描到。
 
@@ -33,11 +33,11 @@ language: "zh-CN"
 
 **本机写：**本机的一些状态，写入到plc中。数据由GB001开始依次存入全局布尔型变量中。起始变量可自行填写，但是变量长度必须大于或者等于写入长度。
 
-![](./assets/6celxdlsge8ycgekboqyw.png)
+![](assets/6celxdlsge8ycgekboqyw.png)
 
 **本机读：**plc写入控制器，由GB257依次存入全局布尔型变量中。起始变量可自行填写，但是变量长度必须大于或者等于写入长度。
 
-![](./assets/wlsr0r1cdbl90qfsufoem.png)
+![](assets/wlsr0r1cdbl90qfsufoem.png)
 
 ***注：本机读写的变量不能重叠，且变量编号必须大于写入长度或者读取长度。***
 
@@ -45,11 +45,11 @@ language: "zh-CN"
 
 ### 设定界面-输出界面
 
-![](./assets/wuqcq3ddc9hvkenmvdgcf.png)
+![](assets/wuqcq3ddc9hvkenmvdgcf.png)
 
 **输出界面：**将数值写入plc中，为AutoShop软件中Input Data部分。
 
-![](./assets/drkvezinzwq925d5rqrym.png)
+![](assets/drkvezinzwq925d5rqrym.png)
 
 **序号：**目前只有十组。
 
@@ -95,11 +95,11 @@ language: "zh-CN"
 
 ### 设定界面-输入界面
 
-![](./assets/nltxxkn0o1r4l2lah5qqu.png)
+![](assets/nltxxkn0o1r4l2lah5qqu.png)
 
 **输入界面：**由plc写入控制器中，为AutoShop软件中Output Data部分。
 
-![](./assets/xgawyr0u7chc0hvh7gskg.png)
+![](assets/xgawyr0u7chc0hvh7gskg.png)
 
 **序号：**目前只有十组。
 
@@ -145,7 +145,7 @@ language: "zh-CN"
 
 前十六个端口可自定义，可去后台的robot目录下的config文件夹内EthernetIP-IOset.json文件进行修改。
 
-![](./assets/97k2wflsyx5vghtjssfhh.png)
+![](assets/97k2wflsyx5vghtjssfhh.png)
 
 代码后的数字代表的是端口。
 
@@ -214,6 +214,8 @@ language: "zh-CN"
                \"robot run\" : 2, //机器人运行状态
 
                \"robot stop" : 4  //机器人暂停状态
+    }
+}
 
 ##  AI 检索专用问答对 (Q&A for Retrieval)
 
