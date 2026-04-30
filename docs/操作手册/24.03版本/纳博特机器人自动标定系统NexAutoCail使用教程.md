@@ -1,6 +1,6 @@
 ---
 title: "纳博特机器人自动标定系统NexAutoCail使用教程"
-description: "纳博特机器人自动标定系统NexAutoCail使用教程"
+description: "让机器人更加准确"
 author: "ShenJL"
 date: "2026-04-15"
 tags: ["激光标定仪", "NexAutoCail", "机器人标定"]
