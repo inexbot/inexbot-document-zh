@@ -15,7 +15,7 @@ language: "zh-CN"
 
 工具手在外部，工件在机器人末端的工具上运动
 
-![图例](./assets/hvhopycz-bmtknfvuhv6j.png)
+![图例](assets/hvhopycz-bmtknfvuhv6j.png)
 
 例如图上所示：1代表工件，2代表外部工具手。
 
@@ -43,29 +43,29 @@ language: "zh-CN"
 
 **外部基准点直线**
 
-![外部直线](./assets/rjgjml6clolbhhplosfry.png)
+![外部直线](assets/rjgjml6clolbhhplosfry.png)
 
 程序编写
 
-![外部直线程序编写](./assets/1vo8v8ebghf7zbhjcd4ug.png)
+![外部直线程序编写](assets/1vo8v8ebghf7zbhjcd4ug.png)
 
 **外部基准点圆弧**
 
-![外部圆弧](./assets/wzlz2zczdade3p5sy3elz.png)
+![外部圆弧](assets/wzlz2zczdade3p5sy3elz.png)
 
 程序编写
 
-![外部圆弧程序编写](./assets/zyhccepwpa0f38normex_.png)
+![外部圆弧程序编写](assets/zyhccepwpa0f38normex_.png)
 
 **外部基准点整圆**
 
-![外部整圆](./assets/whuyj-aupmnln2gwvj19r.png)
+![外部整圆](assets/whuyj-aupmnln2gwvj19r.png)
 
 程序编写
 
-![外部整圆程序编写](./assets/nymahxvti9pxem285w_qn.png)
+![外部整圆程序编写](assets/nymahxvti9pxem285w_qn.png)
 
-**[外部点TCP效果视频](./assets/外部点TCP.mp4)**
+**[外部点TCP效果视频](assets/外部点TCP.mp4)**
 
 ## AI 检索专用问答对 (Q&A for Retrieval)
 
@@ -99,9 +99,9 @@ A: 1.用户坐标系选择 ：确保选择已标定的正确用户坐标系; 2.�
 
 ## 相关资源
 
-- [用户坐标标定](./用户坐标标定手册.md)
+- [用户坐标标定](用户坐标标定手册.md)
 
-- [工具手标定手册](./工具手标定手册.md)
+- [工具手标定手册](工具手标定手册.md)
 
 ## 版本历史
 

@@ -32,7 +32,7 @@ Modbus多主站连接功能允许多个主站设备同时连接到控制器，�
 
 在示教器上进入：**设置 → Modbus设置 → Modbus参数**
 
-![](./assets/naozscy2poifpwpxcpoq0.png)
+![](assets/naozscy2poifpwpxcpoq0.png)
 
 ## 连接步骤
 

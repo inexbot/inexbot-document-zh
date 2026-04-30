@@ -21,22 +21,22 @@ language: "zh-CN"
 
 ### 端口布局
 
-![端口布局](./assets/jdmhwma5ahlr-xczpqsko.png)
+![端口布局](assets/jdmhwma5ahlr-xczpqsko.png)
 
 ### 端口功能说明
 
 **1和2端口：供电端口**
 - 末端通讯板-8PIN_DC 24V接口是否有效检测：8Pin插头接入法兰末端，万用表测量24V输出口电压，无需配置节点
 
-![供电端口测试](./assets/s4nswga6qwvk5eanagnmm.png)
+![供电端口测试](assets/s4nswga6qwvk5eanagnmm.png)
 
 **3和4端口：485 1通讯**
 - 注意：旧版本硬件（5月）的485 1功能不能使用
 - 目前未有完善功能，只能进行读写转发操作
 - 测试结果：控制器发送FF，上位机正常接收FF，串口模拟器正常读写
 
-![485通讯测试1](./assets/pqxuhqw0xmdqjurtmvl_r.png)
-![485通讯测试2](./assets/7ennymow76yhplwwj2oo1.png)
+![485通讯测试1](assets/pqxuhqw0xmdqjurtmvl_r.png)
+![485通讯测试2](assets/7ennymow76yhplwwj2oo1.png)
 
 **4和5端口：485 2通讯**
 - 目前未有完善功能，只能进行读写转发操作
@@ -46,8 +46,8 @@ language: "zh-CN"
 - 测试方法：采用伺服上位机通讯测试或者真实CAN FD测试设备
 - 测试结果：控制器发送FF，上位机正常接收FF
 
-![CAN FD通讯测试1](./assets/j4efegvdkgteg7zavj2qi.png)
-![CAN FD通讯测试2](./assets/nfngjbbvpnmcc9et2uukn.png)
+![CAN FD通讯测试1](assets/j4efegvdkgteg7zavj2qi.png)
+![CAN FD通讯测试2](assets/nfngjbbvpnmcc9et2uukn.png)
 
 ---
 

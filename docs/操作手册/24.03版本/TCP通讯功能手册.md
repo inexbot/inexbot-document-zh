@@ -17,7 +17,7 @@ language: "zh-CN"
 
 与外部设备进行通讯时，可以选择TCP通讯，点击"设置-外部通讯-TCP通讯设置"，进入通讯参数设置界面。如图所示：
 
-![](./assets/douoe4hnmtsk2njaopsd1.png)
+![](assets/douoe4hnmtsk2njaopsd1.png)
 
 参数介绍：
 
@@ -43,7 +43,7 @@ language: "zh-CN"
 
 说明：选择十六进制，执行解析指令后将数据以十进制解析到选择的变量，例如外部通讯设备发送的数据（@,123,100,120,!）将三个数据解析为十进制（291，256，288）输出。
 
-![](./assets/et4o8iezuivnb8-lnbkct.png)
+![](assets/et4o8iezuivnb8-lnbkct.png)
 
 注：TCP通讯进行连接时，首先将控制器IP与外部设备IP设置为同一网段，如192.168.1.xxx，若设置控制器为客户端，则外部设备为服务端，再将网络设置中的IP和端口与外部设备网络调试软件中的IP和端口设置一致，连接开关打开，提示连接成功。
 
@@ -51,7 +51,7 @@ language: "zh-CN"
 
 ### SENDMSG-发送数据
 
-![](./assets/ni9gsenjjpqxh5d7in5uz.png)
+![](assets/ni9gsenjjpqxh5d7in5uz.png)
 
 格式：SENDMSG【指令名】ID=1【工艺号】#DATA#【发送的数据】。
 
@@ -83,7 +83,7 @@ language: "zh-CN"
 
 ### PARSEMSG-解析数据
 
-![](./assets/a4uo2p-yssfb2bukrmyht.png)
+![](assets/a4uo2p-yssfb2bukrmyht.png)
 
 格式：PARSEMSG【指令名】ID=1【工艺号】I001【数据存放的首变量】CLEARCACHE=0【是否清除缓存，"0"不清除，"1"清除】0【提取数据的数量"0"不记录，"1"记录】。
 
@@ -113,7 +113,7 @@ language: "zh-CN"
 
 ### READCOMM-读取数据
 
-![](./assets/bqcrh2evbeb-6rdca31nj.png)
+![](assets/bqcrh2evbeb-6rdca31nj.png)
 
 格式：READCOMM【指令名】ID=1【工艺号】ETHERENT、MODBUS【通讯方式】P/GP【点位存放变量】I001【点位存放个数】。
 
@@ -150,7 +150,7 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 ### OPENMSG-打开数据
 
-![](./assets/y5u6qhcjeghtdwtbwsb9z.png)
+![](assets/y5u6qhcjeghtdwtbwsb9z.png)
 
 格式：OPENMSG【指令名】ID = 1【工艺号序号】。
 
@@ -178,7 +178,7 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 ### CLOSEMSG-关闭数据
 
-![](./assets/02jdgs0hzszmzmv6b4vv7.png)
+![](assets/02jdgs0hzszmzmv6b4vv7.png)
 
 格式：CLOSEMSG【指令名】ID = 1【工艺号序号】。
 
@@ -206,7 +206,7 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 ### PRINTMSG-输出信息
 
-![](./assets/exp286pqbgifykv9pr6-e.png)
+![](assets/exp286pqbgifykv9pr6-e.png)
 
 格式：PRINTMSG【指令名】0，1，2【类型消息，警告，报错】#输入内容#【输出的字符】。
 
@@ -236,7 +236,7 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 ### MSG_CONNECTION_ST-获取信息连接状态
 
-![](./assets/0zzvomn_w_l_x2gaubwya.png)
+![](assets/0zzvomn_w_l_x2gaubwya.png)
 
 格式：MSG_CONNECTION_STATUS【指令名】1【工艺号序号】GB001【当前连接状态"0"未连接，"1"已连接】。
 
@@ -267,9 +267,9 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 外部通讯设备：网络调试助手。如图：
 
-![](./assets/hzikapmhugwwnzlnrntkw.png)
+![](assets/hzikapmhugwwnzlnrntkw.png)
 
-![](./assets/k8_1-ug7iu2bw7udvw9a2.png)
+![](assets/k8_1-ug7iu2bw7udvw9a2.png)
 
 1.  执行第1条指令连接控制器与外部通讯设备。
 
@@ -277,13 +277,13 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 3.  执行第3条指令发送数据给外部设备，将变量GI006,GI007,GI008的值发送给外部设备,如下图所示：
 
-![](./assets/bacpeldbcwf5kxloqjbvp.png)
+![](assets/bacpeldbcwf5kxloqjbvp.png)
 
 4.  执行第4条指令外部设备发送数据后解析数据，根据选择的首变量将解析的数据顺延存入变量。
 
 5.  执行第5条指令将外部设备发送的点位数据存入位置变量，根据选择的首变量顺延存入，如下图所示：
 
-![](./assets/0ctrzznh51zfsoogxoccs.png)
+![](assets/0ctrzznh51zfsoogxoccs.png)
 
 6.  执行第6条指令关闭控制器与外部通讯设备的连接。
 
@@ -317,7 +317,7 @@ Modbus通讯：点位的设置可以外部传输点-通讯方式。
 
 外部通讯可使用Modbus，设置参数进入"设置-外部通讯-Modbus设置-Modbus参数"界面（也可查看Modbus相关手册）。
 
-![](./assets/unbrgwqt0pfvuqdck2-dd.png)
+![](assets/unbrgwqt0pfvuqdck2-dd.png)
 
 连接：Modbus的开关，打开后检测Modbus信号。
 
@@ -422,8 +422,8 @@ A: 检查网络连接和IP地址设置；验证防火墙是否允许TCP端口的
 
 ##  相关资源
 
-- [Modbus功能使用手册](./Modbus功能使用手册.md)
+- [Modbus功能使用手册](Modbus功能使用手册.md)
 
-- [OPC-UA参数](./OPC-UA参数.md)
+- [OPC-UA参数](OPC-UA参数.md)
 
-- [系统功能调试手册](./系统功能调试手册.md)
+- [系统功能调试手册](系统功能调试手册.md)

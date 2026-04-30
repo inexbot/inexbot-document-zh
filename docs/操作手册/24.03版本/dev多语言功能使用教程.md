@@ -15,7 +15,7 @@ dev多语言功能使用教程
 
 在设置-系统设置-修改示教器配置界面可以修改界面语言，系统支持多语言功能
 
-![](./assets/3ruvioywjjw7hjid3wfzc.png)
+![](assets/3ruvioywjjw7hjid3wfzc.png)
 
 # 使用方法
 
@@ -23,30 +23,30 @@ dev多语言功能使用教程
 
 U盘根路径下新建一个upgrade的文件夹，将msg_languages_Chinese.json/msg_languages_English.json文件保存，如果需要俄文将复制的msg_languages_Chinese.json/msg_languages_English.json文件重命名为）msg_languages_Russian.json
 
-![](./assets/cdckhuts3qubuyzis082u.png)
+![](assets/cdckhuts3qubuyzis082u.png)
 
 2.  翻译msg_languages_Russian.json文件需要客户自己翻译，翻译结束保存
 
-![](./assets/gwi6svukmaniskfilva0l.png)
+![](assets/gwi6svukmaniskfilva0l.png)
 
 3.  在设置-系统设置-版本上级界面点击【上传文件】
 
-![](./assets/ndmgpo5rhlkevnhvmqfbh.png)
+![](assets/ndmgpo5rhlkevnhvmqfbh.png)
 
 4.  文件上传成功后在设置-系统设置-修改示教器配置界面语言就可以选择俄文了
 
-![](./assets/o5whpycg-qylr7tcm-wfv.png)
+![](assets/o5whpycg-qylr7tcm-wfv.png)
 
 说明：如果没有升级对应的语言文件，会提示缺少对应的qm文件。
 
-![](./assets/m8yk_ikf_hp5f9ejk3-xe.png)
+![](assets/m8yk_ikf_hp5f9ejk3-xe.png)
 5.  在设置-系统设置-版本升级界面点击【升级文件】，选择语言包后点击【确定】
 
-![](./assets/kpplvarpa3fl9e4643uin.png)
+![](assets/kpplvarpa3fl9e4643uin.png)
 
 6.  文件升级成功后，在设置-系统设置-示教器配置界面再去选择界面语言为俄文，重启系统后，界面语言切换成功
 
-![](./assets/8vcnlbejwssk827d89ywl.png)
+![](assets/8vcnlbejwssk827d89ywl.png)
 
 翻译tp_en_US.ts文件，可查看\"界面语言翻译\"手册。
 

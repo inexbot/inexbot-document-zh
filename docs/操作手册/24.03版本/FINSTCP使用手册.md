@@ -42,23 +42,23 @@ FINSTCP功能是一种通讯协议，用于控制器与欧姆龙PLC之间进行�
 
 该指令用于在运行模式下打开FINSTCP通讯连接，工艺号绑定是FINSTCP参数工艺号。
 
-![](./assets/p0lfm1f_fosd3ycjr9cuc.png)
+![](assets/p0lfm1f_fosd3ycjr9cuc.png)
 
 ### FINSTCP_CLOSE-断开FINSTCP连接
 
 该指令用于在运行模式下断开FINSTCP通讯连接，工艺号绑定是FINSTCP参数工艺号。
 
-![](./assets/ystytvsutj7bzgpwfsnre.png)
+![](assets/ystytvsutj7bzgpwfsnre.png)
 
 ### FINSTCP_CONNECTION_STATUS-获取FINSTCP连接状态
 
 该指令将FINSTCP的连接状态存在BOOL/GBOOL变量中，通过获取变量的数值来判断FINSTCP的连接状态，每运行一次该指令就获取一次状态。
 
-![](./assets/pee66jl-57yfv9js0l5tc.png)
+![](assets/pee66jl-57yfv9js0l5tc.png)
 
 ## FINSTCP参数
 
-![](./assets/qt5mwgj3sn56n_68drdas.png)
+![](assets/qt5mwgj3sn56n_68drdas.png)
 
 工艺号：一共有9个工艺号可选。（此功能内的工艺号不可用，不管是工艺号几，都只有一份填写的参数生效）。
 
@@ -96,7 +96,7 @@ FINSTCP功能概述:FINSTCP功能可使控制器与PLC之间进行数据的交�
 
 IP地址写PLC的地址192.168.1.10，端口写PLC的端口9600，写入地址写CX-Programmer软件的PLC内存的1000，读取地址写CX-Programmer软件的PLC内存的2000,写入地址写GB001和GI001,读取地址写GB500和GI500。
 
-![](./assets/4pwohdjnbxuksxe_d1ayy.png)
+![](assets/4pwohdjnbxuksxe_d1ayy.png)
 
 ### Finstcp参数说明
 

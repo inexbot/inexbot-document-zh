@@ -29,19 +29,19 @@ language: "zh-CN"
 
 1.  以下第一部分以报警信息为消息为例，对于参数设置为0/1，使能打开/关闭的详细介绍
 
-![](./assets/8c1k1dhzjks9rbe5jgu33.png)
+![](assets/8c1k1dhzjks9rbe5jgu33.png)
 
 当端口选择Din1-1；类型选择：消息；消息：11111；参数：1；使能：打开
 
-![](./assets/ifxm_i3g00zas7ik4ixlw.png)
+![](assets/ifxm_i3g00zas7ik4ixlw.png)
 
 当端口选择Din1-1；类型选择：消息；消息：11111；参数：0；使能：打开
 
-![](./assets/74r0bdx8hyrdpzlufayot.png)
+![](assets/74r0bdx8hyrdpzlufayot.png)
 
 当端口选择Din1-1；类型选择：消息；消息：11111；参数：1；使能：关闭。（当使能关闭时无论io什么状态都不会触发报警信息）
 
-![](./assets/5sdhu1qpkmwfkrj_ujhye.png)
+![](assets/5sdhu1qpkmwfkrj_ujhye.png)
 
 2.  报警类型的介绍
 
@@ -49,23 +49,23 @@ language: "zh-CN"
 
 当输出Din1-1为1时，触发io报警功能，在界面的右下角会显示小白条显示用户所输入在消息框中的信息，如下图：
 
-![](./assets/yfntd2zlbdohwxsmewa4z.png)
+![](assets/yfntd2zlbdohwxsmewa4z.png)
 
 - 类型选择为：警告
 
 当输出Din1-2信号时，触发IO报警功能，在界面的右下角会显示小黄条显示用户所输入在消息框中的信息，如下图：
 
-![](./assets/g6zvk2f1fkuv0c4o1k8-1.png)
+![](assets/g6zvk2f1fkuv0c4o1k8-1.png)
 
 - 类型选择为：错误
 
 当输出Din1-3信号时，触发io报警功能，在界面的右下角会显示小红条显示用户所输入在消息框中的信息，若触发该报警时机器人正在运行，会使机器人强制下使能，如下图：
 
-![](./assets/gqithkpnlnh8royckyxzf.png)
+![](assets/gqithkpnlnh8royckyxzf.png)
 
 ## IO复位：程序报错
 
-![](./assets/bsnln9daai-pyxqa6fsy2.png)
+![](assets/bsnln9daai-pyxqa6fsy2.png)
 
 特殊说明：只要会清断点的报错才会触发IO复位-程序报错
 
