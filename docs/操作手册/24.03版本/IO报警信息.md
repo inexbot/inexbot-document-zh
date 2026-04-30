@@ -55,13 +55,13 @@ language: "zh-CN"
 
 当输出Din1-2信号时，触发IO报警功能，在界面的右下角会显示小黄条显示用户所输入在消息框中的信息，如下图：
 
-![](./media/media/g6zvk2f1fkuv0c4o1k8-1.png)
+![](./assets/g6zvk2f1fkuv0c4o1k8-1.png)
 
 - 类型选择为：错误
 
 当输出Din1-3信号时，触发io报警功能，在界面的右下角会显示小红条显示用户所输入在消息框中的信息，若触发该报警时机器人正在运行，会使机器人强制下使能，如下图：
 
-![](./media/media/gqithkpnlnh8royckyxzf.png)
+![](./assets/gqithkpnlnh8royckyxzf.png)
 
 ## IO复位：程序报错
 
