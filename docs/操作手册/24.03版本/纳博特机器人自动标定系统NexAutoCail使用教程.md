@@ -1,3 +1,13 @@
+---
+title: "纳博特机器人自动标定系统NexAutoCail使用教程"
+description: "让机器人更加准确"
+author: "ShenJL"
+date: "2026-04-15"
+tags: ["激光标定仪", "NexAutoCail", "机器人标定"]
+category: "操作手册"
+version: "1.0.0"
+language: "zh-CN"
+---
 # 纳博特机器人自动标定系统NexAutoCail使用教程
 
 目前激光标定仪支持的机型有**七轴串联多关节、七轴串联CBCBCBA、六轴串联、六轴协作、五轴协作、四轴SCARE、四轴SCARE异型一**等机型，后续会适配更多机型
