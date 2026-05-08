@@ -8,24 +8,43 @@ async function buildSidebar(dir: string, prefix = ''): Promise<DefaultTheme.Side
   const entries = await readdir(dir)
 
   for (const entry of entries.sort()) {
-    // 跳过特殊文件和 assets
-    if (entry === 'index.md' || entry === 'assets' || entry === 'assets_T31' ||
+    // 跳过 assets 等特殊目录和文件
+    if (entry === 'assets' || entry === 'assets_T31' ||
         entry === 'convert_ascii_tables.py' || entry === 'README.md') continue
 
     const fullPath = join(dir, entry)
     const st = await stat(fullPath)
 
     if (st.isDirectory()) {
+      // 检查目录下是否有 index.md
+      const indexPath = join(fullPath, 'index.md')
+      let hasIndex = false
+      try {
+        const indexStat = await stat(indexPath)
+        hasIndex = indexStat.isFile()
+      } catch {}
+
+      // 目录本身有 index.md，则该目录入口链接指向 index
+      const dirLink = hasIndex
+        ? (prefix ? `${prefix}/${entry}` : `/${entry}`)
+        : undefined
+
       const children = await buildSidebar(fullPath, prefix ? `${prefix}/${entry}` : `/${entry}`)
       if (children.length > 0) {
         items.push({
           text: entry,
           collapsed: true,
+          link: dirLink,
           items: children
         })
+      } else if (hasIndex) {
+        // 目录只有 index.md，没有其他子页面
+        items.push({ text: entry, link: dirLink })
       }
     } else if (extname(entry) === '.md') {
       const name = basename(entry, '.md')
+      // 跳过 index.md（由目录入口处理）
+      if (name === 'index') continue
       const link = prefix ? `${prefix}/${name}` : `/${name}`
       items.push({ text: name, link })
     }
