@@ -1,11 +1,10 @@
-# FF19h - 迈信
+---
+error_code: "FF19h"
+brand: "迈信"
+---
 
-## FPGA校验错误
+# FF19h - FPGA校验错误
 
-FPGA校验出错
+## 原因
 
-
-
-
-
-
+- FPGA校验出错

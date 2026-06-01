@@ -1,15 +1,10 @@
-# FF44h - 迈信
+---
+error_code: "FF44h"
+brand: "迈信"
+---
 
-## EtherCAT操作EEPROM
-失败
+# FF44h - EtherCAT操作EEPROM失败
 
+## 原因
 
-EtherCAT操作
-EEPROM失败
-
-
-
-
-
-
-
+- EtherCAT操作EEPROM失败

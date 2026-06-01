@@ -1,11 +1,10 @@
-# 0xFF1B - 摩通
+---
+error_code: "0xFF1B"
+brand: "摩通"
+---
 
-## EEPROM参数校验错误
+# 0xFF1B - EEPROM参数校验错误
 
-EEPROM异常
+## 原因
 
-
-
-
-
-
+- EEPROM异常
