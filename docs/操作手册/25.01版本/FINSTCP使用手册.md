@@ -1,7 +1,7 @@
 ---
 title: "FINSTCP使用手册"
 description: "FINSTCP功能使用手册，包含FINSTCP指令、参数设置、功能使用等详细说明。"
-author: "qiuzegai"
+author: "jmz-09"
 date: "2026-06-24"
 tags: ["示教器", "FINSTCP", "通讯", "PLC"]
 category: "操作手册"

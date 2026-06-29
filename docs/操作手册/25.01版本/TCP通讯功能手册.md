@@ -1,7 +1,7 @@
 ---
 title: "TCP通讯功能手册"
 description: "TCP通讯功能使用手册，包含TCP通讯参数设置、网络通讯类指令、外部传输点等详细说明。"
-author: "qiuzegai"
+author: "jmz-09"
 date: "2026-06-24"
 tags: ["示教器", "TCP通讯", "网络通讯", "指令"]
 category: "操作手册"

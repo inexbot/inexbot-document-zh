@@ -1,7 +1,7 @@
 ---
 title: "Modbus功能使用手册"
 description: "Modbus功能使用手册，包含Modbus指令、从站、主站等功能的详细说明。"
-author: "qiuzegai"
+author: "jmz-09"
 date: "2026-06-24"
 tags: ["示教器", "Modbus", "通讯"]
 category: "操作手册"
