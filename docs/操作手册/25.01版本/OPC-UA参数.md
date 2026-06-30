@@ -1,7 +1,7 @@
 ---
 title: "OPC-UA参数"
 description: "OPC-UA参数使用手册，包含服务端和客户端配置、参数读写、节点格式等详细说明。"
-author: "qiuzegai"
+author: "jmz-09"
 date: "2026-06-24"
 tags: ["示教器", "OPC-UA", "通讯"]
 category: "操作手册"
