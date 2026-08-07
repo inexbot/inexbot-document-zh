@@ -99,6 +99,9 @@ export default defineConfig({
     hostname: 'https://doc.inexbot.com'
   },
   themeConfig: {
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/inexbot/inexbot-document-zh' }
+    ],
     sidebar: await buildSidebar(docsDir),
     search: {
       provider: 'local',
