@@ -1,4 +1,4 @@
-# 纳博特科技知识库 (Inexbot Knowledge Base)1
+# 纳博特科技知识库 (Inexbot Knowledge Base)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2026.03-green.svg)]()
