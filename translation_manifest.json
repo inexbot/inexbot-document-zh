@@ -1,0 +1,3320 @@
+[
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/index.md",
+    "size": 3322,
+    "category": "index.md"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/T30示教器.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/T30-Teach-Pendant.md",
+    "size": 2993,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/T31竖版示教器.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/T31-Vertical-Teach-Pendant.md",
+    "size": 3916,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/T40示教器.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/T40-Teach-Pendant.md",
+    "size": 5763,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/嵌入式控制主板C2202.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/Embedded-Control-Board-C2202.md",
+    "size": 2385,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/工业机器人控制器C1102.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/Industrial-Robot-Controller-C1102.md",
+    "size": 6467,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/工业机器人控制器C1103.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/Industrial-Robot-Controller-C1103.md",
+    "size": 6183,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/工业机器人控制器C1201.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/Industrial-Robot-Controller-C1201.md",
+    "size": 7162,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/工业机器人控制器C2200系列.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/Industrial-Robot-Controller-C2200-Series.md",
+    "size": 4861,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/控制系统/无线遥控手持盒NWH01.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Control-Systems/Wireless-Remote-Control-Handheld-Box-NWH01.md",
+    "size": 3589,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/显控一体机/README.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Industrial-Display/README.md",
+    "size": 1007,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/显控一体机/XPC-150-NC工业显示屏.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Industrial-Display/XPC-150-NC-Industrial-Display.md",
+    "size": 3675,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/现场总线IO/R2C_EtherCAT_IO模块.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Fieldbus-IO/R2C-EtherCAT-IO-Module.md",
+    "size": 3242,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/现场总线IO/R4C_EtherCAT_IO模块.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Fieldbus-IO/R4C-EtherCAT-IO-Module.md",
+    "size": 3350,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/现场总线IO/R4D_EtherCAT_IO模块.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Fieldbus-IO/R4D-EtherCAT-IO-Module.md",
+    "size": 3320,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/现场总线IO/R5B_EtherCAT_IO模块.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Fieldbus-IO/R5B-EtherCAT-IO-Module.md",
+    "size": 3041,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/现场总线IO/README.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Fieldbus-IO/README.md",
+    "size": 2461,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/精度标定/自动标定系统NexAutoCali.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Calibration/Auto-Calibration-System-NexAutoCali.md",
+    "size": 4229,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/驱控一体柜/X01-D02协作控制柜.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Integrated-Drive-Cabinet/X01-D02-Collaborative-Control-Cabinet.md",
+    "size": 5962,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/驱控一体柜/X01协作控制柜.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Integrated-Drive-Cabinet/X01-Collaborative-Control-Cabinet.md",
+    "size": 4376,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/产品资料/驱控一体柜/X02驱控一体柜.md",
+    "en": "/home/inexbot-document-zh/docs/en/Products/Integrated-Drive-Cabinet/X02-Integrated-Drive-Cabinet.md",
+    "size": 3349,
+    "category": "产品资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/IO与安全.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/IO-and-Safety.md",
+    "size": 2279,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/index.md",
+    "size": 1332,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/传送带跟踪.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Conveyor-Tracking.md",
+    "size": 1051,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服与电机.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-and-Motor.md",
+    "size": 6913,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/X02驱控一体柜/星辰二号报警代码一览表.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/X02-Integrated-Drive-Cabinet/星辰二号报警代码一览表.md",
+    "size": 46989,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/index.md",
+    "size": 402,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0001 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0001.md",
+    "size": 109,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0002 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0002.md",
+    "size": 111,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0003 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0003.md",
+    "size": 84,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0004 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0004.md",
+    "size": 127,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0005 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0005.md",
+    "size": 105,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0006 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0006.md",
+    "size": 117,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0007 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0007.md",
+    "size": 96,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0008 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0008.md",
+    "size": 99,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x000A - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x000A.md",
+    "size": 108,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x000B - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x000B.md",
+    "size": 96,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x000C - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x000C.md",
+    "size": 87,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x000D - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x000D.md",
+    "size": 120,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x000E - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x000E.md",
+    "size": 121,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x000F - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x000F.md",
+    "size": 108,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0012 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0012.md",
+    "size": 108,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0013 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0013.md",
+    "size": 139,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0014 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0014.md",
+    "size": 109,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0014 - 久同_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0014.md",
+    "size": 109,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0015 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0015.md",
+    "size": 104,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0016 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0016.md",
+    "size": 120,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0017 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0017.md",
+    "size": 104,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x001B - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x001B.md",
+    "size": 133,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x001C - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x001C.md",
+    "size": 126,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x001D - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x001D.md",
+    "size": 132,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0021 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0021.md",
+    "size": 120,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0022 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0022.md",
+    "size": 114,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0023 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0023.md",
+    "size": 127,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x002D - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x002D.md",
+    "size": 93,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x002E - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x002E.md",
+    "size": 108,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x002F - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x002F.md",
+    "size": 148,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0047 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0047.md",
+    "size": 102,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0048 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0048.md",
+    "size": 93,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0049 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0049.md",
+    "size": 133,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x004A - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x004A.md",
+    "size": 72,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x004B - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x004B.md",
+    "size": 112,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x004C - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x004C.md",
+    "size": 102,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x004D - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x004D.md",
+    "size": 72,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x004E - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x004E.md",
+    "size": 72,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x004F - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x004F.md",
+    "size": 126,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0050 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0050.md",
+    "size": 126,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0051 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0051.md",
+    "size": 111,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0052 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0052.md",
+    "size": 78,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0053 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0053.md",
+    "size": 84,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0054 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0054.md",
+    "size": 102,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0056 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0056.md",
+    "size": 99,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0057 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0057.md",
+    "size": 123,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0058 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0058.md",
+    "size": 156,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0059 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0059.md",
+    "size": 126,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x005A - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x005A.md",
+    "size": 126,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x005B - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x005B.md",
+    "size": 104,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x005C - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x005C.md",
+    "size": 116,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x005F - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x005F.md",
+    "size": 102,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/0x0060 - 久同.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/0x0060.md",
+    "size": 112,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/久同/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiutong/index.md",
+    "size": 2146,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF00 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF00.md",
+    "size": 78,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF01 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF01.md",
+    "size": 138,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF02 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF02.md",
+    "size": 305,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF03 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF03.md",
+    "size": 305,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF04 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF04.md",
+    "size": 185,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF05 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF05.md",
+    "size": 197,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF06 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF06.md",
+    "size": 197,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF06 - 摩通_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF06.md",
+    "size": 197,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF07 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF07.md",
+    "size": 279,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF08 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF08.md",
+    "size": 279,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF09 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF09.md",
+    "size": 275,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF0A - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF0A.md",
+    "size": 275,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF0B - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF0B.md",
+    "size": 151,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF0C - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF0C.md",
+    "size": 169,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF0D - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF0D.md",
+    "size": 294,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF0E - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF0E.md",
+    "size": 294,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF0F - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF0F.md",
+    "size": 163,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF10 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF10.md",
+    "size": 125,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF11 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF11.md",
+    "size": 101,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF12 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF12.md",
+    "size": 275,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF13 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF13.md",
+    "size": 275,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF14 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF14.md",
+    "size": 158,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF15 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF15.md",
+    "size": 137,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF16 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF16.md",
+    "size": 143,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF18 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF18.md",
+    "size": 115,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF1B - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF1B.md",
+    "size": 109,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF1C - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF1C.md",
+    "size": 128,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF1D - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF1D.md",
+    "size": 137,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF1E - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF1E.md",
+    "size": 143,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF1F - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF1F.md",
+    "size": 127,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF20 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF20.md",
+    "size": 160,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF21 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF21.md",
+    "size": 193,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF22 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF22.md",
+    "size": 219,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF23 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF23.md",
+    "size": 219,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF24 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF24.md",
+    "size": 314,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF25 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF25.md",
+    "size": 317,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF26 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF26.md",
+    "size": 167,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF27 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF27.md",
+    "size": 164,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF28 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF28.md",
+    "size": 149,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF29 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF29.md",
+    "size": 146,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF2A - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF2A.md",
+    "size": 182,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFF2B - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFF2B.md",
+    "size": 182,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/0xFFE3 - 摩通.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/0xFFE3.md",
+    "size": 157,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/摩通/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Motong/index.md",
+    "size": 1756,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x2230 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x2230.md",
+    "size": 610,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x2320 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x2320.md",
+    "size": 577,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x2350 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x2350.md",
+    "size": 382,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x3210 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x3210.md",
+    "size": 322,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x3220 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x3220.md",
+    "size": 409,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x3380 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x3380.md",
+    "size": 184,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x4310 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x4310.md",
+    "size": 268,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x4320-新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x4320.md",
+    "size": 157,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7180 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7180.md",
+    "size": 331,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7180 - 新时达_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7180.md",
+    "size": 401,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7380-新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7380.md",
+    "size": 268,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7381 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7381.md",
+    "size": 160,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7382 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7382.md",
+    "size": 157,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7383 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7383.md",
+    "size": 106,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7384 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7384.md",
+    "size": 197,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x7581 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x7581.md",
+    "size": 290,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x8482 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x8482.md",
+    "size": 552,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x8483 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x8483.md",
+    "size": 362,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0x8611 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0x8611.md",
+    "size": 393,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/0xff03 - 新时达.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/0xff03.md",
+    "size": 139,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/新时达/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Step/index.md",
+    "size": 974,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0033-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0033.md",
+    "size": 226,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x003C-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x003C.md",
+    "size": 418,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x003F-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x003F.md",
+    "size": 370,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0046-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0046.md",
+    "size": 241,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0047-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0047.md",
+    "size": 241,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0066-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0066.md",
+    "size": 277,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0069-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0069.md",
+    "size": 402,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x006E-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x006E.md",
+    "size": 199,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0131-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0131.md",
+    "size": 213,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0191-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0191.md",
+    "size": 465,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0192-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0192.md",
+    "size": 512,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x019C-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x019C.md",
+    "size": 504,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x01A4-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x01A4.md",
+    "size": 342,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x01A5-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x01A5.md",
+    "size": 345,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x01A7-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x01A7.md",
+    "size": 279,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x01B0-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x01B0.md",
+    "size": 323,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x01B8-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x01B8.md",
+    "size": 357,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x01F5-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x01F5.md",
+    "size": 555,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0227-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0227.md",
+    "size": 236,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0263-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0263.md",
+    "size": 200,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x026C-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x026C.md",
+    "size": 187,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x026D-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x026D.md",
+    "size": 187,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0280-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0280.md",
+    "size": 285,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0281-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0281.md",
+    "size": 250,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0283-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0283.md",
+    "size": 469,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0284-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0284.md",
+    "size": 282,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0285-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0285.md",
+    "size": 318,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x0286~0x028B-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x0286~0x028B.md",
+    "size": 267,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/0x03AD-杰美康.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/0x03AD.md",
+    "size": 190,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/杰美康/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Jiemekang/index.md",
+    "size": 1285,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x2250-清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x2250.md",
+    "size": 751,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x2310 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x2310.md",
+    "size": 409,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x2320 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x2320.md",
+    "size": 1144,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x2330 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x2330.md",
+    "size": 312,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x3130 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x3130.md",
+    "size": 532,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x3210 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x3210.md",
+    "size": 685,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x3220 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x3220.md",
+    "size": 480,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x4210 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x4210.md",
+    "size": 376,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x5112 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x5112.md",
+    "size": 478,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x5210-清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x5210.md",
+    "size": 197,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x5530 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x5530.md",
+    "size": 343,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x6010 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x6010.md",
+    "size": 412,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x7112 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x7112.md",
+    "size": 502,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x8311 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x8311.md",
+    "size": 832,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x8611 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x8611.md",
+    "size": 667,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x8612 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x8612.md",
+    "size": 226,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0x8800 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0x8800.md",
+    "size": 430,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF02 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF02.md",
+    "size": 562,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF03 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF03.md",
+    "size": 487,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF04 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF04.md",
+    "size": 378,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF06 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF06.md",
+    "size": 211,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF07 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF07.md",
+    "size": 955,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF08 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF08.md",
+    "size": 211,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF09 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF09.md",
+    "size": 376,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF0A-清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF0A.md",
+    "size": 205,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF0B -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF0B.md",
+    "size": 571,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF0C -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF0C.md",
+    "size": 766,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF0D -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF0D.md",
+    "size": 938,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF0E -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF0E.md",
+    "size": 274,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF0F -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF0F.md",
+    "size": 446,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF10 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF10.md",
+    "size": 457,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF15 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF15.md",
+    "size": 398,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF16 0xFF17  -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF16 0xFF17.md",
+    "size": 501,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF18 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF18.md",
+    "size": 565,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF1B -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF1B.md",
+    "size": 314,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF1C -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF1C.md",
+    "size": 376,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF1D-清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF1D.md",
+    "size": 312,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF1E -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF1E.md",
+    "size": 271,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF20-清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF20.md",
+    "size": 1006,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF23 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF23.md",
+    "size": 464,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF24 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF24.md",
+    "size": 508,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF25 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF25.md",
+    "size": 601,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF28 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF28.md",
+    "size": 229,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF29 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF29.md",
+    "size": 346,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF2A -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF2A.md",
+    "size": 472,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF2B -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF2B.md",
+    "size": 661,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF2C -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF2C.md",
+    "size": 619,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF2D -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF2D.md",
+    "size": 784,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF2E -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF2E.md",
+    "size": 703,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF2F -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF2F.md",
+    "size": 619,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF30 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF30.md",
+    "size": 202,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF31 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF31.md",
+    "size": 715,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF33 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF33.md",
+    "size": 439,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF34 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF34.md",
+    "size": 304,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF36 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF36.md",
+    "size": 427,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF37 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF37.md",
+    "size": 223,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF38 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF38.md",
+    "size": 274,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF39 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF39.md",
+    "size": 529,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF3A -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF3A.md",
+    "size": 223,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF3B -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF3B.md",
+    "size": 418,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF3C -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF3C.md",
+    "size": 196,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF3D -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF3D.md",
+    "size": 619,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF3E -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF3E.md",
+    "size": 619,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF3F -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF3F.md",
+    "size": 661,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF40 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF40.md",
+    "size": 595,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF41 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF41.md",
+    "size": 217,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF42 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF42.md",
+    "size": 226,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF43 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF43.md",
+    "size": 280,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF81 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF81.md",
+    "size": 406,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF83 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF83.md",
+    "size": 577,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF84 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF84.md",
+    "size": 304,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF85 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF85.md",
+    "size": 280,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF86 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF86.md",
+    "size": 379,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF87 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF87.md",
+    "size": 193,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF88-清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF88.md",
+    "size": 196,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF89 -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF89.md",
+    "size": 298,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/0xFF8A -清能德创.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/0xFF8A.md",
+    "size": 346,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/清能德创/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Tsino-Dynatron/index.md",
+    "size": 3862,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x2310 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x2310.md",
+    "size": 948,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x2310 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x2310.md",
+    "size": 844,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x2330 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x2330.md",
+    "size": 303,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x3130 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x3130.md",
+    "size": 288,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x3210 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x3210.md",
+    "size": 741,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x3220 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x3220.md",
+    "size": 394,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x3220 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x3220.md",
+    "size": 525,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x3230 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x3230.md",
+    "size": 1162,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x4210 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x4210.md",
+    "size": 884,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x5100 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x5100.md",
+    "size": 373,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x6320 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x6320.md",
+    "size": 377,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x6320 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x6320.md",
+    "size": 380,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x7200 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x7200.md",
+    "size": 213,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x7200 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x7200.md",
+    "size": 273,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x7305 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x7305.md",
+    "size": 453,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x7500 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x7500.md",
+    "size": 221,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x7500 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x7500.md",
+    "size": 178,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x7600 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x7600.md",
+    "size": 427,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x8300 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x8300.md",
+    "size": 241,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x8400 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x8400.md",
+    "size": 369,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x8400 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x8400.md",
+    "size": 319,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x8500 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x8500.md",
+    "size": 388,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x8611 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x8611.md",
+    "size": 874,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0x8611 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0x8611.md",
+    "size": 338,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0xFF00 - 禾川.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0xFF00.md",
+    "size": 244,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/0xFF00 - 禾川_2.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/0xFF00.md",
+    "size": 298,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/禾川/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Hechuang/index.md",
+    "size": 1093,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/20点标定后依然不准.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/20点标定后依然不准.md",
+    "size": 263,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/20点标定失败.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/20点标定失败.md",
+    "size": 593,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/20点标定的意义.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/20点标定的意义.md",
+    "size": 390,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/7点标定后工具手依然不准.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/7点标定后工具手依然不准.md",
+    "size": 589,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/T20更换开机图片（通电及走进度条的两张图）.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/T20更换开机图片（通电及走进度条的两张图）.md",
+    "size": 714,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/index.md",
+    "size": 2769,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/slaveTypeLib.json文件在哪个文件夹下.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/slaveTypeLib.json文件在哪个文件夹下.md",
+    "size": 277,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/testone.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/testone.md",
+    "size": 127,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/不能画整圆.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/不能画整圆.md",
+    "size": 1499,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/哪个是添加伺服的文件.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/哪个是添加伺服的文件.md",
+    "size": 213,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/如何导入导出文件.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/如何导入导出文件.md",
+    "size": 2226,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/实际连接数目与配置和数目不符.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/实际连接数目与配置和数目不符.md",
+    "size": 271,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/导入机器人参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/导入机器人参数.md",
+    "size": 691,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/导入程序示教盒死机.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/导入程序示教盒死机.md",
+    "size": 245,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/导出机器人参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/导出机器人参数.md",
+    "size": 538,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/开机显示版本不匹配.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/开机显示版本不匹配.md",
+    "size": 731,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/按下示教器的三位按压开关后无法使能.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/按下示教器的三位按压开关后无法使能.md",
+    "size": 1187,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/换Logo、开机图、程序启动图、文字.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/换Logo、开机图、程序启动图、文字.md",
+    "size": 429,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/支持的伺服型号.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/Supported-Servo-Models.md",
+    "size": 208,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/数字IO不能使用.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/数字IO不能使用.md",
+    "size": 482,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/断电零点位置丢失.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/断电零点位置丢失.md",
+    "size": 354,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/无法升级程序.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/无法升级程序.md",
+    "size": 1770,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/显示“操作过快，请稍后操作”.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/显示“操作过快，请稍后操作”.md",
+    "size": 545,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/显示伺服未连接.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/显示伺服未连接.md",
+    "size": 2310,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/更换二维码.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/更换二维码.md",
+    "size": 386,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/更换文字说明.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/更换文字说明.md",
+    "size": 521,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/更换程序启动图片.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/更换程序启动图片.md",
+    "size": 575,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/更改模拟板配置信息.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/更改模拟板配置信息.md",
+    "size": 434,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/机器人DH参数怎么填.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/机器人DH参数怎么填.md",
+    "size": 456,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/机器人关节参数怎么填.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/机器人关节参数怎么填.md",
+    "size": 1194,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/模拟IO不能使用.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/模拟IO不能使用.md",
+    "size": 607,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/点动直角坐标不对（不能走直线）.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/点动直角坐标不对（不能走直线）.md",
+    "size": 981,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/示教器上方显示红色的伺服错误.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/示教器上方显示红色的伺服错误.md",
+    "size": 1056,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/示教器左上角显示红色的连接断开.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/示教器左上角显示红色的连接断开.md",
+    "size": 1195,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/示教器无法开机.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/示教器无法开机.md",
+    "size": 729,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/示教器的IP设置界面中本机IP为空.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/示教器的IP设置界面中本机IP为空.md",
+    "size": 540,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/简便方法.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/简便方法.md",
+    "size": 227,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/运行程序速度太慢.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/运行程序速度太慢.md",
+    "size": 755,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/远程模式使用IO预约程序只运行一次.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/远程模式使用IO预约程序只运行一次.md",
+    "size": 362,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/远程模式运行速度太快.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/远程模式运行速度太快.md",
+    "size": 395,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/系统问题/错误：Ethercat主站启动失败.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/System-Issues/错误：Ethercat主站启动失败.md",
+    "size": 315,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF00h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF00h.md",
+    "size": 79,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF01h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF01h.md",
+    "size": 110,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF02h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF02h.md",
+    "size": 122,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF03h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF03h.md",
+    "size": 122,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF04h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF04h.md",
+    "size": 128,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF07h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF07h.md",
+    "size": 126,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF08h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF08h.md",
+    "size": 158,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF0Bh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF0Bh.md",
+    "size": 116,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF0Ch - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF0Ch.md",
+    "size": 98,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF0Dh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF0Dh.md",
+    "size": 95,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF0Eh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF0Eh.md",
+    "size": 128,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF10h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF10h.md",
+    "size": 128,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF11h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF11h.md",
+    "size": 128,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF12h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF12h.md",
+    "size": 125,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF14h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF14h.md",
+    "size": 104,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF15h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF15h.md",
+    "size": 122,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF16h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF16h.md",
+    "size": 137,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF17h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF17h.md",
+    "size": 115,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF19h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF19h.md",
+    "size": 103,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF1Dh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF1Dh.md",
+    "size": 143,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF23h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF23h.md",
+    "size": 116,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF28h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF28h.md",
+    "size": 131,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF29h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF29h.md",
+    "size": 131,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF2Ah - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF2Ah.md",
+    "size": 134,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF2Bh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF2Bh.md",
+    "size": 140,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF2Ch - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF2Ch.md",
+    "size": 131,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF2Dh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF2Dh.md",
+    "size": 134,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF2Eh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF2Eh.md",
+    "size": 134,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF2Fh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF2Fh.md",
+    "size": 125,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF30h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF30h.md",
+    "size": 125,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF31h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF31h.md",
+    "size": 95,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF32h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF32h.md",
+    "size": 137,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF33h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF33h.md",
+    "size": 125,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF35h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF35h.md",
+    "size": 119,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF36h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF36h.md",
+    "size": 125,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF3Ch - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF3Ch.md",
+    "size": 121,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF3Dh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF3Dh.md",
+    "size": 137,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF3Eh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF3Eh.md",
+    "size": 137,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF3Fh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF3Fh.md",
+    "size": 132,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF41h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF41h.md",
+    "size": 121,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF42h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF42h.md",
+    "size": 145,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF44h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF44h.md",
+    "size": 123,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF50h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF50h.md",
+    "size": 132,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF51h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF51h.md",
+    "size": 127,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF52h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF52h.md",
+    "size": 132,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF54h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF54h.md",
+    "size": 129,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF58h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF58h.md",
+    "size": 123,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF59h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF59h.md",
+    "size": 117,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF5Fh - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF5Fh.md",
+    "size": 129,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF60h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF60h.md",
+    "size": 141,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/FF61h - 迈信.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/FF61h.md",
+    "size": 117,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/伺服报错/迈信/index.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Servo-Errors/Maxon/index.md",
+    "size": 1966,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/作业文件与程序运行.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Job-File-and-Program-Execution.md",
+    "size": 3841,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/冲压工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Stamping-Process.md",
+    "size": 1440,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/寻位工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Position-Search-Process.md",
+    "size": 779,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/干涉区与碰撞防护.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Interference-Zone-and-Collision-Protection.md",
+    "size": 575,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/拖拽示教与动力学.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Hand-Guiding-and-Dynamics.md",
+    "size": 3446,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/控制器硬件.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Controller-Hardware.md",
+    "size": 1716,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/机器人标定与精度.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Robot-Calibration-and-Accuracy.md",
+    "size": 3163,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/激光切割工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Laser-Cutting-Process.md",
+    "size": 1208,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/焊接工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Welding-Process.md",
+    "size": 3577,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/独立轴与外部轴.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Independent-Axis-and-External-Axis.md",
+    "size": 2182,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/码垛工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Palletizing-Process.md",
+    "size": 2777,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/示教器.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Teach-Pendant.md",
+    "size": 3079,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/系统升级与文件管理.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/System-Upgrade-and-File-Management.md",
+    "size": 4635,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/系统配置与授权.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/System-Configuration-and-Authorization.md",
+    "size": 2257,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/视觉工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Vision-Process.md",
+    "size": 2238,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/运动学参数与零点.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Kinematics-Parameters-and-Zero-Point.md",
+    "size": 5652,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/运动控制.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Motion-Control.md",
+    "size": 4358,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/运行模式与远程控制.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Operation-Mode-and-Remote-Control.md",
+    "size": 1614,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/常见问题/通讯与总线.md",
+    "en": "/home/inexbot-document-zh/docs/en/FAQ/Communication-and-Bus.md",
+    "size": 6207,
+    "category": "常见问题"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/技术资料/支持的伺服型号.md",
+    "en": "/home/inexbot-document-zh/docs/en/Technical/Supported-Servo-Models.md",
+    "size": 3232,
+    "category": "技术资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/技术资料/支持的外部轴类型.md",
+    "en": "/home/inexbot-document-zh/docs/en/Technical/Supported-External-Axis-Types.md",
+    "size": 931,
+    "category": "技术资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/技术资料/支持的机器人类型.md",
+    "en": "/home/inexbot-document-zh/docs/en/Technical/Supported-Robot-Types.md",
+    "size": 6391,
+    "category": "技术资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/技术资料/通讯协议&地址码.md",
+    "en": "/home/inexbot-document-zh/docs/en/Technical/Communication-Protocols-Address-Codes.md",
+    "size": 5801,
+    "category": "技术资料"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/100个全局位置变量现场应用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/100个全局位置变量现场应用手册.md",
+    "size": 15564,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/FINSTCP手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/FINSTCP手册.md",
+    "size": 27478,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/IO_Modbus与远程功能使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/IO_Modbus与远程功能使用手册.md",
+    "size": 38410,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/专用工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/专用工艺手册.md",
+    "size": 7888,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/人机协作手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/人机协作手册.md",
+    "size": 23579,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/六轴协作机器人操作手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/六轴协作机器人操作手册.md",
+    "size": 12109,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/冲压工艺2.0手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/冲压工艺2.0手册.md",
+    "size": 33077,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/冲压工艺3.0手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/冲压工艺3.0手册.md",
+    "size": 29156,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/喷涂工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/喷涂工艺手册.md",
+    "size": 9452,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/四轴并联机器人操作手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/四轴并联机器人操作手册.md",
+    "size": 11820,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/多机模式与双机协作手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/多机模式与双机协作手册.md",
+    "size": 14151,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/寻位跟踪手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/寻位跟踪手册.md",
+    "size": 34990,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/工具手标定手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/工具手标定手册.md",
+    "size": 32136,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/打磨工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/打磨工艺手册.md",
+    "size": 6049,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/指令集手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/指令集手册.md",
+    "size": 82469,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/激光切割工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/激光切割工艺手册.md",
+    "size": 9495,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/焊接工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/焊接工艺手册.md",
+    "size": 57557,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/用户坐标标定手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/用户坐标标定手册.md",
+    "size": 4010,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/码垛工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/码垛工艺手册.md",
+    "size": 70274,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/系统操作手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/系统操作手册.md",
+    "size": 176129,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/系统设置与文件导入导出手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/系统设置与文件导入导出手册.md",
+    "size": 24305,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/网络功能使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/网络功能使用手册.md",
+    "size": 18671,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/自适应加减速手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/自适应加减速手册.md",
+    "size": 12920,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/视觉工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/视觉工艺手册.md",
+    "size": 19916,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/调试手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/调试手册.md",
+    "size": 52861,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/22.07版本/酒槽机型机器人手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/22.07/酒槽机型机器人手册.md",
+    "size": 7030,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/7000端口.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/7000端口.md",
+    "size": 19483,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/DXF工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/DXF工艺.md",
+    "size": 20805,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/EIP功能操作说明.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/EIP功能操作说明.md",
+    "size": 8935,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/FINSTCP使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/FINSTCP使用手册.md",
+    "size": 9914,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/IO报警信息.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/IO报警信息.md",
+    "size": 2979,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/Lua教程.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Lua教程.md",
+    "size": 31402,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/Modbus功能使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Modbus功能使用手册.md",
+    "size": 34536,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/OPC-UA参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/OPC-UA参数.md",
+    "size": 6721,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/PC支持仿真软件使用教程.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/PC支持仿真软件使用教程.md",
+    "size": 4608,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/TCP通讯功能手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/TCP通讯功能手册.md",
+    "size": 17845,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/dev多语言功能使用教程.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/dev多语言功能使用教程.md",
+    "size": 2897,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/modbus多主站连接.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/modbus多主站连接.md",
+    "size": 3527,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/不常使用的功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/不常使用的功能.md",
+    "size": 5094,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/人机协作.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/人机协作.md",
+    "size": 25602,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/传送带跟踪工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/传送带跟踪工艺手册.md",
+    "size": 20933,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/伺服响应时间.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/伺服响应时间.md",
+    "size": 1089,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/位置变量类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/位置变量类.md",
+    "size": 30424,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/修改机器人点位.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/修改机器人点位.md",
+    "size": 6210,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/六轴协作机器人增加形态参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/六轴协作机器人增加形态参数.md",
+    "size": 3313,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/关于自动适配六维力传感器配置文件的说明.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/关于自动适配六维力传感器配置文件的说明.md",
+    "size": 4465,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/反向间隙.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/反向间隙.md",
+    "size": 3172,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/变量手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/变量手册.md",
+    "size": 33774,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/坐标系类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/坐标系类.md",
+    "size": 7105,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/外部点TCP.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/外部点TCP.md",
+    "size": 4384,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/外部轴使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/外部轴使用手册.md",
+    "size": 25570,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/外部轴点动_联动.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/外部轴点动_联动.md",
+    "size": 2419,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/外部轴速度.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/外部轴速度.md",
+    "size": 2424,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/多机与双机协作.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/多机与双机协作.md",
+    "size": 12530,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/多机协调类指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/多机协调类指令.md",
+    "size": 3005,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/天机需求.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/天机需求.md",
+    "size": 1637,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/字符串类+输入输出类+定时器类+运算类指令手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/字符串类+输入输出类+定时器类+运算类指令手册.md",
+    "size": 30196,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/寻位跟踪手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/寻位跟踪手册.md",
+    "size": 34414,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/工具手标定手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/工具手标定手册.md",
+    "size": 20719,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/干涉区.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/干涉区.md",
+    "size": 1510,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/恢复出厂设置后如何让机器人运动.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/恢复出厂设置后如何让机器人运动.md",
+    "size": 4114,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/扫描IP功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/扫描IP功能.md",
+    "size": 2029,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/指令运行逻辑.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/指令运行逻辑.md",
+    "size": 2632,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/数据上传.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/数据上传.md",
+    "size": 9070,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/断电保持功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/断电保持功能.md",
+    "size": 2010,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/新传送带跟踪工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/新传送带跟踪工艺手册.md",
+    "size": 62977,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/新双机功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/新双机功能.md",
+    "size": 5540,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/最小加速度时间与最小减速度时间.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/最小加速度时间与最小减速度时间.md",
+    "size": 4454,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人DH参数说明.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/机器人DH参数说明.md",
+    "size": 45581,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人定制适配/天机七轴CBCBCBA.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Robot-Custom-Adaptation/天机七轴CBCBCBA.md",
+    "size": 2654,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人定制适配/法奥fr5.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Robot-Custom-Adaptation/法奥fr5.md",
+    "size": 7177,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人定制适配/珞石CR20-C.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Robot-Custom-Adaptation/珞石CR20-C.md",
+    "size": 3934,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人定制适配/珞石SR5-C.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Robot-Custom-Adaptation/珞石SR5-C.md",
+    "size": 3903,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人定制适配/越疆CR10V.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Robot-Custom-Adaptation/越疆CR10V.md",
+    "size": 3905,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/机器人的构成.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/机器人的构成.md",
+    "size": 6432,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/条件控制类指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/条件控制类指令.md",
+    "size": 50927,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/森峰需求.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/森峰需求.md",
+    "size": 952,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/水冷机.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/水冷机.md",
+    "size": 3009,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/激光切割工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Laser-Cutting-Process.md",
+    "size": 14002,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/焊接工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Welding-Process.md",
+    "size": 89695,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/特殊工艺/专用工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Special-Processes/专用工艺.md",
+    "size": 7744,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/特殊工艺/晶圆工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Special-Processes/晶圆工艺.md",
+    "size": 71071,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/独立轴控制.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/独立轴控制.md",
+    "size": 14201,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/用户坐标标定手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/用户坐标标定手册.md",
+    "size": 3702,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/码垛工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Palletizing-Process.md",
+    "size": 81378,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/示教器与控制器多语言翻译及升级指南.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/示教器与控制器多语言翻译及升级指南.md",
+    "size": 7365,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/示教器修改主题颜色功能教程.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/示教器修改主题颜色功能教程.md",
+    "size": 2208,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/示教器功能按键说明手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/示教器功能按键说明手册.md",
+    "size": 34955,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/示教器换图.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/示教器换图.md",
+    "size": 24123,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/示教器模式指导手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/示教器模式指导手册.md",
+    "size": 24625,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/程序控制类指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/程序控制类指令.md",
+    "size": 12476,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/系统保养.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/系统保养.md",
+    "size": 2098,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/系统功能调试手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/系统功能调试手册.md",
+    "size": 42725,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/系统备份与还原.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/系统备份与还原.md",
+    "size": 2766,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/纳博特机器人自动标定系统NexAutoCail使用教程.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/纳博特机器人自动标定系统NexAutoCail使用教程.md",
+    "size": 9737,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/线激光视觉环境搭建步骤.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/线激光视觉环境搭建步骤.md",
+    "size": 1365,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/编码器位置.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/编码器位置.md",
+    "size": 2729,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/自动寻址功能测试教程.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/自动寻址功能测试教程.md",
+    "size": 2542,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/视觉工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/Vision-Process.md",
+    "size": 33903,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/计算目标形态指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/计算目标形态指令.md",
+    "size": 5967,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/语法检测功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/语法检测功能.md",
+    "size": 3326,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/运动控制类指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/运动控制类指令.md",
+    "size": 54772,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/门型指令使用文档.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/门型指令使用文档.md",
+    "size": 3401,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/24.03版本/鱼鳞焊首段焊接首段空走.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/24.03/鱼鳞焊首段焊接首段空走.md",
+    "size": 1373,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/DXF工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/DXF工艺手册.md",
+    "size": 20345,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/EIP功能操作说明.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/EIP功能操作说明.md",
+    "size": 8420,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/FINSTCP使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/FINSTCP使用手册.md",
+    "size": 10677,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/IO功能使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/IO功能使用手册.md",
+    "size": 24538,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/Modbus功能使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/Modbus功能使用手册.md",
+    "size": 27915,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/OPC-UA参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/OPC-UA参数.md",
+    "size": 5663,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/TCP通讯功能手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/TCP通讯功能手册.md",
+    "size": 16945,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/专用工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/专用工艺.md",
+    "size": 5138,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/人机协作.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/人机协作.md",
+    "size": 42147,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/传送带跟踪工艺手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/传送带跟踪工艺手册.md",
+    "size": 39793,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/位置变量类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/位置变量类.md",
+    "size": 30545,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/修改机器人点位.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/修改机器人点位.md",
+    "size": 6018,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/变量类+字符串类手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/变量类+字符串类手册.md",
+    "size": 38831,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/坐标系类+网络通讯类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/坐标系类+网络通讯类.md",
+    "size": 13204,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/外部轴使用手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/外部轴使用手册.md",
+    "size": 24808,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/多机协调类指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/多机协调类指令.md",
+    "size": 4470,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/子函数类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/子函数类.md",
+    "size": 5791,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/工具手标定.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/工具手标定.md",
+    "size": 27103,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/指令参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/指令参数.md",
+    "size": 5878,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/数据上传.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/数据上传.md",
+    "size": 9495,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/新双机功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/新双机功能.md",
+    "size": 5683,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/晶圆工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/晶圆工艺.md",
+    "size": 67494,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/机器人打包位置设置功能.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/机器人打包位置设置功能.md",
+    "size": 5270,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/条件控制类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/条件控制类.md",
+    "size": 45810,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/激光切割工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/Laser-Cutting-Process.md",
+    "size": 16279,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/独立轴控制.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/独立轴控制.md",
+    "size": 14199,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/用户坐标标定手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/用户坐标标定手册.md",
+    "size": 3699,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/码垛工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/Palletizing-Process.md",
+    "size": 81700,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/示教器功能按键说明手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/示教器功能按键说明手册.md",
+    "size": 37124,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/示教器换图.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/示教器换图.md",
+    "size": 56891,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/示教器编程指导手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/示教器编程指导手册.md",
+    "size": 42777,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/程序控制类.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/程序控制类.md",
+    "size": 12649,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/系统功能调试手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/系统功能调试手册.md",
+    "size": 64469,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/视觉工艺.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/Vision-Process.md",
+    "size": 37815,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/输入输出类+定时器类+运算类手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/输入输出类+定时器类+运算类手册.md",
+    "size": 19213,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/运动控制类指令.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/运动控制类指令.md",
+    "size": 62502,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/25.01版本/速度参数.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/25.01/速度参数.md",
+    "size": 2966,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/操作手册/T31竖版焊接示教器操作手册.md",
+    "en": "/home/inexbot-document-zh/docs/en/Manuals/T31竖版焊接示教器操作手册.md",
+    "size": 339055,
+    "category": "操作手册"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/索引.md",
+    "en": "/home/inexbot-document-zh/docs/en/索引.md",
+    "size": 10968,
+    "category": "索引.md"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/免编程示教系统喷涂行业解决方案.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Programming-Free-Spraying-Solution.md",
+    "size": 5354,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/医疗机器人.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Medical-Robot.md",
+    "size": 1642,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/协作码垛.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Collaborative-Palletizing.md",
+    "size": 4586,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/打磨行业解决方案.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Polishing-Solution.md",
+    "size": 4081,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/晶圆行业解决方案.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Wafer-Solution.md",
+    "size": 6078,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/激光切割.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Laser-Cutting.md",
+    "size": 5018,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/激光寻位-跟踪.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Laser-Position-Tracking.md",
+    "size": 6433,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/激光焊接.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Laser-Welding.md",
+    "size": 6010,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/点胶行业解决方案.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Dispensing-Solution.md",
+    "size": 3071,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/物流系统自动供包.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Logistics-Auto-Package.md",
+    "size": 3298,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/码垛行业解决方案.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Palletizing-Solution.md",
+    "size": 4348,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/轮式人形机器人运动控制系统.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Wheeled-Humanoid-Motion-Control.md",
+    "size": 21675,
+    "category": "行业方案"
+  },
+  {
+    "zh": "/home/inexbot/inexbot-document-zh/docs/zh/行业方案/金属焊接.md",
+    "en": "/home/inexbot-document-zh/docs/en/Solutions/Metal-Welding.md",
+    "size": 9786,
+    "category": "行业方案"
+  }
+]

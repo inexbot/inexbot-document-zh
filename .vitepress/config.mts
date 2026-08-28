@@ -3,20 +3,19 @@ import { readdir, stat } from 'fs/promises'
 import { join, extname, basename } from 'path'
 
 // 递归扫描目录生成侧边栏
-async function buildSidebar(dir: string, prefix = ''): Promise<DefaultTheme.SidebarItem[]> {
-  const items = []
+async function buildSidebar(dir: string, prefix = '', skipDirs: string[] = []): Promise<DefaultTheme.SidebarItem[]> {
+  const items: DefaultTheme.SidebarItem[] = []
   const entries = await readdir(dir)
 
   for (const entry of entries.sort()) {
-    // 跳过 assets 等特殊目录和文件
     if (entry === 'assets' || entry === 'assets_T31' ||
-        entry === 'convert_ascii_tables.py' || entry === 'README.md') continue
+        entry === 'convert_ascii_tables.py' || entry === 'README.md' ||
+        skipDirs.includes(entry)) continue
 
     const fullPath = join(dir, entry)
     const st = await stat(fullPath)
 
     if (st.isDirectory()) {
-      // 检查目录下是否有 index.md
       const indexPath = join(fullPath, 'index.md')
       let hasIndex = false
       try {
@@ -24,12 +23,11 @@ async function buildSidebar(dir: string, prefix = ''): Promise<DefaultTheme.Side
         hasIndex = indexStat.isFile()
       } catch {}
 
-      // 目录本身有 index.md，则该目录入口链接指向 index
       const dirLink = hasIndex
-        ? (prefix ? `${prefix}/${entry}` : `/${entry}`)
+        ? (prefix ? `${prefix}/${entry}/` : `/${entry}/`)
         : undefined
 
-      const children = await buildSidebar(fullPath, prefix ? `${prefix}/${entry}` : `/${entry}`)
+      const children = await buildSidebar(fullPath, prefix ? `${prefix}/${entry}` : `/${entry}`, skipDirs)
       if (children.length > 0) {
         items.push({
           text: entry,
@@ -38,12 +36,10 @@ async function buildSidebar(dir: string, prefix = ''): Promise<DefaultTheme.Side
           items: children
         })
       } else if (hasIndex) {
-        // 目录只有 index.md，没有其他子页面
         items.push({ text: entry, link: dirLink })
       }
     } else if (extname(entry) === '.md') {
       const name = basename(entry, '.md')
-      // 跳过 index.md（由目录入口处理）
       if (name === 'index') continue
       const link = prefix ? `${prefix}/${name}` : `/${name}`
       items.push({ text: name, link })
@@ -51,9 +47,6 @@ async function buildSidebar(dir: string, prefix = ''): Promise<DefaultTheme.Side
   }
   return items
 }
-
-// 获取 docs 目录路径
-const docsDir = join(process.cwd(), 'docs')
 
 // 中文分词器
 function chineseTokenizer(text: string): string[] {
@@ -89,9 +82,30 @@ function chineseTokenizer(text: string): string[] {
   return [...enTokens.filter(t => t !== ' '), ...cnChars].filter(t => t.length > 0)
 }
 
+const docsDir = join(process.cwd(), 'docs')
+
+// 各语言侧边栏
+const zhSidebar = await buildSidebar(join(docsDir, 'zh'), '/zh')
+const enSidebar = await buildSidebar(join(docsDir, 'en'), '/en')
+
+// 搜索配置
+function searchOptions(useChineseTokenizer: boolean) {
+  return {
+    detailedView: true,
+    maxResults: 60,
+    minLength: 1,
+    fields: ['title', 'titles', 'text'] as const,
+    storeFields: ['title', 'titles'] as const,
+    ...(useChineseTokenizer ? { tokenize: (text: string) => chineseTokenizer(text) } : {}),
+    searchOptions: {
+      fuzzy: 0.2,
+      prefix: true,
+      boost: { title: 4, text: 2, titles: 1 }
+    }
+  }
+}
+
 export default defineConfig({
-  title: "纳博特科技知识库",
-  description: "纳博特科技官方知识库",
   srcDir: "./docs",
   ignoreDeadLinks: true,
   outDir: "./dist",
@@ -99,27 +113,58 @@ export default defineConfig({
     hostname: 'https://doc.inexbot.com'
   },
   themeConfig: {
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/inexbot/inexbot-document-zh' }
-    ],
-    sidebar: await buildSidebar(docsDir),
+    i18nRouting: false,
     search: {
       provider: 'local',
-      options: {
-        detailedView: true,
-        maxResults: 60,
-        minLength: 1,
-        // 索引字段
-        fields: ['title', 'titles', 'text'],
-        // 存储字段（用于结果展示）
-        storeFields: ['title', 'titles'],
-        // 自定义中文分词
-        tokenize: (text: string) => chineseTokenizer(text),
-        // 搜索选项
-        searchOptions: {
-          fuzzy: 0.2,
-          prefix: true,
-          boost: { title: 4, text: 2, titles: 1 }
+      options: searchOptions(true)
+    }
+  },
+  locales: {
+    zh: {
+      label: '中文',
+      lang: 'zh-CN',
+      title: '纳博特科技知识库',
+      description: '纳博特科技官方知识库',
+      themeConfig: {
+        nav: [
+          { text: '首页', link: '/zh/' },
+          { text: '产品资料', link: '/zh/产品资料/' },
+          { text: '技术资料', link: '/zh/技术资料/' },
+          { text: '操作手册', link: '/zh/操作手册/' },
+          { text: '行业方案', link: '/zh/行业方案/' },
+          { text: '常见问题', link: '/zh/常见问题/' }
+        ],
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/inexbot/inexbot-document-zh' }
+        ],
+        sidebar: zhSidebar,
+        search: {
+          provider: 'local',
+          options: searchOptions(true)
+        }
+      }
+    },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      title: 'iNexBot Knowledge Base',
+      description: 'iNexBot Official Knowledge Base',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Products', link: '/en/Products/' },
+          { text: 'Technical', link: '/en/Technical/' },
+          { text: 'Manuals', link: '/en/Manuals/' },
+          { text: 'Solutions', link: '/en/Solutions/' },
+          { text: 'FAQ', link: '/en/FAQ/' }
+        ],
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/inexbot/inexbot-document-zh' }
+        ],
+        sidebar: enSidebar,
+        search: {
+          provider: 'local',
+          options: searchOptions(false)
         }
       }
     }
