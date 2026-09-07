@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>iNexBot Knowledge Base</title>
+<script>
+(function(){
+  var lang = (navigator.languages && navigator.languages[0] || navigator.language || '').toLowerCase();
+  var target;
+  if (/^zh/.test(lang)) {
+    target = '/zh/';
+  } else {
+    target = '/en/';
+  }
+  location.replace(target);
+})();
+</script>
+</head>
+<body>
+<p>Redirecting to <a href="/zh/">iNexBot Knowledge Base</a>...</p>
+</body>
+</html>
