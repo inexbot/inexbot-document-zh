@@ -183,7 +183,7 @@ When the corresponding fault is triggered, the robot will stop, and the suppress
 
 ### Laser Start
 
-![Image](assets/1t3guf4jidlek1ynhdugc1c.png)
+![Image](assets/1t3guf4jidlek1ynhdugc1.png)
 
 Note: The height adjuster follow option is a dev feature, not available in 2403.
 

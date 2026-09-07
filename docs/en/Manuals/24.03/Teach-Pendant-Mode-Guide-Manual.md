@@ -135,7 +135,7 @@ How to calculate run mode speed?
 
 The global speed here refers to the speed on the teach pendant status bar.
 
-![](assets/cc6y23kqn1usmowroz1.png)
+![](assets/cc6y23kwtqn1usmowroz1.png)
 
 | Run Mode | Joint: Maximum axis speed = Rated forward speed * Instruction speed * Global speed |
 | :--- | :--- |
@@ -551,7 +551,7 @@ Indicates IO cannot run its own program. Instead, IO (settings on teach pendant)
 
 The global speed here refers to the speed displayed on the teach pendant speed bar when the operation mode is remote mode.
 
-![](assets/rqfshqo2ctv8_1eb2m3c.png)
+![](assets/rqfshwqo2ctv8_1eb2m3c.png)
 
 | Remote Mode | Joint: Maximum axis speed = Rated forward speed * Instruction speed * Global speed |
 | :--- | :--- |

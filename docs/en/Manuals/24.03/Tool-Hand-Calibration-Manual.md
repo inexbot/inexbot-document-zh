@@ -198,7 +198,7 @@ In teach mode, align the tool hand calibration tip with the calibration cone. Wi
 
 Click Settings - Enter tool hand calibration interface, click [Tool Hand Calibration].
 
-![](assets/oqxjv8tyvzly4vxmtsiy1p.png)
+![](assets/oqxjv8tyzly4vxmtsiy1p.png)
 
 ![](assets/ygv_iyfrlz_zw9rxlduwt.png)
 
