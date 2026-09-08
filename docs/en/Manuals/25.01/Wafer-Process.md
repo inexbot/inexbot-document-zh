@@ -9,1237 +9,1277 @@ version: "1.0.0"
 language: "en-US"
 ---
 
-# Wafer Process
+# 晶圆工艺
 
 ![](./assets/qwhthqv3alzlyw_mk-xqa.png)
 
-## 1. Process Introduction
+## 一、工艺介绍
 
-The wafer process is mainly used to enable wafer robots to transport wafer substrates in semiconductor processing equipment. Its content mainly includes three modules: wafer cassette parameter configuration, manipulator control actions, and host computer control communication settings.
+晶圆工艺的主要用于实现晶圆机器人在一些半导体处理设备中搬运传输晶圆片，其内容主要包含晶圆盒参数配置、操控动作机械手以及上位机控制通信设置三个模块。
 
-Under the wafer process, there are three interfaces: wafer cassette configuration interface, control interface, and communication settings interface. As shown:
+在晶圆工艺下有三个界面，分别是晶圆盒配置界面、控制界面和通讯设置界面。如图所示：
 
 ![](./assets/etbyn9bfvt5_bya79upjb.png)
 
-| Module | Description |
+| 模块 | 说明 |
 | :--- | :--- |
-| Wafer Cassette Configuration | Configure the number, type, size, capacity, and position-related parameters of wafer cassettes (FOUP, Front Opening Unified Pod). Additionally, parameters related to pick-and-place operations in the wafer cassette (such as motion trajectories, speed, and signal detection) are also configured in this module |
-| Control | The control module is mainly used to operate the manipulator and manually debug wafer process logic |
-| Communication Settings | This module mainly configures communication parameters related to host computer control of the manipulator |
+| 晶圆盒配置 | 配置晶圆盒（FOUP, Front Opening Unified Pod）的数量、类型、尺寸、容量以及位置相关的各种参数。此外，在晶圆盒中进行取放片操作的相关参数（比如运动轨迹、速度及信号检测）也在该模块中配置 |
+| 控制 | 控制模块主要用于操作动作机械手，手动调试晶圆工艺逻辑 |
+| 通讯设置 | 该模块主要配置上位机控制机械手相关的通讯参数 |
 
-Below are the three interfaces and their corresponding functions:
+下面分别介绍三个界面及其相应功能：
 
-### 1. Wafer Cassette Configuration Interface
+### 1. 晶圆盒配置界面
 
-#### 1.1 Global Configuration Interface
+#### 1.1 全局配置界面
 
-Configure wafer cassette, blade total count and blade model, set HOM position coordinates.
+配置晶圆盒、片叉总数及片叉型号，设置HOM位置坐标。
 
 ![](./assets/jll3gdk8vsvzzr5w8mlll.png)
 
-| Parameter | Range/Options | Description |
+| 参数 | 范围/选项 | 说明 |
 | :--- | :--- | :--- |
-| Total Wafer Cassette Count | [1, 99], default 25 | When modifying the total wafer cassette count, the "Current Station" dropdown options in the wafer cassette configuration interface will increase or decrease accordingly. Newly added cassettes are named in box_xx format |
-| Total Blade Count | [1, 4], generally default 4 | When modifying the total blade count, the "Current Blade" dropdown options in the blade configuration interface will also increase or decrease accordingly, and the selectable blade count in the control interface will also change |
-| Blade Model | Gripper / Suction | Select the blade type |
-| HOM Setting (Joint Coordinates) | J1, J2, J4, J5, J6, J7: [-20000, 20000] mm; J3: [-500, 5000] degrees | HOM point is the robot's safe starting position. After completing a task, the robot usually returns to the HOM point to prepare for the next task |
+| 晶圆盒总个数 | \[1, 99\]，默认25个 | 修改晶圆盒总数时，晶圆盒配置界面中的"当前工号"下拉框选项会相应增加或减少。新增加的晶圆盒将以box_xx的形式命名 |
+| 片叉总个数 | \[1, 4\]，一般默认4个 | 修改片叉总数时，片叉配置界面中的"当前片叉"下拉框选项也会相应增加或减少，且控制界面中可选的片叉数量也会变化 |
+| 片叉型号 | 夹爪 / 吸附 | 选择片叉的类型 |
+| HOM设置（关节坐标） | J1, J2, J4, J5, J6, J7: \[-20000, 20000\] mm；J3: \[-500, 5000\] 度 | HOM点是机器人的安全起始位置。机器人完成一个任务后，通常会回到HOM点准备下一个任务 |
 
-> Note: In this document, home, HOME are equivalent to HOM
+> 注：本文档中home、HOME等效于HOM
 
-#### 1.2 TCH Teaching Interface
+#### 1.2 TCH示教界面
 
-Mark wafer cassette position coordinates.
+标记晶圆盒位置坐标。
 
 ![](./assets/gqosdshf8iqk4b0pnzyo_.png)
 
-| Parameter | Description |
+| 参数 | 说明 |
 | :--- | :--- |
-| Station Number | The number of selectable wafer cassettes matches the total cassette count, and names are consistent. Each station saves the corresponding TCH coordinate parameters |
-| TCH Current Mark Status | Divided into "Unmarked" and "Marked". By clicking the "Modify" button, then clicking "Save" or "Mark Current Point" button, status can be changed from "Unmarked" to "Marked" |
-| Joint Coordinates | Range: J1, J2, J4, J5, J6, J7 are [-20000, 20000] mm; J3 is [-20000, 20000] degrees. Operation: Can be manually entered or obtained via "Mark Current Point" button |
-| Cartesian Coordinates | Range: X, Y, Z, H are [-20000, 20000] mm; U is [-3.14, 3.14] rad. Operation: Can be manually entered or obtained via "Mark Current Point" button |
-| Mark Current Point | Under a station number, clicking blade 1 mark current point will write the robot's current machine coordinate value to the station's blade 1 and mark it |
-| Move to TCH | In servo ready state, after powering on, click "Move to TCH" button. Robot will move to the previously marked TCH point |
+| 工号 | 可选择的晶圆盒个数与晶圆盒总数一致，名称也保持一致。每个工号均保存该工号下的对应TCH坐标参数 |
+| TCH当前标记状态 | 分为"未标记"和"已标记"两种。通过点击"修改"按钮，再点击"保存"或"标记当前点"按钮，可以将状态从"未标记"变为"已标记" |
+| 关节坐标 | 范围：J1, J2, J4, J5, J6, J7 为 \[-20000, 20000\] mm；J3 为 \[-20000, 20000\] °。操作：可以手动填写或通过"标记当前点"按钮获取当前位置 |
+| 直角坐标 | 范围：X, Y, Z, H 为 \[-20000, 20000\] mm；U 为 \[-3.14, 3.14\] rad。操作：可以手动填写或通过"标记当前点"按钮获取当前位置 |
+| 标记当前点 | 在某一工号下点击片叉1标记当前点，会将机器人的当前机器坐标值写入当前工号的片叉1并标记 |
+| 移动至TCH | 在伺服就绪状态下，上电后点击"移动至TCH"按钮，机器人会移动到之前标记的TCH点 |
 
-#### 1.3 Wafer Cassette Configuration Interface
+#### 1.3 晶圆盒配置界面
 
-> Configure wafer cassette type, capacity, interlock detection IO parameters.
+> 配置晶圆盒类型、容量、互锁检测IO参数。
 
 ![](./assets/ppkhqsdzlo0sde2ndafzb.png)
 
-| Parameter | Range/Options | Description |
+| 参数 | 范围/选项 | 说明 |
 | :--- | :--- | :--- |
-| Current Station | Matches total wafer cassette count, default box_xx | Can remove unnecessary stations via delete button at bottom of interface, but must retain at least one station. System reports error when deleting the last station |
-| Station Type | PA (Process Application) / Cassette | Station type |
-| Station Setting (Station Name) | Must start with letter, only letters, numbers, underscores allowed | Default named in box_xx format. Note station names cannot be duplicated. After modification and save, current station name changes accordingly |
-| Inner Layers | [1, 99] layers, default 1 layer | Number of layers inside wafer cassette |
-| Layer Spacing | [1, 1000] mm, default 10mm | Distance between each layer |
-| Interlock Function | Enable / Disable | When enabled, system reads specific IO signals to determine if workstation is in interlock state. Detecting interlock triggers alarm blockage, and outputs release signal after clearing |
-| Interlock IO_DIN | 1-1 ~ 1-16 / None | Select input IO signal for determining workstation interlock state |
-| IO_DIN Enable Method | 1: High enable / 0: Low enable | High enable means DIN signal is 1 (high level) when workstation is interlocked |
-| Interlock IO_OUT | 1-1 ~ 1-16 / None | Select output IO signal for determining workstation interlock state |
-| IO_OUT Enable Method | 1: High enable / 0: Low enable | High enable means DOUT signal is 1 (high level) when workstation is interlocked |
+| 当前工号 | 与晶圆盒总个数一致，默认box_xx | 可通过界面下方的删除按钮移除不需要的工位，但必须至少保留一个工位。当删除最后一个工位时系统报错 |
+| 工号类型 | PA（处理应用）/ Cassette（晶圆盒） | 工号的类型 |
+| 工号设置（工号名称） | 必须以字母开头，只允许字母、数字、下划线 | 默认以box_xx的形式命名。注意工位名称不可重复，修改后保存，当前工号名称随之改变 |
+| 内部层数 | \[1, 99\]层，默认1层 | 晶圆盒内部的层数 |
+| 层间距 | \[1, 1000\]mm，默认10mm | 每层之间的距离 |
+| 互锁功能 | 开启 / 关闭 | 开启时，系统通过读取特定IO信号判断工作台是否处于互锁状态。检测到互锁则报警阻塞，解除后输出解除信号 |
+| 互锁功能IO_DIN | 1-1 ~ 1-16 / 无 | 选择用于判断工作台是否处于互锁状态的输入IO信号 |
+| IO_DIN使能方式 | 1：高使能 / 0：低使能 | 高使能表示DIN信号为1（高电平）时工作台互锁 |
+| 互锁功能IO_OUT | 1-1 ~ 1-16 / 无 | 选择用于判断工作台互锁状态的输出IO信号 |
+| IO_OUT使能方式 | 1：高使能 / 0：低使能 | 高使能表示DOUT信号为1（高电平）时工作台互锁 |
 
-> Notes: Ensure station name is unique; set appropriate layer count and layer spacing; recommend enabling interlock function for enhanced safety; select appropriate IO signal and enable method.
+> 注意事项：确保工号名称唯一；设置合适的层数和层间距；建议开启互锁功能增强安全性；选择适当的IO信号和使能方式。
 
-#### 1.4 Blade Configuration Interface
+#### 1.4 片叉配置界面
 
-> Configure various sensor parameters on multi-blade.
+> 配置多片叉上各种传感器参数。
 
 ![](./assets/wwbhmba8_rg_dan0peq3y.png)
 
-| Parameter | Range/Options | Description |
+| 参数 | 范围/选项 | 说明 |
 | :--- | :--- | :--- |
-| Blade Number | 1, 2, 3, 4 (matches global configuration) | Select blade to configure |
-| Gripper Control IO_DOUT | 1-1 ~ 1-16 / None | Enable method: High enable (1) or Low enable (0). When gripper detects wafer presence, system outputs this IO_DOUT signal |
-| Detect Wafer Presence | Enable / Disable | When enabled, system detects if wafer is present in gripper |
-| Detection IO_DIN | 1-1 ~ 1-16 / None | Enable method: High enable (1) or Low enable (0). Select input signal for detecting wafer presence |
-| Detect Wafer Protrusion | Enable / Disable | When enabled, system detects if wafer is protruding (correctly placed in gripper) |
-| Protrusion Detection IO Count | - | Select number of input signals for detecting wafer protrusion |
-| Protrusion Detection IO_DIN_1 ~ 4 | 1-1 ~ 1-16 / None | Enable method: High enable (1) or Low enable (0). Correspond to 1st~4th IO input signals for detecting wafer protrusion |
-| Use Mapping Sense | Enable / Disable | Pre-research function (not yet implemented). When enabled, determines wafer position and state based on preset mapping rules, improving pick-and-place accuracy and safety |
+| 片叉号 | 1, 2, 3, 4（与全局配置一致） | 选择需要配置的片叉 |
+| 夹爪控制IO_DOUT | 1-1 ~ 1-16 / 无 | 使能方式：高使能（1）或低使能（0）。夹爪检测到晶圆片存在时，系统输出此IO_DOUT信号 |
+| 检测有无晶圆片 | 开启 / 关闭 | 选择开启时，系统会检测夹爪中是否有晶圆片存在 |
+| 检测有无IO_DIN | 1-1 ~ 1-16 / 无 | 使能方式：高使能（1）或低使能（0）。选择检测晶圆片是否存在的输入信号 |
+| 检测晶圆片是否突出 | 开启 / 关闭 | 开启时系统会检测晶圆片是否突出（正确放置于夹爪内） |
+| 检测突出IO个数 | - | 选择用于检测晶圆片突出的输入信号个数 |
+| 检测突出IO_DIN_1 ~ 4 | 1-1 ~ 1-16 / 无 | 使能方式：高使能（1）或低使能（0）。分别对应第1~4个检测晶圆片突出的IO输入信号 |
+| 使用Maping Sense | 开启 / 关闭 | 预研功能（暂未实现），启用时根据预设映射规则判断晶圆位置和状态，提高取放精度和安全性 |
 
-#### 1.5 Point Offset Interface
+#### 1.5 点位偏移界面
 
-> Configure trajectory point offset parameters for pick-and-place from this wafer cassette.
+> 配置从该晶圆盒中取放片的轨迹点偏移参数。
 
 ![](./assets/ttwmre7vubcaj0kea3tz0.png)
 
-| Parameter | English Full Name | Range | Description |
+| 参数 | 英文全称 | 范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-| Current Cassette Station | - | - | Currently operated wafer cassette number. Selected via dropdown, displays corresponding cassette parameters after selection |
-| UOFF | Upper Offset | [0, 15] mm | Z-axis distance from teach position to upper path. Upper offset for adjusting position deviation of cassette top relative to robot |
-| LOFF | Lower Offset | [0, 15] mm | Z-axis distance from teach position to lower path. Lower offset for adjusting position deviation of cassette bottom relative to robot |
-| GCNF | Global Configuration Offset | [0, 15] mm | Tool coordinate Y-axis distance from teach position to rising path. Global configuration offset for adjusting overall cassette position relative to robot |
-| GOFF | Global Offset | [0, 15] mm | Tool coordinate Y-axis distance from teach position to wafer holding position. Global offset for adjusting overall cassette position relative to robot |
-| PADJ | Position Adjustment | [0, 15] mm | Tool coordinate Y-axis distance from teach position to wafer holding position. Position adjustment for fine-tuning cassette position relative to robot |
-| POFF | Position Offset | [0, 15] mm | Y-axis distance from wafer placement position to lower path end position. Position offset for adjusting cassette position relative to robot |
-| PCNF | Position Configuration | [0, 15] mm | Tool coordinate Y-axis distance from wafer placement position to holding position. Position configuration for configuring cassette position parameters relative to robot |
+| 当前晶圆盒工号 | - | - | 指当前正在操作的晶圆盒编号。通过下拉框选择，选择后显示对应晶圆盒的参数，后续操作针对该工号 |
+| UOFF | Upper Offset | \[0, 15\]mm | 从示教位置到上路径的Z轴方向距离。上部偏移量，用于调整晶圆盒顶部相对于机器人的位置偏差 |
+| LOFF | Lower Offset | \[0, 15\]mm | 从示教位置到下路径的Z轴方向距离。下部偏移量，用于调整晶圆盒底部相对于机器人的位置偏差 |
+| GCNF | Global Configuration Offset | \[0, 15\]mm | 从示教位置上升路径的工具坐标Y轴方向距离。全局配置偏移量，调整晶圆盒整体相对于机器人的位置偏差 |
+| GOFF | Global Offset | \[0, 15\]mm | 从示教位置到晶圆握持位置的工具坐标Y轴方向距离。全局偏移量，调整晶圆盒整体相对于机器人的位置偏差 |
+| PADJ | Position Adjustment | \[0, 15\]mm | 从示教位置到晶圆握持位置的工具坐标Y轴方向距离。位置调整，用于微调晶圆盒相对于机器人的位置 |
+| POFF | Position Offset | \[0, 15\]mm | 从晶圆放置位置到下路径下端位置的Y轴方向距离。位置偏移量，调整晶圆盒相对于机器人的位置偏差 |
+| PCNF | Position Configuration | \[0, 15\]mm | 从晶圆放置位置到握持位置的工具坐标Y轴方向距离。位置配置，用于配置晶圆盒相对于机器人的位置参数 |
 
-> The above offsets have a default initial value of 3mm, adjustable in positive or negative direction to ensure robot can accurately pick and place wafers.
+> 以上偏移量默认初始值为3mm，可正向或负向调整，确保机器人能准确取放晶圆。
 
-Manipulator states at each Location position during GETS action are shown below:
+GETS动作下各Location位置的机械手状态如下图所示：
 
 ![](./assets/xk2s9j6chrqhocofejsxz.png)
 
-GETS action parameters are shown below:
+GETS动作的参数如下图所示：
 
 ![](./assets/zgipbo8pw6nxa5bkaoxey.png)
 
-Manipulator states at each Location position during PUTS action are shown below:
+PUTS动作下各Location位置的机械手状态如下图所示：
 
 ![](./assets/nqqe3gdx5x3isuigvd6sa.png)
 
-PUTS action parameters are shown below:
+PUTS动作的参数如下图所示：
 
 ![](./assets/czgiibedblsjqpl8-_sje.png)
 
-#### 1.6 Joint Motion Interface
+#### 1.6 关节运动界面
 
-> Configure maximum speed for each joint under various working conditions.
+> 配置各种工况下每个关节的最大速度。
 
 ![](./assets/wtc5dwrfadoh19vpkq2-i.png)
 
-In this interface, J1-J7's 7 buttons can select different joints. Modify/save speed parameters for each joint under the following working conditions:
+在此界面J1-J7的7个按钮可以选择不同关节，修改/保存各关节在以下工况下的速度参数：
 
-- Host computer control mode: No-wafer speed, with-wafer speed, low speed, return HOM speed, low-speed area speed
-- Teach pendant control mode: Low speed, with-wafer speed, return HOM speed, low-speed area speed
+- 上位机控制模式：不带片速度、带片速度、低速、回HOM位速度、低速区域速度
+- 示教盒控制模式：低速、带片速度、回HOM位速度、低速区域速度
 
-| Parameter | Range | Description |
+| 参数 | 范围 | 说明 |
 | :--- | :--- | :--- |
-| J1, J2, J4, J5, J6, J7 Speed | (0, 1000] mm/s | Maximum speed for corresponding joint under various working conditions |
-| J3 Speed | (0, 1000] °/s | Maximum angular speed for J3 joint under various working conditions |
-| No-Wafer Speed | - | Robot motion speed when not carrying wafer, suitable for moving between stations |
-| With-Wafer Speed | - | Robot motion speed when carrying wafer, suitable for moving between stations |
-| Low Speed | - | Speed for moving to clamping position after picking wafer |
-| Return Home Speed | - | Robot axes motion speed when returning to HOM position |
-| Low-Speed Area Speed | - | Speed for lifting or lowering during pick-and-place process |
+| J1, J2, J4, J5, J6, J7速度 | (0, 1000\] mm/s | 对应关节在各工况下的最大速度 |
+| J3速度 | (0, 1000\] °/s | J3关节在各工况下的最大角速度 |
+| 不带片速度 | - | 机器人在不携带晶圆时的运动速度，适用于从工位运动到工位的过程 |
+| 带片速度 | - | 机器人携带晶圆时的运动速度，适用于从工位运动到工位的过程 |
+| 低速 | - | 拾取到晶圆后走到夹持位置的速度 |
+| 回home位速度 | - | 机器人各轴返回HOM位置时的运动速度 |
+| 在低速区域的速度 | - | 机器人取放片过程中上抬或者下降的速度 |
 
-#### 1.7 Linear Motion Interface (Linear motion currently only has jog speed and inch speed active)
+#### 1.7 直线运动界面（直线运动暂只有点动速度和寸动速度生效）
 
-> Configure maximum end-effector linear speed under various working conditions in linear motion.
+> 配置直线运动中，各种工况下的最大末端线速度。
 
 ![](./assets/jqoho2uhp_iio8nbaqt_q.png)
 
-In this interface, you can modify/save the system's linear motion speed, including:
+在此界面可以修改/保存系统的直线运动速度，包括：
 
-- Host computer control mode: No-wafer speed, with-wafer speed, low speed, return HOM speed, low-speed area speed
-- Teach pendant control mode: No-wafer speed, with-wafer speed, low speed, return HOM speed, low-speed area speed, teach pendant jog speed, inch speed
+- 上位机控制模式：不带片速度、带片速度、低速、回HOM位速度、低速区域速度
+- 示教盒控制模式：不带片速度、带片速度、低速、回HOM位速度、低速区域速度、示教盒点动速度、寸动速度
 
-| Parameter | Range | Description |
+| 参数 | 范围 | 说明 |
 | :--- | :--- | :--- |
-| No-Wafer Speed (except jog/inch) | [1, 5000] mm/s | Robot motion speed when not carrying wafer, mainly for blade extending or retracting during pick-and-place |
-| With-Wafer Speed | [1, 5000] mm/s | Robot motion speed when carrying wafer, mainly for blade extending or retracting during pick-and-place |
-| Low Speed | [1, 5000] mm/s | Speed for moving to clamping position after picking wafer |
-| Return Home Speed | [1, 5000] mm/s | Robot motion speed when returning to HOM position; since return HOM uses joint motion, this parameter is inactive |
-| Low-Speed Area Speed | [1, 5000] mm/s | Speed for lifting or lowering during pick-and-place process |
-| Teach Pendant Jog Speed | [1, 100] % | Global speed percentage limit when using teach pendant for jog operations |
-| Teach Pendant Inch Speed | [0.001, 10] mm/s | Maximum speed limit for robot inch (micro) operations |
+| 不带片速度（除点动/寸动） | \[1, 5000\] mm/s | 机器人在不携带晶圆时的运动速度，主要适用于取放片时片叉伸出或缩回过程 |
+| 带片速度 | \[1, 5000\] mm/s | 机器人携带晶圆时的运动速度，主要适用于取放片时片叉伸出或缩回过程 |
+| 低速 | \[1, 5000\] mm/s | 拾取到晶圆后走到夹持位置的速度 |
+| 回home位速度 | \[1, 5000\] mm/s | 机器人返回HOM位置时的运动速度；由于回HOM点使用关节运动，该参数不生效 |
+| 低速区域的速度 | \[1, 5000\] mm/s | 取放片过程中上抬或下降的速度 |
+| 示教盒点动速度 | \[1, 100\] % | 使用示教盒进行点动操作时的全局速度百分比限制 |
+| 示教盒寸动速度 | \[0.001, 10\] mm/s | 机器人寸动（微动）操作时的最大速度限制 |
 
-### 2. Control Interface
+### 2. 控制界面
 
-#### 2.1 Pick-and-Place Interface
+#### 2.1 取放片界面
 
-> Operate manipulator to pick/place wafer from selected wafer cassette.
+> 操作机械手去选中的晶圆盒中取片/放片。
 
 ![](./assets/npizxur5119g0ofjnzowj.png)
 
-| Parameter/Control | Range/Options | Description |
+| 参数/控件 | 范围/选项 | 说明 |
 | :--- | :--- | :--- |
-| Wafer Cassette Selection | Matches total wafer cassette count | Each station saves corresponding TCH coordinate parameters and point offset parameters |
-| Wafer Layer | Matches inner layers of corresponding station | Example: When box_03 inner layers is set to 20, layers 1~20 can be selected |
-| Action | GETS / PUTS / MOVP | GETS: Pick a wafer from cassette; PUTS: Place a wafer into cassette; MOVP: Move wafer without pick-and-place action, for simple movement between positions |
-| MOVP Target Position | GETS: GBH / PUTS: PBH | Only selectable when action is MOVP. Target position dropdown matches action |
-| Blade Selection | Matches total blade count | Can select one or more blades for pick-and-place. Example: When 3 blades configured, only blades 1~3 are selectable |
-| MOVE Button | - | In servo ready state, after powering on, click to execute corresponding operation based on selected action |
+| 晶圆盒选择 | 与晶圆盒总个数一致 | 每个工号均保存对应的TCH坐标参数和点位偏移参数 |
+| 晶圆片层 | 与对应工号的内部层数一致 | 示例：box_03内部层数设为20时，可选择1~20层 |
+| 动作 | GETS / PUTS / MOVP | GETS：从晶圆盒中取出一片晶圆；PUTS：将一片晶圆放入晶圆盒；MOVP：移动晶圆而不进行取放动作，用于晶圆在不同位置之间的简单移动 |
+| MOVP目标位 | GETS: GBH / PUTS: PBH | 仅当动作为MOVP时可选，目标点位下拉框与动作匹配 |
+| 片叉选择 | 与片叉总个数一致 | 可以选择一个或多个片叉进行取放动作。示例：配置3个片叉时仅片叉1~3可选 |
+| MOVE按钮 | - | 在伺服就绪状态下上电后点击，机器根据所选动作执行相应操作 |
 
-**Usage Flow:**
+**使用流程：**
 
-1. Select wafer cassette station
-2. Select wafer layer (within the station's inner layer range)
-3. Select action: GETS / PUTS / MOVP (if MOVP, also select target position)
-4. Select blade
-5. After servo ready and powered on, click MOVE button to execute
+1. 选择晶圆盒工号
+2. 选择晶圆片层（在该工号的内部层数范围内）
+3. 选择动作：GETS / PUTS / MOVP（若MOVP则同时选择目标位）
+4. 选择片叉
+5. 伺服就绪上电后，点击MOVE按钮执行
 
-#### 2.2 Return HOM Interface
+#### 2.2 回HOM界面
 
-> Operate manipulator to return to HOM position.
+操作机械手回HOM位置。
 
 ![](./assets/4i5pijtyaqlipoz5q6a_m.png)
 
-| Parameter/Control | Options | Description |
+| 参数/控件 | 选项 | 说明 |
 | :--- | :--- | :--- |
-| Return HOM Axis Group | ALL / Blade | ALL: All joints and blades are checked by default, entire robot returns to HOM; Blade: Checked count matches total blade count, only checked blades return to HOM |
-| BACK Button | - | After servo ready and powered on, click to execute return HOM based on selected return HOM group |
+| 回HOM轴组 | ALL / 片叉 | ALL：所有关节和片叉默认被勾选，整个机器人回到HOM位置；片叉：勾选数量与片叉总个数一致，仅被勾选的片叉回HOM位置 |
+| BACK按钮 | - | 伺服就绪上电后点击，机器根据所选回HOM组执行回HOM动作 |
 
-**Usage Flow:**
+**使用流程：**
 
-1. Select return HOM group: ALL or Blade (if Blade, check specific blades)
-2. After servo ready and powered on, click BACK button to execute return HOM
+1. 选择回HOM组：ALL或片叉（若选片叉则勾选具体片叉）
+2. 伺服就绪上电后，点击BACK按钮执行回HOM
 
-### 3. Communication Settings Interface
+### 3. 通讯设置界面
 
-> Configure communication parameters related to host computer control of manipulator.
+配置上位机控制机械手相关的通讯参数。
 
 ![](./assets/20f4uufuu36z31y7jwjbe.png)
 
-| Parameter | Range | Description |
+| 参数 | 范围 | 说明 |
 | :--- | :--- | :--- |
-| IP | - | Current controller IP address, identifies controller position in network, usually fixed and cannot be changed arbitrarily |
-| Port Number | [1, 65535] | Port used for communication between controller and external systems, adjustable based on actual communication needs |
-| Timeout Detection T1 | [1, 1000000] ms | Timeout detection time for communication phase, can be used for receiving data packet time limit |
-| Timeout Detection T2 | [1, 1000000] ms | Timeout detection time for communication phase, can be used for response time after sending commands |
-| Timeout Detection T3 | [1, 1000000] ms | Timeout detection time for communication phase, can be used for maximum wait time of entire communication cycle |
+| IP | - | 当前控制器的IP地址，标识控制器在网络中的位置，通常固定不可随意更改 |
+| 端口号 | \[1, 65535\] | 控制器与外部系统通信时使用的端口，可根据实际通讯需求调整 |
+| 超时检测T1 | \[1, 1000000\] ms | 通信阶段的超时检测时间，可用于接收数据包的时间限制 |
+| 超时检测T2 | \[1, 1000000\] ms | 通信阶段的超时检测时间，可用于发送指令后的响应时间 |
+| 超时检测T3 | \[1, 1000000\] ms | 通信阶段的超时检测时间，可用于整个通信周期的最长等待时间 |
 
-> Usage scenario: Port number is usually used for establishing TCP/IP connection with host computer; timeout detection ensures communication stability and reliability.
+> 使用场景：端口号通常用于与上位机建立TCP/IP连接；超时检测确保通信的稳定性和可靠性。
+>
+> 注意事项：确保端口号不与其他服务冲突；与外部系统兼容；合理设置超时时间以提高通信效率。
 
-> Notes: Ensure port number doesn't conflict with other services; compatible with external systems; set reasonable timeout to improve communication efficiency.
+### 4. 自动找零配置界面
 
-### 4. Auto Homing Configuration Interface
+机器人零点是机器人坐标系的基准点，是机器人运动过程中需要定位和记录的重要位置。由于环境因素（温度、湿度、气压等）或外界干扰，机器人可能出现误差或偏移。通过调零操作，无需更改已存入的工位TCH点坐标，只需保证零点位IO传感器位置固定（核心原理：零点与TCH点在空间上的偏移始终保持一致）即可确保机器人点位准确。
 
-Robot zero point is the reference point of the robot coordinate system, an important position that needs to be located and recorded during robot motion. Due to environmental factors (temperature, humidity, air pressure, etc.) or external interference, robot may have errors or offsets. Through homing operation, there is no need to change the stored station TCH point coordinates. Just ensure the zero point IO sensor position is fixed (core principle: offset between zero point and TCH point in space remains consistent) to ensure robot position accuracy.
-
-#### 4.1 Auto Homing Function Interface and Logic Introduction
+#### 4.1 自动找零功能界面和逻辑介绍
 
 ![](./assets/1bcg5iuxgmxatweshxw4w.png)
 
-| Control/Status | Description |
+| 控件/状态 | 说明 |
 | :--- | :--- |
-| Value | Current joint coordinate of the axis. After clicking [Homing] or [One-Key Homing], value briefly becomes "0" (no actual meaning). After successful homing, current position is marked as "0.000" |
-| Individual Return Zero | To return a specific axis to zero, first power on the robot then click "Return Zero" |
-| Individual Homing | No power needed, only servo ready required. Click homing to execute homing for single axis |
-| Homing Status | "Incomplete" for unhomed or failed homing, "Homing Complete" for successful homing |
+| 数值 | 该轴当前的关节坐标。点击【找零】或【一键找零】后数值短时间变为"0"（无实际意义），找零成功后当前点位被标记为"0.000" |
+| 单独回零 | 若想将某个轴回零点，需要先给机器人上电再点"回零" |
+| 单独找零 | 无需上电，只需伺服就绪，点击找零即可对单个轴执行找零 |
+| 找零状态 | 未找零或找零失败显示"未完成"，找零成功显示"找零完成" |
 
-**Homing Logic (Two Retractions, Two Homings):**
+**找零逻辑（两次回退，两次找零）：**
 
-| Step | Action | Description |
+| 步骤 | 动作 | 说明 |
 | :--- | :--- | :--- |
-| 1 | Switch Servo Mode | Click homing, servo mode changes from CSP (Cyclic Synchronous Position mode) to PV (Profile Velocity mode) |
-| 2 | First Retraction | Axis moves in reverse direction of homing direction for a retraction distance |
-| 3 | First Homing | After retraction completes, moves toward homing direction until homing IO signal is triggered |
-| 4 | Second Retraction | After triggering IO signal, turns back and retraces in reverse homing direction, distance same as retraction distance |
-| 5 | Second Homing | After retraction completes, moves toward homing direction again. When IO signal is triggered, marks current encoder position as zero point. Servo mode returns from PV to CSP |
-| 6 | Stop Motion | Robot immediately stops moving |
+| 1 | 切换伺服模式 | 点击找零，伺服模式由CSP（周期同步位置模式）变为PV（轮廓速度模式） |
+| 2 | 第一次回退 | 轴向找零方向的反方向移动一段回退距离 |
+| 3 | 第一次找零 | 回退完成后向找零方向移动，直至触碰找零IO信号 |
+| 4 | 第二次回退 | 触碰IO信号后折返向找零反方向回退，距离同为回退距离 |
+| 5 | 第二次找零 | 回退完成后再次向找零方向移动，触碰IO信号时将当前编码器位置标记为零点，伺服模式由PV回到CSP |
+| 6 | 停止运动 | 机器人立刻停止运动 |
 
-> Note: Homing function requires servo status to be in "Ready" state.
+> 注意：找零功能需要伺服状态处于"就绪"状态。
 
-#### 4.2 Return Zero Configuration Page
+#### 4.2 回零配置页
 
 ![](./assets/wqkmgufad3wyccqe2u7dq.png)
 
-| Parameter | Description |
+| 参数 | 说明 |
 | :--- | :--- |
-| Homing Direction | Direction where sensor is placed on the axis. If sensor faces positive direction of axis, fill "Positive Limit", otherwise fill "Negative Limit". Positive direction of each axis can be viewed in Settings - Robot Parameters - DH Parameters |
-| Return Zero Order (Priority) | Used for one-key homing and sequential return zero. Robot executes homing in order of filled priority. If you want J4-J7 to start homing simultaneously, set these 4 axes to same priority |
-| Retraction Distance | Retraction distance to execute when axis performs homing (unit mm or degrees), retraction direction is opposite to homing direction |
-| Trigger IO | IO port number where the axis IO sensor is connected |
-| Enable Method | High enable or low enable. Example: When J1 moves toward homing direction and triggers sensor, IO changes from 0→1 (low to high), it is high enable |
-| Homing Wait Time | Maximum time limit for entire homing process, preventing unlimited homing operation |
+| 找零方向 | 传感器放置在该轴的方向。若传感器朝向该轴正方向，则填"正限位"，反之填"负限位"。各轴正方向可查看设置-机器人参数-DH参数 |
+| 回零顺序（优先级） | 一键找零和按序回零时使用。机器人按所填优先级依次执行找零。若希望J4-J7同时开始找零，可将这4个轴优先级设为相同 |
+| 回退距离 | 某轴执行找零时需要执行的回退距离（单位mm或°），回退方向为找零方向的反方向 |
+| 触发IO | 该轴IO传感器接入的IO端口号 |
+| 使能方式 | 高使能或低使能。例如：J1向找零方向移动触发传感器的瞬间IO由0→1（低变高），则为高使能 |
+| 找零等待时间 | 整个找零过程的最长时间限制，防止找零操作无限制进行 |
 
-> Note: To avoid blade staying at HOM position when robot body moves, it is recommended that J1, J2, J3 priorities are higher than J4-J7.
+> 注：为了避免机器人本体移动时片叉保持在HOM位，建议J1、J2、J3的优先级高于J4-J7。
 
-#### 4.3 One-Key Homing, Pause Homing and Sequential Return Zero
+#### 4.3 一键找零、暂停找零和按序回零
 
-| Control | Description |
+| 控件 | 说明 |
 | :--- | :--- |
-| One-Key Homing | Same logic as single axis homing, but places all 7 axes into homing queue at once, homing in priority order, saving homing time and improving efficiency |
-| Pause Homing | During homing, if emergency occurs, click pause homing to immediately end homing task and stop motion |
-| Sequential Return Zero | Requires servo powered on to execute, returns to zero point in order of each axis priority |
+| 一键找零 | 与单轴找零逻辑相同，但一次性将7个轴放入找零队列，按优先级依次找零，节省找零时间，提高效率 |
+| 暂停找零 | 找零过程中遇紧急情况，点击暂停找零可立即结束找零任务并停止运动 |
+| 按序回零 | 需要伺服上电后执行，按各轴优先级依次回到零点 |
 
-#### 4.4 Homing Function Notes
+#### 4.4 找零功能的注意点
 
-| Serial | Notes |
+| 序号 | 注意事项 |
 | :--- | :--- |
-| 1 | After homing task starts, keep hand on emergency stop button. Press immediately in emergency for safety |
-| 2 | Homing preset speed: First homing 15mm/s, second homing 5mm/s, retraction speed 10mm/s. If speed is too slow causing timeout, adjust homing wait time |
-| 3 | Safety speed limit: Homing speed cannot exceed 70% of servo pulse. If exceeded, moves at 70% |
-| 4 | After successful homing, use zero point offset function to fill -305 degrees in J3 (specific offset depends on sensor position), click J3's [Set as Zero Point] to ensure 3-axis blade direction matches model diagram (facing X-axis positive direction) |
+| 1 | 找零任务开启后，请将手放在急停按钮上，遇紧急情况立即按下确保安全 |
+| 2 | 找零预置速度：第一次找零15mm/s，第二次找零5mm/s，回退速度10mm/s。若速度太慢导致超时，请调整找零等待时间 |
+| 3 | 安全速度限制：找零速度不能超过伺服脉冲的70%，超出则按70%运动 |
+| 4 | 找零成功后，请使用零点偏移功能在J3填写-305°（具体偏移视传感器位置而定），点击J3的【设为零点】，确保3轴片叉朝向与模型图一致（朝向X轴正方向） |
 
 ![](./assets/a3fwlpaprnshlgn6uvuji.png)
 
-## 2. Pick-and-Place Logic Introduction
+## 二、取放片逻辑介绍
 
-### 1. GETS Action (Pick)
+### 1. GETS动作（取片）
 
 ![](./assets/sowvpbywlgyv0jbyhqrlm.png)
 
-| Point Name | English Meaning | Description |
+| 点位名称 | 英文含义 | 说明 |
 | :--- | :--- | :--- |
-| TCH | Teach Position | Teaching position |
-| GBH | Get Before Hold | Standby position before wafer pickup |
-| GBX | Get Before eXtended | Extended position before wafer pickup |
-| GWX | Get Wafer eXtended | Extended position at wafer pickup height (pick wafer here) |
-| GAX | Get After eXtended | Extended position after wafer pickup |
-| GAC | Get After Carry | Wafer holding position |
-| GAH | Get After Hold | Standby position after wafer pickup |
+| TCH | Teach Position | 示教位置 |
+| GBH | Get Before Hold | 晶圆拾取动作前的待机位置 |
+| GBX | Get Before eXtended | 晶圆拾取动作前的伸出位置 |
+| GWX | Get Wafer eXtended | 晶圆拾取高度的伸出位置（此处取片） |
+| GAX | Get After eXtended | 晶圆拾取动作后的伸出位置 |
+| GAC | Get After Carry | 晶圆握持位置 |
+| GAH | Get After Hold | 晶圆拾取动作后的待机位置 |
 
-#### Pick Logic (Speed reference sections 1.6, 1.7)
+#### 取片逻辑（速度参考1.6、1.7节）
 
-| Step | Action | Speed | Description (Purpose) |
+| 步骤 | 动作 | 速度 | 说明（目的） |
 | :--- | :--- | :--- | :--- |
-| 1 | Return to TCH and HOM points | J1~J3: Joint motion [No-wafer speed]; J4~J7: Joint motion [Return home speed] | Ensure robot returns to known safe position before picking |
-| 2 | Move to GBH point | Joint motion [No-wafer speed] | Prepare to enter pick process |
-| 3 | Check blade has wafer IO | - | Detect if tool hand already has wafer; if yes, report error and stop, ensure no wafer on tool hand before picking |
-| 4 | Check workstation interlock IO | - | If workstation is interlocked, report error and stop; otherwise allow entering GBX point, ensure safety conditions |
-| 5 | Move to GBX point (output interlock signal first) | Linear motion [No-wafer speed] | Extend blade to front of wafer cassette ready for pickup |
-| 6 | Move to GWX point | Linear motion [Low-speed area speed] | Lower to pickup height, pick wafer at GWX point |
-| 7 | Check blade protrusion IO | - | Only check when blade is at HOM position, ensure wafer correctly placed during station movement |
-| 8 | Move to GAX point | Linear motion [Low-speed area speed] | Lift wafer out of card slot |
-| 9 | Move to GAC→GAH points | Linear motion [With-wafer speed] | Retract blade and extract wafer |
-| 10 | Check wafer presence after reaching GAH point | - | If no wafer on tool hand, report pick failure, confirm pick success |
-| 11 | Release workstation interlock output | - | Pick operation complete, this workstation allows other machines to enter |
+| 1 | 回到TCH点和HOM点 | J1~J3：关节运动【不带片速度】；J4~J7：关节运动【回home位速度】 | 确保机器人回到已知的安全位置开始取片 |
+| 2 | 移动到GBH点 | 关节运动【不带片速度】 | 准备进入取片流程 |
+| 3 | 判断片叉有片的IO | - | 检测工具手上是否已有晶圆片；若有则报错停止，确保取片前工具手无片 |
+| 4 | 判断工作台互锁IO | - | 若工作台处于互锁状态则报错停止；否则允许进入GBX点，确保安全条件 |
+| 5 | 移动到GBX点（前先输出互锁信号） | 直线运动【不带片速度】 | 将片叉伸出到晶圆盒前方准备取片 |
+| 6 | 移动到GWX点 | 直线运动【低速区域的速度】 | 下降到取片高度，在GWX点取片 |
+| 7 | 检测片突IO | - | 片叉在HOM位才检测，确保工位间移动时晶圆正确放置 |
+| 8 | 移动到GAX点 | 直线运动【低速区域的速度】 | 将晶圆片向上抬出卡槽 |
+| 9 | 移动到GAC→GAH点 | 直线运动【带片速度】 | 缩回片叉并取出晶圆片 |
+| 10 | 到达GAH点后检查有片 | - | 若工具手上无片则报错取片失败，确认取片成功 |
+| 11 | 解除工作台互锁输出 | - | 取片操作结束，该工作台允许其他机器进入 |
 
-### 2. PUTS Action (Place)
+### 2. PUTS动作（放片）
 
 ![](./assets/awj3pw8vm9dwatmnr704k.png)
 
-| Point Name | English Meaning | Description |
+| 点位名称 | 英文含义 | 说明 |
 | :--- | :--- | :--- |
-| PBH | Put Before Hold | Standby position before wafer placement |
-| PBX | Put Before eXtended | Extended position before wafer placement |
-| PWX | Put Wafer eXtended | Extended position at wafer placement height (place wafer here) |
-| PAX | Put After eXtended | Extended position after wafer placement |
-| PAC | Put After Carry | Wafer holding position |
-| PAH | Put After Hold | Standby position after wafer placement |
+| PBH | Put Before Hold | 晶圆放置动作前的待机位置 |
+| PBX | Put Before eXtended | 晶圆放置动作前的伸出位置 |
+| PWX | Put Wafer eXtended | 晶圆放置高度的伸出位置（此处放片） |
+| PAX | Put After eXtended | 晶圆放置动作后的伸出位置 |
+| PAC | Put After Carry | 晶圆握持位置 |
+| PAH | Put After Hold | 晶圆放置动作后的待机位置 |
 
-#### Place Logic (Speed reference sections 1.6, 1.7)
+#### 放片逻辑（速度参考1.6、1.7节）
 
-| Step | Action | Speed | Description (Purpose) |
+| 步骤 | 动作 | 速度 | 说明（目的） |
 | :--- | :--- | :--- | :--- |
-| 1 | Return to TCH and HOM points | J1~J3: Joint motion [With-wafer speed]; J4~J7: Joint motion [Return home speed] | Ensure robot returns to known safe position before placing |
-| 2 | Move to PBH point | Joint motion [With-wafer speed] | Prepare to enter place process |
-| 3 | Check blade has wafer IO | - | If no wafer on tool hand, report error and stop, ensure wafer present before placing |
-| 4 | Check workstation interlock IO | - | If workstation is interlocked, report error and stop; otherwise allow entering PBX point |
-| 5 | Check blade protrusion IO | - | Only check when blade is at HOM position, ensure wafer correctly placed during station movement |
-| 6 | Move to PBX point | Linear motion [Low-speed area speed] | Extend blade to front of wafer cassette ready for placement |
-| 7 | Move to PWX point | Linear motion [Low-speed area speed] | Lower to placement height, place wafer at PWX point |
-| 8 | Move to PAX point | Linear motion [Low-speed area speed] | Move blade down then retract |
-| 9 | Move to PAC→PAH points | Linear motion [No-wafer speed] | Retract blade and return to standby position |
-| 10 | Check wafer presence after reaching PAH point | - | If wafer still on tool hand, report place failure, confirm place success |
-| 11 | Release workstation interlock output | - | Place operation complete, this workstation allows other machines to enter |
+| 1 | 回到TCH点和HOM点 | J1~J3：关节运动【带片速度】；J4~J7：关节运动【回home位速度】 | 确保机器人回到已知的安全位置开始放片 |
+| 2 | 移动到PBH点 | 关节运动【带片速度】 | 准备进入放片流程 |
+| 3 | 判断片叉有片的IO | - | 若工具手上无片则报错停止，确保放片前确有晶圆片 |
+| 4 | 判断工作台互锁IO | - | 若工作台互锁则报错停止；否则允许进入PBX点 |
+| 5 | 检测片突IO | - | 片叉在HOM位才检测，确保工位间移动时晶圆正确放置 |
+| 6 | 移动到PBX点 | 直线运动【低速区域的速度】 | 将片叉伸出到晶圆盒前方准备放片 |
+| 7 | 移动到PWX点 | 直线运动【低速区域的速度】 | 下降到放片高度，在PWX点放片 |
+| 8 | 移动到PAX点 | 直线运动【低速区域的速度】 | 将片叉下移后抽出 |
+| 9 | 移动到PAC→PAH点 | 直线运动【不带片速度】 | 缩回片叉并回到待机位置 |
+| 10 | 到达PAH点后检查有片 | - | 若工具手上仍有片则报错放片失败，确认放片成功 |
+| 11 | 解除工作台互锁输出 | - | 放片操作结束，该工作台允许其他机器进入 |
 
-## 3. Host Computer Control
+## 三、上位机控制
 
-### 1. Preparation for Host Computer Control
+### 1. 上位机控制的准备操作
 
-#### Step 1: Wafer Cassette Configuration
+#### 第一步：晶圆盒配置
 
-Set wafer-related parameters in teach pendant's wafer cassette configuration interface:
+在示教器的晶圆盒配置界面设置有关晶圆的参数：
 
-| Configuration Item | Description |
+| 配置项 | 说明 |
 | :--- | :--- |
-| Wafer Cassette Parameters | Set basic information such as cassette type, size, etc. |
-| Blade Parameters | Configure blade position, size and other parameters related to wafer gripping |
-| Point Offset Parameters | Set offset values for different positions inside cassette to ensure robot can accurately locate each wafer |
-| TCH Point | Define reference point when contacting wafer, ensuring stability during processing |
-| HOM Point | Set robot's initial or safe position for returning during startup or reset |
-| Joint and Linear Motion Speed | Set robot joint movement speed and linear motion speed, ensuring operation is both fast and smooth |
+| 晶圆盒参数 | 设置晶圆盒的类型、尺寸等基本信息 |
+| 片叉参数 | 配置片叉的位置、尺寸以及其他与晶圆抓取相关的参数 |
+| 点位偏移参数 | 设置晶圆盒内不同位置的偏移量，确保机器人能够准确定位到每个晶圆 |
+| TCH点 | 定义接触晶圆时的参考点，确保晶圆在处理过程中的稳定性 |
+| HOM点 | 设定机器人的初始位置或安全位置，用于启动或复位时返回 |
+| 关节运动和直线运动速度 | 设置机器人各关节的移动速度以及直线运动速度，保证操作既快速又平稳 |
 
-#### Step 2: Teach Pendant Communication Settings
+#### 第二步：示教器通讯设置
 
-Set communication-related parameters in teach pendant's communication settings interface:
+在示教器的通讯设置界面设置通讯相关参数：
 
-| Configuration Item | Description |
+| 配置项 | 说明 |
 | :--- | :--- |
-| Controller IP Address | Confirm the IP address displayed on teach pendant is correct |
-| Port Number | Default is 12800 (if cannot be modified, ensure host computer software matches this port) |
-| Timeout Detection Time | Set based on actual communication needs to ensure data transmission reliability |
+| 控制器IP地址 | 确认示教器上显示的是正确的控制器IP地址 |
+| 端口号 | 默认为12800（若无法修改，确保上位机软件与此端口匹配） |
+| 超时检测时间 | 根据实际通信需求设置，确保数据传输可靠性 |
 
-#### Step 3: Host Computer Software Settings
+#### 第三步：上位机软件设置
 
-| Configuration Item | Description |
+| 配置项 | 说明 |
 | :--- | :--- |
-| Install Software | Ensure host computer software for wafer processing robot is installed |
-| IP Address | Fill in controller IP address |
-| Port Number | Fill in 12800 or other port matching host computer |
-| Other Parameters | Configure other communication parameters as needed |
-| Connection Test | Try to establish connection with controller, ensure communication is normal |
-| Command Configuration | Write or call control commands based on actual needs (move to specified position, read status, etc.) |
+| 安装软件 | 确保已安装适用于晶圆处理机器人的上位机软件 |
+| IP地址 | 填写控制器的IP地址 |
+| 端口号 | 填写12800或其他与上位机匹配的端口号 |
+| 其他参数 | 根据需要配置其他通信参数 |
+| 连接测试 | 尝试与控制器建立连接，确保通信正常 |
+| 命令配置 | 根据实际需要编写或调用控制命令（移动到指定位置、读取状态等） |
 
-#### Step 4: Communication Debugging
+#### 第四步：通讯调试
 
-| Step | Description |
+| 步骤 | 说明 |
 | :--- | :--- |
-| Switch Mode | Switch teach pendant to "Run Mode" |
-| Host Command Sending | Enter commands in host computer software for debugging, can write scripts to automatically send loop commands |
-| Monitor Feedback | Observe controller response, check if working as expected |
+| 切换模式 | 将示教器切换至"运行模式" |
+| 上位机命令发送 | 在上位机软件中输入命令进行调试，可编写脚本自动发送循环命令 |
+| 监控反馈 | 观察控制器的响应情况，检查是否按预期工作 |
 
-### 2. Host Computer Supported Commands
+### 2. 上位机支持的命令
 
-#### 2.1 Command Sequence
+#### 2.1 命令顺序
 
-| Type | Symbol/Description | Description |
+| 类型 | 符号/描述 | 说明 |
 | :--- | :--- | :--- |
-| Command Delimiter (Primary Message) | `<` | Information flow start mark |
-| Command Delimiter | `>` | Information flow end mark |
-| Command Delimiter | `,` (comma) | Parameter separator |
-| Command Delimiter | CRLF (Carriage Return + Line Feed) | Command message end mark |
-| Ack (Secondary Message) | Sent after syntax check | Robot sends Ack after receiving command, confirmation contains same MesID as command |
-| Ack Error Status | Busy | Robot is busy executing previous command |
-| Ack Error Status | Checksum Error | Checksum is incorrect |
+| 命令分隔符（一次信息） | `<` | 信息流开始标记 |
+| 命令分隔符 | `>` | 信息流结束标记 |
+| 命令分隔符 | `，`（逗号） | 参数分隔符 |
+| 命令分隔符 | CRLF（回车+换行） | 命令信息结束标记 |
+| Ack（二次信息） | 校验语法后发送 | 机器人收到命令后发送Ack，确认信息包含与命令相同的MesID |
+| Ack错误状态 | Busy | 机器人正忙于执行上一个命令 |
+| Ack错误状态 | 校验和错误 | 校验和不正确 |
 
-- If command syntax is incorrect, returns illegal command or invalid parameter error.
+- 如果命令语法不正确，返回非法命令或无效参数错误。
 
-- If unexpected "LF" is detected in command, returns illegal format error.
+- 如果在命令中检测到意外的"LF"，则返回非法格式错误。
 
-**Note: Ack Code Command List**
+**注：Ack Code 命令一揽表**
 
 ![](./assets/slvdxc7r2la9fxs32ezo4.png)
 
-**3. Response: Completion Message (sent after command execution completes)**
+**3.Response：完成信息（命令执行完成后发送）**
 
-- Returns immediately after command ends.
+- 在命令结束后立即返回。
 
-- Completion message MesID is the same as the running command's MesID:
+- 完成信息的MesID与运行命令的MesID相同：
 
-- If command executes successfully, returns <MesID,Success> or <MesID,Success,ResultData> in completion message
+- 如果命令成功执行，则在完成信息中返回\<MeslD,Success\>或\<MeslD,Success,ResultData\>
 
-- If command execution fails, returns <MesID,Error,Error#,DeviceCode,ErrorMessage> in completion message
+- 如果命令执行失败，则在完成信息中返回\<MeslD,Error,Error#,DeviceCode,ErrorMessage\>
 
-#### 2.2 Command Syntax
+#### 2.2命令语法
 
-##### 2.2.1 Terminology List
+##### 2.2.1 术语一览表
 
-| Parameter Name | Parameter Data | Description |
+| 参数名称 | 参数数据 | 说明 |
 | :--- | :--- | :--- |
-| RobotCode | R1 | Robot 1 |
-| | R2 | Robot 2 |
-| HandCode | H1 | Tool Hand 1 |
-| | H2 | Tool Hand 2 |
-| | H3 | H1-F: Uses hexadecimal to determine which tool hand to use, e.g., H3,3 = 0011, selects tool hand 1 and 2 |
-| JointCode | J1 | First axis |
-| | J2 | Second axis |
+| RobotCode | R1 | 机器人1 |
+| | R2 | 机器人2 |
+| HandCode | H1 | 工具手1 |
+| | H2 | 工具手2 |
+| | H3 | H1-F：采用16进制的方式确定哪个工具手来做，如H3,3 = 0011，选择的是工具手1和工具手2 |
+| JointCode | J1 | 第一轴 |
+| | J2 | 第二轴 |
 | | ... | ... |
-| | J7 | Seventh axis |
-| ModeCode | REAL | Confirm wafer presence during action (normal action) |
-| | SIMU | Don't confirm wafer presence during action (test action) |
-| SenseCode | 0 | No wafer |
-| | 1 | Wafer present |
-| | U | Wafer presence unknown |
-| | E | Error state |
-| Slot# | 1 | Slot 1 |
-| | 2 | Slot 2 |
-| | N | Slot N (N max=50) |
-| Station Code | P1 | Station 1 |
-| | P2 | Station 2 |
-| | Pn | Station N |
-| StatusCode | Rdy | Ready (servo on) state |
-| | Bsy | Busy (robot action in progress) state |
-| | Off | Servo disconnected state |
-| | Err | Error state |
-| | Tch | Teach mode |
-| LocationCode | GBH...GAH | Action positions during pickup |
-| | PBH...PAH | Action positions during placement |
-| ErrorCount | 1 to 10 | Error history number |
+| | J7 | 第七轴 |
+| ModeCode | REAL | 动作时确认晶圆有无（通常动作） |
+| | SIMU | 动作时不确定晶圆有无（测试动作） |
+| SenseCode | 0 | 无晶圆 |
+| | 1 | 有晶圆 |
+| | U | 晶圆有无未知 |
+| | E | 错误状态 |
+| Solt# | 1 | Solt 1 |
+| | 2 | Solts 2 |
+| | N | Solt N（N最大=50） |
+| Station Code | P1 | 工号1 |
+| | P2 | 工号2 |
+| | Pn | 工号N |
+| StatusCode | Rdy | Ready（伺服开启）状态 |
+| | Bsy | Busy（机器人动作中）状态 |
+| | Off | 伺服断开状态 |
+| | Err | 错误状况 |
+| | Tch | 示教模式 |
+| LocationCode | GBH...GAH | 拾取动作时的各动作位置 |
+| | PBH...PAH | 放置动作时的各动作位置 |
+| ErrorCount | 1至10 | 错误履历编号 |
 
-##### 2.2.2 Command Format (Partial)
+##### 2.2.2命令格式(部分)
 
-**CSTA**: Report Composite Status
+**CSTA** ：报告复合状态
 
-- Function: Report current composite status.
+- 功能：报告当前的复合状态。
 
-- Syntax: "CSTA, DeviceCode"
+- 语法："CSTA, DeviceCode"
 
-DeviceCode: "R1" = Robot 1;
+DeviceCode："R1"=机器人1;"
 
 - Ack "Ack"
 
-- Response "Success,CombinedAlignerResponse" (Robot)
+- Response "Success,CombinedAlignerResponse\"(机器人)
 
 "Success,R1, StatusCode, H1, ChuckCode, SenseCode, H2.ChuckCode,
-SenseCode" (If manipulator 2 does not exist, no data after "H2".)
+SenseCode"(如果机械手2不存在，则在"H2"之后没有数据。)
 
-**GETS**: Pick Wafer
+**GETS**：拾取晶圆
 
-- Function: Pick wafer from specified slot of specified station.
+- 功能：从指定工位的指定插槽拾取晶圆。
 
-- Syntax: "GETS, RobotCode, HandCode, StationCode, Slot#" Command
+- 语法："GETS, RobotCode, HandCode, StationCode, Slot#"Command
 
-RobotCode: "R1" = Robot 1, "R2" = Robot 2
+RobotCode："R1"= 机器人 1,"R2"=机器人 2
 
-HandCode: "H1" = Manipulator 1, "H2" = Manipulator 2
+HandCode："H1"= 机械手1,"H2"= 机械手2
 
-StationCode: "P1"-"P25" = Station 1 to 25
-
-- Ack "Ack"
-
-- Response
-
-"Success" (Normal end)
-
-"Success, CombinedRobotResponse" (When CSTARESPONSE is ON)
-
-"Error" (Error)
-
-**PUTS**: Place Wafer
-
-- Function: Place wafer into specified slot of specified station.
-
-- Syntax: "PUTS, RobotCode, HandCode, StationCode, Slot#"
+StationCode："P1"-"P25"= 工位1至 25
 
 - Ack "Ack"
 
 - Response
 
-"Success" (Normal end)
+"Success"(正常结束)
 
-"Success, CombinedRobotResponse" (When CSTARESPONSE is ON)
+"Success, CombinedRobotResponse"(CSTARESPONSE 为ON 时)
 
-"Error" (Error)
+"Error"(错误)
 
-**HOMH**: Move Manipulator and Joint Axes to Origin Position
+**PUTS**：放置晶圆
 
-- Function: Move manipulator and joint axes to origin position. Z-axis does not move to origin position.
+- 功能：把晶圆放置到指定工位的指定插槽
 
-- Syntax: "HOMH, RobotCode"
+- 语法："PUTS, RobotCode, HandCode, StationCode, Slot#"
+
+<!-- -->
 
 - Ack "Ack"
 
 - Response
 
-"Success" (Normal end)
+"Success"(正常结束)
 
-"Success, CombinedRobotResponse" (When CSTARESPONSE is ON)
+"Success, CombinedRobotResponse"(CSTARESPONSE 为ON 时)
 
-"Error" (Error)
+"Error(错误)
 
-**HOMA**: Move All Axes to Origin Position
+**HOMH**：将机械手轴和关节轴移动到原点位置
 
-- Function: Move all axes to origin position.
+- 功能：将机械手轴和关节轴移动到原点位置。Z轴不移到的原点位置。
 
-Robot: After moving manipulator and joint axes to origin position, move axes to specified origin position.
+- 语法："HOMH, RobotCode"
 
-Calibrator: Move rotation axis to 0 degree position.
+<!-- -->
 
-- Syntax: "HOMA, DeviceCode"
+- Ack "Ack"
 
-DeviceCode: "R1" = Robot 1, "R2" = Robot 2, "A1" = Calibrator 1
+- Response
 
-- Ack: "Ack" (Confirmation)
+"Success'(正常结束)
 
-- Response: "Success" (Normal end)
+"Success, CombinedRobotResponse"(CSTARESPONSE 为ON 时)
+
+"Error"(错误)
+
+**HOMA**：将所有轴移动到原点位置
+
+- 功能：将所有轴移动到原点位置。
+
+机器人：将机械手轴和关节轴移动到原点位置后，将轴移动到指定原点位置。
+
+校准器：将旋转轴移动到 0\[degree\]位置。
+
+- 语法："HOMA, DeviceCode"
+
+DeviceCode ："R1"=机器人1，"R2"= 机器人 2"A1"= 校准器1
+
+- Ack ："Ack"（确认）
+
+- Response："Success"(正常结束)
 
 "Success,CombinedRobotResponse" or
 
-"Success, CombinedAlignerResponse" (When CSTARESPONSE is ON)
+"Success, CombinedAlignerReponse"(CSTARESPONSE 为ON 时)
 
-"Error" (Error)
+"Error,(错误)
 
-**SENS**: Report Wafer Presence
+**SENS**：报告品圆的有无
 
-- Function: Report wafer presence on specified device.
+- 功能：报告指定装置上有无晶圆。
 
-- Syntax: "SENS, RobotCode, HandCode", "SENS, AlignerCode" (For calibrator)
-
-- Ack "Ack"
-
-- Response: "Success, SenseCode"
-
-SenseCode: "0" = No wafer, "1" = Wafer present, "U" = Wafer presence unknown, "E" = Error state (Sensor abnormality etc.)
-
-**STAT**: Report Specified Device Status
-
-- Function: Report specified device status.
-
-- Syntax: "STAT, DeviceCode"
+- 语法："SENS. RobotCode, HandCode"，"SENS,AlignerCode"(校准器时)
 
 - Ack "Ack"
 
-- Response: "Success, StatusCode"
+- Response："Success, SenseCode"
 
-StatusCode: "Rdy" = Ready state, "Bsy" = Busy (robot action in progress) state, "Off" = Servo disconnected state, "Er" = Error occurring, "Tch" = Operating with teach pendant
+SenseCode："0"= 无晶圆，"1"= 有晶圆，"U"=
+晶圆有无未知，"E"=错误状态(传感器异常等错误状态)
 
-**SERV**: Enable Servo
+**STAT**：报告指定设备的状态功能：报告指定设备的状态。
 
-- Function: Enable servo of specified device.
-
-- Syntax: "SERV, DeviceCode"
-
-- Ack "Ack"
-
-- Response: "Success" (Normal end), "Error" (Error)
-
-**STOP**: Disconnect Servo
-
-- Function: Decelerate stop when specified device is in action, and disconnect servo.
-
-- Syntax: "STOP, DeviceCode"
+- 语法："STAT, DeviceCode"
 
 - Ack "Ack"
 
-- Response "Success"
+- Response： "Success, StatusCode"
 
-**SSPD**: Set Robot Action Speed
+StatusCode："Rdy"= Ready 状态"Bsy"=Busy(机器人动作中)状态，"Of'=
+伺服断开状态，"Er"= 错误发生中，"Tch"=正在使用示教器进行操作
 
-- Function: Set robot action speed.
+**SERV**：开启伺服
 
-- Syntax: "SSPD, DeviceCode, SpeedData"
+- 功能：开启指定设备的伺服。
 
-SpeedData Unit: %, Range: 1.00 to 100.00
+- 语法："SERV, DeviceCode"
 
 - Ack "Ack"
 
-- Response "Success"
+- Response ："Success'(正常结束)，"Error"(错误)
 
-**RSPD**: Report Robot Action Speed Setting
+**STOP**：断开伺服功能：当指定设备正在动作时减速停止，并断开伺服。
 
-- Function: Report robot action speed setting.
+- 语法："STOP, DeviceCode"
 
-- Syntax: "RSPD, DeviceCode"
+- Ack "Ack"
+
+- Response"Success\*
+
+**SSPD**：设定机器人的动作速度功能：设定机器人的动作速度。
+
+- 语法："SSPD, DeviceCode, SpeedData"
+
+SpeedData 单位：%、范围：1.00至100.00
+
+- Ack "Ack"
+
+- Response"Success"
+
+**RSPD**：报告机器人的动作速度设定值功能：报告机器人的动作速度设定值。
+
+- 语法："RSPD, DeviceCode'
 
 - Ack "Ack"
 
 - Response "Success, SpeedData"
 
-SpeedData Unit: %, Range: 1.00 to 100.00
+SpeedData单位：%、范围：1.00至100.00
 
-**TCHP**: Teach Position
+**TCHP**：示教位置
 
-- Function: Perform position teaching on specified station's slot.
+- 功能：在指定工位的插槽上进行位置示教。
 
-Register current position as the specified station and slot's teaching position.
+将当前位置注册为指定工位和插槽的示教位置。
 
-Teaching position is saved in controller memory.
+示教位置保存在控制器的存储器中。
 
-- Syntax: "TCHP, RobotCode, HandCode, StationCode, Slot#"
-
-- Ack "Ack"
-
-- Response "Success" (Normal end), "Error" (Error)
-
-**SMOD**: Set Mode
-
-- Function: Set wafer presence confirmation mode.
-
-- Syntax: "SMOD, ModeCode"
-
-ModeCode: "Real" = Execute wafer presence confirmation. "Simu" = Don't execute wafer presence confirmation. "Simu" is used for confirming robot action.
+- 语法："TCHP.RobotCode, HandCode, StationCode, Slot#'
 
 - Ack "Ack"
 
-- Response: "Success" (Normal end), "Error" (Error)
+- Response "Success"(正常结束)，"Error"(错误)
 
-**RMOD**: Report Mode Setting
+**SMOD**：设定模式
 
-- Function: Report current wafer presence confirmation mode setting status.
+- 功能：设定晶圆有无确认模式。
 
-- Syntax: "RMOD"
+- 语法："SMOD, ModeCode"
 
-- Ack: "Ack"
-
-- Response "Success, ModeCode"
-
-**MOVP**: Move to Specified Position
-
-- Function: Move to specified position.
-
-- Syntax: "MOVP, RobotCode, HandCode, StationCode, Slot#, LocationCode"
+ModeCode："Rea!"= 执行晶圆有无确认。"Simu"=
+不执行晶圆有无确认。"Simu"用于确认机器人的动作。
 
 - Ack "Ack"
 
-- Response "Success" (Normal end),
-  "Success,CombinedRobotResponse" (When CSTARESPONSE is ON), "Error" (Error)
+- Response："Success"(正常结束)，"Error"错误)
 
-**MOVA**: Move to Absolute Position
+**RMOD：**报告模式设定功能：报告当前设定的品圆有无确认模式的状态。
 
-- Function: Move a specific axis to absolute position.
+- 语法："RMOD"
 
-- Syntax: "MOVA, RobotCode, JointCode, JointData"
+- Ack："Ack"
 
-- Ack "Ack"
+- Response"Success, ModeCode"
 
-- Response "Success" (Normal end),
-  "Success,CombinedRobotResponse" (When CSTARESPONSE is ON), "Error" (Error)
+**MOVP**：移动到指定位置
 
-**HOLD**: Hold Wafer or Enable Suction
+- 功能：移动到指定位置。
 
-- Function: Hold wafer or enable suction.
+- 语法："MOVP, RobotCode, HandCode, StationCode, Slot#, LocationCode"
 
-- Syntax: "HOLD, RobotCode, HandCode"
+<!-- -->
 
 - Ack "Ack"
 
-- Response "Success" (Normal end)
+- Response "Success;\"(正常结束),
+  "Success,CombinedRobotResponse"(CSTARESPONSE 为ON 时), "Error"(错误)
 
-**RELS**: Release Wafer or Disable Suction
+**MOVA**：移动到绝对位置
 
-- Function: Release wafer or disable suction.
+- 功能：将某个轴移动到绝对位置。
 
-- Syntax: "RELS, RobotCode, HandCode"
+- 语法："MOVA, RobotCode, JointCode, JointData"
 
-- Ack "Ack"
-
-- Response "Success" (Normal end)
-
-**RPOS**: Report Current Coordinate Position
-
-- Function: Report current joint coordinate position.
-
-- Syntax: "RPOS, RobotCode"
+<!-- -->
 
 - Ack "Ack"
 
-- Response "Success,J1Data, J2Data, J3Data, J4Data, J5Data, J6Data, J7Data" (Normal end)
+- Response "Success;\"(正常结束),
+  "Success,CombinedRobotResponse"(CSTARESPONSE 为ON 时), "Error"(错误)
 
-**RXYZ**: Report Current Coordinate Position
+**HOLD**：握持晶圆或打开吸附
 
-- Function: Report current Cartesian coordinate position.
+- 功能：握持晶圆或打开吸附。
 
-- Syntax: "RXYZ, RobotCode"
+- 语法："HOLD, RobotCode, HandCode"
 
-- Ack "Ack"
-
-- Response "Success,XData, YData, ZData, J4Data, J5Data, J6Data, J7Data" (Normal end)
-
-**STCH**: Set Teaching Position
-
-- Function: Set teaching position (joint) for specified station and tool hand.
-
-- Syntax: "STCH, RobotCode, HandCode, StationCode, J1Data, J2Data, J3Data, J4Data, J5Data, J6Data, J7Data"
+<!-- -->
 
 - Ack "Ack"
 
-- Response "Success" (Normal end) / "Error" (Error)
+- Response "Success\"(正常结束)
 
-**RTCH**: Report Teaching Position
+**RELS**：放开晶圆或关闭吸附
 
-- Function: Report teaching position (joint) for specified station and tool hand.
+- 功能：放开晶圆或打开吸附。
 
-- Syntax: "RTCH, RobotCode, HandCode, StationCode"
+- 语法："RELS, RobotCode, HandCode"
 
-- Ack "Ack"
-
-- Response "Success,J1Data, J2Data, J3Data, J4Data, J5Data, J6Data, J7Data" (Normal end)
-
-**CTCH**: Clear Teaching Position
-
-- Function: Clear teaching position for specified station and tool hand.
-
-- Syntax: "CTCH, RobotCode, HandCode, StationCode"
+<!-- -->
 
 - Ack "Ack"
 
-- Response "Success" (Normal end) / "Error" (Error)
+- Response "Success\"(正常结束)
 
-**STXY**: Set Teaching Position
+**RPOS**：报告当前坐标位置
 
-- Function: Set teaching position for specified station and tool hand.
+- 功能：报告当前关节坐标位置。
 
-- Syntax: "STXY, RobotCode, HandCode, StationCode, XData, YData, ZData, UData, HData"
+- 语法："RPOS, RobotCode"
 
-- Ack "Ack"
-
-- Response "Success" (Normal end)
-
-**RTXY**: Report Teaching Position
-
-- Function: Report teaching position for specified station and tool hand.
-
-- Syntax: "RTXY, RobotCode, HandCode, StationCode"
+<!-- -->
 
 - Ack "Ack"
 
-- Response "Success,XData, YData, ZData, UData, HData" (Normal end)
+- Response "Success,J1Data, J2Data, J3Data, J4Data, J5Data, J6Data,
+  J7Data\"(正常结束)
 
-**RNST**: Report Nearest Station
+**RMOD**：报告模式设定
 
-- Function: Report teaching position for specified station and tool hand.
+- 功能：报告检查所有片叉的晶圆有无的使能状态是否打开。
 
-- Syntax: "RNST, RobotCode, HandCode, StationCode"
+- 语法："RMOD"
+
+<!-- -->
+
+- Ack "Ack"
+
+- Response "Success, MoveCode\"(正常结束)
+
+**RXYZ**：报告当前坐标位置
+
+- 功能：报告当前直角坐标位置。
+
+- 语法："RXYZ, RobotCode"
+
+<!-- -->
 
 - Ack "Ack"
 
-- Response "Success, StationCode, Slot#, ExtendCode" (Normal end)
+- Response "Success,XData, YData, ZData, J4Data, J5Data, J6Data,
+  J7Data\"(正常结束)
 
-**CERR**: Clear Error
+**STCH**：设置示教位置
 
-- Function: Clear all errors
+- 功能：设置指定工位指定工具手的示教位置（关节）。
 
-- Syntax: "CERR, RobotCode"
+- 语法："STCH, RobotCode, HandCode, StationCode, J1Data, J2Data, J3Data,
+  J4Data, J5Data, J6Data, J7Data "
+
+<!-- -->
 
 - Ack "Ack"
+
+- Response "Success\"(正常结束) / \"Error"（错误）
+
+**RTCH**：报告示教位置
+
+- 功能：报告指定工位指定工具手的示教位置（关节）。
+
+- 语法："RTCH, RobotCode, HandCode, StationCode"
+
+<!-- -->
+
+- Ack "Ack"
+
+- Response "Success,J1Data, J2Data, J3Data, J4Data, J5Data, J6Data,
+  J7Data\"(正常结束)
+
+**CTCH**：清除示教位置
+
+- 功能：清除指定工位指定工具手的示教位置。
+
+- 语法："CTCH, RobotCode, HandCode, StationCode"
+
+<!-- -->
+
+- Ack "Ack"
+
+- Response "Success\"(正常结束) / \"Error\"(错误)
+
+**STXY**：设置示教位置
+
+- 功能：设置指定工位指定工具手的示教位置。
+
+- 语法："STXY, RobotCode, HandCode, StationCode, XData, YData, ZData,
+  UData, HData"
+
+<!-- -->
+
+- Ack "Ack"
+
+- Response "Success\"(正常结束)
+
+**RTXY**：报告示教位置
+
+- 功能：报告指定工位指定工具手的示教位置。
+
+- 语法："RTXY, RobotCode, HandCode, StationCode"
+
+<!-- -->
+
+- Ack "Ack"
+
+- Response "Success,XData, YData, ZData, UData, HData\"(正常结束)
+
+**RNST**：报告最近工位
+
+- 功能：报告指定工位指定工具手的示教位置。
+
+- 语法："RNST, RobotCode, HandCode, StationCode"
+
+<!-- -->
+
+- Ack "Ack"
+
+- Response "Success, StationCode, Slot#, ExtendCode\"(正常结束)
+
+**CERR**：清除错误
+
+- 功能：清除所有的错误
+
+- 语法："CERR, RobotCode" 
+
+- Ack    "Ack"
 
 - Response
-  "Success" (Normal end), "Error,..." (Still has errors after clearing, needs further inspection)
+    "Success\"(正常结束)， "Error,\..."(清错后仍然有错，需要进一步检查)
 
-### 3. Supported Command List
+### 3. 支持的命令一览表
 
-#### 3.1 Motion Commands
+#### 3.1 运动类命令
 
-| Command | Meaning | Instruction Type | Special Description |
+| 命令 | 含义 | 指令类型 | 特殊说明 |
 | :--- | :--- | :--- | :--- |
-| PUTS,R1,H2,P5,1 | Place wafer | Motion | R1: Robot 1; H1-F uses hexadecimal to determine tool hand (e.g., H3,3=0011 means tool hand 1 and 2); P5: Wafer cassette station name; 1: Inner layer |
-| GETS,R1,H1,P5,21 | Pick wafer | Motion | Same as above |
-| HOMA,R1 | Full return HOM | Motion | First return blade J4567, then return body J123. After returning to HOM, release interlock signal and clear all errors |
-| HOMH,R1 | Return HOM except Z-axis | Motion | Same as above |
-| MOVP,R1,H1,P3,11,GBH | Move to point | Motion | Supports GBH, PBH. After reaching start point, pick-and-place commands don't need to return to HOM, continue directly from first point |
-| MOVA,R1,J1,100 | Move axis to specified position | Motion | - |
-| HOLD,R1,HD | Output specified blade clamp enable | Motion | - |
-| RELS,R1,H4 | Output specified blade clamp disable | Motion | - |
+| PUTS,R1,H2,P5,1 | 放片 | 运动 | R1：机器人1；H1-F采用16进制确定工具手（例H3,3=0011即工具手1和2）；P5：晶圆盒工号名称；1：内部层数 |
+| GETS,R1,H1,P5,21 | 取片 | 运动 | 同上 |
+| HOMA,R1 | 全回HOM位 | 运动 | 先回片叉J4567，再回本体J123，回HOM位后释放互锁信号、清除所有报错 |
+| HOMH,R1 | 回HOM位除2轴（Z） | 运动 | 同上 |
+| MOVP,R1,H1,P3,11,GBH | 移动到某点 | 运动 | 支持GBH、PBH，到达起始点后取放片命令不必再回HOM点，直接从第一个点继续 |
+| MOVA,R1,J1,100 | 移动某个轴到指定位置 | 运动 | - |
+| HOLD,R1,HD | 输出指定片叉夹持使能 | 运动 | - |
+| RELS,R1,H4 | 输出指定片叉夹持不使能 | 运动 | - |
 
-#### 3.2 Non-Motion Commands
+#### 3.2 非运动类命令
 
-| Command | Meaning | Instruction Type | Individual Description |
+| 命令 | 含义 | 指令类型 | 个别说明 |
 | :--- | :--- | :--- | :--- |
-| STAT,R1 | Report device status | Non-Motion | - |
-| SERV,R1 | Enable servo | Non-Motion | - |
-| CSTA,R1 | Query status | Non-Motion | Only supports R1 |
-| SSPD,R1,50 | Set speed | Non-Motion | Third speed parameter range 1-100, cannot adjust speed during motion |
-| RSPD,R1 | Get speed | Non-Motion | - |
-| TCHP,R1,H1,P5,1 | Mark teach point | Non-Motion | Layer compensates to height. After setting, switch to teach pendant to view TCH point |
-| RPOS,R1 | Query current joint position | Non-Motion | - |
-| SMOD,REAL | Set mode | Non-Motion | Set four blades' wafer detection switch. After setting, switch teach pendant to view or check config file |
-| RMOD | Read set mode | Non-Motion | Read blade wafer detection switch. If all enabled, reply REAL, otherwise reply SIMU |
-| RXYZ,R1,H5 | Report current position XYZUH | Non-Motion | - |
-| RTXY,R1,P5 | Report station TCH point XYZUH | Non-Motion | - |
-| STXY,R1,H1,P5,0,0,0,0,0 | Set station TCH point XYZUH | Non-Motion | During motion, reply Error forbids modification. Switch teach pendant to view or check config file, synchronously update joint coordinates |
-| RTCH,R1,H1,P5 | Report station TCH point J1-7 | Non-Motion | - |
-| STCH,R1,H1,P5,0,0,0,0,0,0,0 | Set station TCH point J1-7 | Non-Motion | During motion, reply Error forbids modification. Switch teach pendant to view or check config file, synchronously update Cartesian coordinates |
-| CTCH, R1, H1, P5 | Clear station TCH point | Non-Motion | - |
-| RNST,R1,H1 | Report nearest station | Non-Motion | - |
-| SENS,R1,H1 | Query blade wafer status | Non-Motion | - |
-| STOP,R1 | Stop motion | Non-Motion | - |
+| STAT,R1 | 报告设备状态 | 非运动 | - |
+| SERV,R1 | 开启伺服 | 非运动 | - |
+| CSTA,R1 | 查询状态 | 非运动 | 只支持R1 |
+| SSPD,R1,50 | 设置速度 | 非运动 | 第三个速度参数范围1-100，运动时不可调速 |
+| RSPD,R1 | 获取速度 | 非运动 | - |
+| TCHP,R1,H1,P5,1 | 标记示教点 | 非运动 | 层数会补偿到高度，设置后切换到示教器查看TCH点 |
+| RPOS,R1 | 查询当前关节位置 | 非运动 | - |
+| SMOD,REAL | 设置模式 | 非运动 | 设置四个片叉的检测晶圆有无开关，设置后切换示教器查看或看配置文件 |
+| RMOD | 读取设置模式 | 非运动 | 读取片叉的晶圆检测开关，全打开回复REAL，否则回复SIMU |
+| RXYZ,R1,H5 | 报告当前位置XYZUH | 非运动 | - |
+| RTXY,R1,P5 | 报告工位的TCH点XYZUH | 非运动 | - |
+| STXY,R1,H1,P5,0,0,0,0,0 | 设置工位的TCH点XYZUH | 非运动 | 运动时回复Error不允许修改，切换示教器查看或看配置文件，同步更新关节坐标 |
+| RTCH,R1,H1,P5 | 报告工位的TCH点J1-7 | 非运动 | - |
+| STCH,R1,H1,P5,0,0,0,0,0,0,0 | 设置工位的TCH点J1-7 | 非运动 | 运动时回复Error不允许修改，切换示教器查看或看配置文件，同步更新直角坐标 |
+| CTCH, R1, H1, P5 | 清除工位TCH点 | 非运动 | - |
+| RNST,R1,H1 | 报告最近工位 | 非运动 | - |
+| SENS,R1,H1 | 查询片叉有无片状态 | 非运动 | - |
+| STOP,R1 | 停止运动 | 非运动 | - |
 
-## Appendix 1: System Operation and Running
+## 附录一、系统操作与运行
 
-### 1. T30 Teach Pendant Button Description
+### 1. T30示教器按键说明
 
 ![](./assets/bjjk68j_jppf1xz15y2hd.png)
 
-| Button Icon | Description |
+| 按键图示 | 说明 |
 | :--- | :--- |
-| ![](./assets/0xwickog9jpf0-g8h0ud-.png) | Click [Servo] to switch servo state (Stop, Ready) |
-| Supplement Icon | ![](./assets/qsyszzucwogexgyz9mvkz.png) ![](./assets/kowijfu_bcqhkpipzjyof.png) |
-| ![](./assets/3iqe5uijlj_ogjr5bev-d.png) | Click [Robot] to switch current robot (only available in multi-robot mode) |
-| ![](./assets/8zclgmjjjqdumbiiigily.png) | Click [External Axis] to switch between external axis and robot when connected (only available with external axis). Select external axis to jog current connected external axis, select robot to jog current robot |
-| External Axis Supplement | ![](./assets/4zfq2opqtlk9dy9av5xqy.png) ![](./assets/vz7zbkl50pwtnthdwarse.png) |
-| ![](./assets/bew3ftoov_2luskx6zinz.png) | Click [Zero] to return robot to zero position |
-| ![](./assets/lo4qkw3via9apes_wuzcj.png) | Click [Reset] to move robot to recorded reset point position |
-| ![](./assets/g2hwhuaixa6w-guhotns6.png) | Click [Clear Error] to clear error prompt when robot shows error |
-| ![](./assets/_7dqsic5_gjxeqw011u7m.png) | Click [Circle] to enter drag mode, drag robot to target position. Note: Robot can only drag after successful recognition |
-| ![](./assets/1tuhkeggyfkyt7gs2ozqt.png) | Click [F/B] to select forward or reverse during single step. Forward: Run from top to bottom; Reverse: Run from bottom to top |
-| Forward/Reverse Icon | ![](./assets/nmtkxrp_2zg1dv_frj-il.png) (Forward) ![](./assets/jgq8fbcctwlnphcnee_bi.png) (Reverse) |
-| ![](./assets/tamwi2htstmmycnkvftcu.png) | Click [Single Step] to run program in teach mode. Click [Single Step] to run first line, after completion click again to continue next line until entire job file completes |
-| Single Step Icon | ![](./assets/tyudn5unzccgwahbm0o8e.png) |
-| ![](./assets/zagzca2xkuamjzyw2au_t.png) | [V-] Decrease global speed, each click decreases 5% |
-| V- Icon | ![](./assets/dxopj3pccrkuz5tx4edpe.png) |
-| ![](./assets/0agzxm2gv_ccuhe4uplha.png) | [V+] Increase global speed, each click increases 5% |
-| V+ Icon | ![](./assets/moi047vcjfam2dgwkpxwj.png) |
-| ![](./assets/-6kg6v20n3jfr5rkcgjhk.png) | [Tool] Switch tool hand |
-| Tool Switch Icon | ![](./assets/-jbaks9itvrmoujpabmp0.png) |
-| ![](./assets/ixg_7d6zvlh2eez6vkbsb.png) | [Coordinate] Switch coordinates. Click coordinate button to cycle through joint, Cartesian, tool and user coordinates |
-| Coordinate Switch Icon | ![](./assets/abkyjmja7xd-lu6twlje1.png) |
-| ![](./assets/nkecbwtlyygopwbyiekbs.png) | [Switch Operation Mode] Knob left = Teach mode, center = Run mode, right = Remote mode |
-| ![](./assets/eljs9iqwcyr0efgzyee-3.png) | [Emergency Stop Button] Press emergency stop during collision or runaway during program execution, robot stops |
-| ![](./assets/kfbfykqcteev9u0aoaiyd.png) | [Start] Used to start program in run mode, click [Start] to begin program execution |
-| ![](./assets/vqsgsez-xcwexibbnd_fb.png) | [Stop] Used to pause program in run mode, click [Stop] to pause running program |
-| ![](./assets/cljjrnhhqvs_n1ykib99h.png) | [-] Negative direction of corresponding axis during teaching |
-| ![](./assets/csi1qvyegqgsgy2m8clp-.png) | [+] Positive direction of corresponding axis during teaching |
-| ![](./assets/ds_acil9t6b_ujnwgp7yb.png) | Rotate to switch previous/next line in program interface |
-| ![](./assets/_m4t67c6ouxftnwehmpmo.png) | Button behind teach pendant grip: Press to middle to power on robot (servo); Press to bottom to power off servo; Release button to power off servo |
+| ![](./assets/0xwickog9jpf0-g8h0ud-.png) | 点击【伺服】，切换伺服状态（停止、就绪） |
+| 补充图示 | ![](./assets/qsyszzucwogexgyz9mvkz.png) ![](./assets/kowijfu_bcqhkpipzjyof.png) |
+| ![](./assets/3iqe5uijlj_ogjr5bev-d.png) | 点击【机器人】，切换当前机器人（仅多机模式时可用） |
+| ![](./assets/8zclgmjjjqdumbiiigily.png) | 点击【外部轴】，连接外部轴时切换外部轴和机器人（仅在有外部轴时可用）。选择外部轴可点动当前连接的外部轴，选择机器人可对当前机器人进行点动等操作 |
+| 外部轴补充图示 | ![](./assets/4zfq2opqtlk9dy9av5xqy.png) ![](./assets/vz7zbkl50pwtnthdwarse.png) |
+| ![](./assets/bew3ftoov_2luskx6zinz.png) | 点击【零点】，机器人回到零点位置 |
+| ![](./assets/lo4qkw3via9apes_wuzcj.png) | 点击【复位】，机器人运行到记录的复位点位置 |
+| ![](./assets/g2hwhuaixa6w-guhotns6.png) | 点击【清错】，机器人在出现错误提示时，可清除错误提示 |
+| ![](./assets/_7dqsic5_gjxeqw011u7m.png) | 点击【⭕】机器人进入拖拽模式，可拖拽让机器人到达目标点位。注意：机器人只有在辨识成功后才可以进行拖拽 |
+| ![](./assets/1tuhkeggyfkyt7gs2ozqt.png) | 点击【F/B】，在单步运行程序时可以选择正序或倒序。正序运行：指令由上向下运行；倒序运行：指令由下向上运行 |
+| 正序/倒序图示 | ![](./assets/nmtkxrp_2zg1dv_frj-il.png)（正序）![](./assets/jgq8fbcctwlnphcnee_bi.png)（倒序） |
+| ![](./assets/tamwi2htstmmycnkvftcu.png) | 点击【单步】在示教模式下运行程序。点击【单步】运行第一行，结束后再点击继续运行下一行，直到整个作业文件运行结束 |
+| 单步运行图示 | ![](./assets/tyudn5unzccgwahbm0o8e.png) |
+| ![](./assets/zagzca2xkuamjzyw2au_t.png) | 【V-】减小全局速度，每点击一次全局速度减小5% |
+| V-图示 | ![](./assets/dxopj3pccrkuz5tx4edpe.png) |
+| ![](./assets/0agzxm2gv_ccuhe4uplha.png) | 【V+】增加全局速度，每点击一次全局速度增加5% |
+| V+图示 | ![](./assets/moi047vcjfam2dgwkpxwj.png) |
+| ![](./assets/-6kg6v20n3jfr5rkcgjhk.png) | 【工具】切换工具手 |
+| 工具切换图示 | ![](./assets/-jbaks9itvrmoujpabmp0.png) |
+| ![](./assets/ixg_7d6zvlh2eez6vkbsb.png) | 【坐标】切换坐标。点击坐标按钮可以依次切换关节坐标、直角坐标、工具坐标和用户坐标 |
+| 坐标切换图示 | ![](./assets/abkyjmja7xd-lu6twlje1.png) |
+| ![](./assets/nkecbwtlyygopwbyiekbs.png) | 【切换操作模式】旋钮在左边=示教模式、中间=运行模式、右边=远程模式 |
+| ![](./assets/eljs9iqwcyr0efgzyee-3.png) | 【紧急停止按钮】程序运行中出现碰撞或飞车等情况按下急停，机器人停止运动 |
+| ![](./assets/kfbfykqcteev9u0aoaiyd.png) | 【启动】在运行模式下用来启动程序，点击【启动】程序开始运行 |
+| ![](./assets/vqsgsez-xcwexibbnd_fb.png) | 【停止】在运行模式下用来暂停程序，点击【停止】正在运行的程序会暂停运行 |
+| ![](./assets/cljjrnhhqvs_n1ykib99h.png) | 【-】示教时对应轴负方向运行 |
+| ![](./assets/csi1qvyegqgsgy2m8clp-.png) | 【+】示教时对应轴正方向运行 |
+| ![](./assets/ds_acil9t6b_ujnwgp7yb.png) | 程序界面旋转切换上一行、下一行 |
+| ![](./assets/_m4t67c6ouxftnwehmpmo.png) | 示教器握把后面的按钮：按到中间控制机器人（伺服）上电；按到底控制伺服下电；松开按键伺服下电 |
 
-### 2. Monitor Interface Parameter Description
+### 2.监控界面参数说明
 
 ![](./assets/itoxxhdo0l6r7uzp67ljv.png)
 
-[Shortcut Keys]
+【快捷键】
 
 ![](./assets/krrsiuaz0faue8cg-xh9e.png)
 
-1. [Return Zero] Press power enable, click return zero to move robot to zero position.
+1.  【回零】按下上电使能，点击回零机器人会运行到零点位置。
 
-Zero position description: Each coordinate system has a point where all axes are 0, called the coordinate system origin. For joint coordinate system, this point is called the zero position (position where robot's 1-7 axes joint coordinates are all 0).
+零点位置说明：每个坐标系都有所有轴都为 0
+的点，这叫做坐标系原点，对于关节坐标系来说，这个点叫做零点位置（机器人的第
+1-7 轴的关节坐标均为 0 的位置）。
 
-2. [External Axis] Can be used to switch between current robot and external axis.
+2.  【外部轴】可以用来切换当前机器人和外部轴。
 
-3. [Return Safety Point] Press power enable, click return safety point to move robot to set safety point position.
+3.  【回安全点】按下上电使能，点击回安全点机器人运行到设置的安全点位。
 
-Settings - Reset Point Settings interface position is the set safety point.
+设置-复位点设置界面的点位就是设置的安全点。
 
-4. [Teach Method Jog (Single)] Can switch between robot jog mode and drag mode.
+4.  【示教方式点动（单动）】可以切换机器人点动模式和拖拽模式。
 
 ![](./assets/djrogeucxos8zcykll0kg.png)
 
-Drag description: After successful recognition, select drag method to switch to drag mode.
+拖拽说明：辨识成功后选择拖拽方式后就可以切换到拖拽模式。
 
-5. [Remove Teach Pendant] After removing teach pendant, controller and teach pendant connection is disconnected.
+5.  【拔出示教器】拔出示教器后控制器与示教器连接断开。
 
-6. [Shutdown/Restart] Click to show the following prompt window. Users can select shutdown, restart, or cancel. Select shutdown to turn off controller and teach pendant, select restart to restart, select cancel to close prompt window.
+6.  【关机/重启】点击后会出现以下提示窗口，用户可选择关机、重启、取消。选择关机则关闭控制器和示教器，选择重启则重启控制器和示教器，选择取消则关闭提示窗口。
 
 ![](./assets/v2pehevue_tdgj_zhydyx.png)
 
-7. External Axis Single/Linked: In monitor, can switch external axis single/linked mode. Prerequisite: Calibrated external axis needed for linking.
+7.  外部轴单动/联动：在监控中可以切换外部轴单动/联动模式，前提是需要标定好需要联动的外部轴。
 
-Linked: When jogging external axis, robot can follow relative movement. When jogging robot, external axis doesn't move.
+联动：点动外部轴时，机器人可跟随相对运行，点动机器人时外部轴不动。
 
-Single: When jogging robot, external axis stays still. When jogging external axis, robot stays still.
+单动：点动机器人时外部轴保持不动；点动外部轴时机器人保持不动。
 
-[Machine Coordinates]
+【机器坐标】
 
-1. Monitor robot's joint coordinates, Cartesian coordinates, tool coordinates, user coordinates during motion.
+1.  监控机器人在运动时的关节坐标、直角坐标、工具坐标、用户坐标下的点位。
 
-2. Detection distance: Detect distance from one point to another.
+2.  检测量距：检测机器人从一个点运动到另一个点的距离。
 
-[IO Status]
+【IO状态】
 
-If signal parameters are set during job file execution, digital and analog signals can be monitored in this interface.
+机器人在执行作业文件时如果设置了信号参数，可以在此界面监控数字信号和模拟信号。
 
-As shown:
+如下图所示：
 
 ![](./assets/rb5t9ta8w6crqlkmczd4k.png)
 
-[Axis Speed]
+【轴速度】
 
-Based on set instruction speed and global speed parameters during robot movement, current speed and maximum speed can be monitored in Monitor - Axis Speed interface. As shown:
+机器人在移动时根据设置的指令速度和全局速度参数，在监控-轴速度界面可以监控机器人运行时的当前速度和最大速度，如图：
 
 ![](./assets/ny1ld2jcmj0vrumoy-pxv.png)
 
 ![](./assets/5hukovztsjb6iahnox2yq.png)
 
-### 3. Status Bar Introduction
+### 3.状态栏介绍
 
 ![](./assets/b88p24wtkskxtxvv7qppk.png)
 
-### 4. Operation Modes
+### 4. 操作模式
 
-| Operation Mode | Description |
+| 操作模式 | 说明 |
 | :--- | :--- |
-| Teach Mode / Run Mode / Remote Mode | Switch mode via teach pendant knob |
+| 示教模式 / 运行模式 / 远程模式 | 通过示教器旋钮切换模式 |
 
-### 5. Servo Status
+### 5. 伺服状态
 
-| Servo Status | Description |
+| 伺服状态 | 说明 |
 | :--- | :--- |
-| Stop, Ready | Click left servo function button to switch servo between stop and ready state |
-| Running (Teach Mode) | Press "Enable Key", servo status switches to "Running" |
-| Running (Run Mode) | Press "Start" button, servo status switches to "Running" |
-| Alarm | Press "Emergency Stop Button" on control cabinet/teach pendant, servo status switches to "Alarm" |
+| 停止、就绪 | 点击左侧伺服功能按键，可以切换伺服为停止或者就绪状态 |
+| 运行（示教模式） | 按下"使能键"，伺服状态切换为"运行"状态 |
+| 运行（运行模式） | 按下"启动"按钮，伺服状态切换为"运行"状态 |
+| 警报 | 拍下控制柜/示教器上的"急停按钮"，伺服状态切换为"警报"状态 |
 
-### 6. Speed Status
+### 6. 速度状态
 
-| Speed Status | Description |
+| 速度状态 | 说明 |
 | :--- | :--- |
-| Jog (Speed Range) | Speed range: [1%, 100%] |
-| Jog (V+/V- Adjustment) | Press [V+], [V-] at bottom of teach pendant, speed increases or decreases 5% each time |
-| Jog (Fine Adjustment) | Click [+], [-] shown below, speed increases or decreases 1% each time |
-| Jog Fine Adjustment Icon | ![](./assets/rmldsec2qwy4xy9rlh8rt.png) |
-| Fixed Distance Move (Function) | After setting speed and distance, jog robot. Robot will run set angle or distance then stop |
-| Fixed Distance Move (Note) | If stopped during jog, re-jog will re-run set distance, not remaining distance |
-| Fixed Distance Move (Default) | Default 0.1° under joint coordinates, 0.1mm under Cartesian coordinates |
-| Fixed Distance Move (Speed Switch) | When switching from jog to fixed distance move, speed changes to default 10% (e.g., jog speed 50%, switching to fixed distance, speed changes to 10%) |
-| Fixed Distance Move (Mode Limit) | Jog/fixed distance move can only be switched in teach mode, grayed out in other modes |
+| 点动（速度范围） | 速度范围：\[1%,100%\] |
+| 点动（V+/V-调节） | 按下示教器底部的【V+】，【V-】速度每次增加或者减小5% |
+| 点动（微调） | 点击下图所示的【+】，【-】速度每次增加或者减小1% |
+| 点动微调图示 | ![](./assets/rmldsec2qwy4xy9rlh8rt.png) |
+| 定距移动（作用） | 设定好速度和距离后点动机器人，机器人会运行设定的角度或距离后停止 |
+| 定距移动（注意） | 点动过程中停止，重新点动会重新运行设定距离，而不是运行之前剩余距离 |
+| 定距移动（默认值） | 关节坐标下默认值为0.1°，直角坐标下默认值为0.1mm |
+| 定距移动（速度切换） | 点动切换到定距移动时，速度改为默认10%（例如：点动速度为50%，切换到定距移动，速度会改为10%） |
+| 定距移动（模式限制） | 点动/定距移动仅示教模式下可切换，其他模式下置灰 |
 
-### 7. System Operation
+### 7. 系统运行
 
-#### 7.1 Teach Mode
+#### 7.1 示教模式
 
-**Function:**
-1. Jog robot to move to desired position. For example, when teaching positions, need to jog each axis to TCH point;
-2. After TCH calibration, can reduce speed to execute GETS, PUTS, return HOM and other commands to confirm if calibrated TCH point achieves expected trajectory and if pick-and-place trajectory is safe. If trajectory is safe, then host computer executing pick-and-place for this station will also be expected and safe.
+**作用：**
+1. 点动机器人将其移动到想要去到的点位，例如Teaching点位的时候需要点动各轴移动到TCH点；
+2. TCH标定完之后，可以降低速度执行GETS、PUTS、回HOM等指令，确认标定的TCH点是否能达到预期的轨迹，取放片轨迹是否安全，如果该轨迹安全，那么上位机执行这个工位取放片的轨迹也会是预期的、安全的。
 
-**Operation Steps:**
-1. Rotate operation mode knob to "Teach".
+**操作步骤：**
+1. 将操作模式旋钮旋至"示教"。
 
 ![](./assets/9gd60bzg2pg8uyqibssik.png)
 
-2. First check servo [Ready State], need to switch servo state to "Ready".
+2. 首先检查伺服【就绪状态】，需要切换伺服状态为"就绪"。
 
 ![](./assets/m2xo0isclvo-_l_8r_zvg.png)
 
-3. Confirm speed. Recommend using 5% speed first, low speed for safety confirmation, slowly adjust to appropriate speed.
-4. Press power enable button.
+3. 确认速度，建议先用5%速度，低速确认安全，慢慢调整合适速度。
+4. 按下上电按钮。
 
 ![](./assets/3bjiksir5zqxqycbcqyzb.png)
 
-5. Press J1+-, J2+-... on right side of teach pendant (J1-J7 correspond to axes 1-7). With person standing on robot lift axis side facing robot, axis correspondence is as follows:
+5. 点按示教器右侧J1+-，J2+-……（J1-J7对应着1轴到7轴），以人站在机器人升降轴那一侧面对机器人，各轴对应关系如下：
 
-| Axis | J1 | J2 | J3 | J4 | J5 | J6 | J7 |
+| 轴号 | J1 | J2 | J3 | J4 | J5 | J6 | J7 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Represented Axis | Travel Axis | Lift Axis | Rotation Axis | Blade 1 | Blade 2 | Blade 3 | Blade 4 |
-| Positive Direction | Left Hand | Up | Counterclockwise | Extend Forward | Extend Forward | Extend Forward | Extend Forward |
+| 代表的轴 | 行走轴 | 升降轴 | 旋转轴 | 片叉1 | 片叉2 | 片叉3 | 片叉4 |
+| 正方向 | 左手 | 上 | 逆时针 | 向前伸出 | 向前伸出 | 向前伸出 | 向前伸出 |
 
-#### 7.2 Run Mode
+#### 7.2 运行模式
 
-**Function:** Switch mode for host computer to control robot.
+**作用：** 切换模式使上位机控制机器人。
 
-After position teaching is complete, switch to run mode, then host computer can send commands to robot.
+点位示教好后，切换运行模式后，上位机方可向机器人发送指令。
 
-## Appendix 2: Teaching Steps
+## 附录二、Teaching步骤
 
-### 1. Set Station Count
+### 1.设置工位数量
 
-Set [Total Wafer Cassette Count] in global configuration interface.
+在全局配置界面设置【晶圆盒总个数】。
 
-### 2. Set Configuration for a Station
+### 2.设置某个工位的配置信息
 
-In [Wafer Cassette Configuration] interface, select a station from current station dropdown. Can set station name, inner layers, layer spacing and IO configuration info. Click save after setting.
+在【晶圆盒配置】界面，当前工号下拉框选中某个工位，可以设置该工位的工位名，内部层数、层间距和IO配置信息等，设置好之后点击保存。
 
 ![](./assets/okpuubyyjhx_xe-tqyuka.png)
 
-### 3. Enter TCH Calibration Interface
+### 3.进入TCH标定界面
 
-Enter TCH calibration interface, select the station just set.
+进入TCH标定界面，选择刚才设置的这个工位。
 
-Initially, TCH current mark status is "Unmarked".
+初始时TCH当前标记状态是"未标记"。
 
 ![](./assets/ecnbtfsefeq0c_s5jsexv.png)
 
-4. In teach mode, jog robot axes (operation steps in Appendix 1 Section 7). Note: Use low speed for safety confirmation. Use inch speed for fine adjustment.
+4.示教模式下点动机器人各轴（操作步骤见附录一的第7节），注意请使用低速确认安全，如果需要微调时请使用寸动速度。
 
-Jog axis order:
+点动轴的顺序：
 
-> First jog J1, J2, J3 to move robot body close to wafer cassette;
+> 首先点动J1，J2，J3让机器人本体接近该晶圆盒；
 >
-> Jog J4 (blade 1) to extend slightly for alignment with cassette first layer. During this, adjust axis 2 (Z-axis lift) height to appropriate position, generally about 4mm lower than cassette first layer to ensure blade can safely extend;
+> 点动J4（片叉1）稍微伸出，方便对准晶圆盒第一层，在此之中请将2轴（Z轴升降轴）高度调整到合适位置，一般是比晶圆盒第一层略低4mm左右，确保片叉能够安全伸出；
 >
-> While jogging J4, observe if J1, J2 positions are reasonable;
+> 一边点动J4一边观察J1，J2的位置是否合理；
 >
-> Use inch speed to fine-tune until blade card slot can just fit wafer position;
+> 使用寸动速度微调点位直到片叉卡槽能恰好卡住晶圆的位置；
 >
-> Jog J2+ to make wafer bottom surface just touch blade top surface;
+> 点动J2+，使晶圆片下表面恰好贴上片叉上表面；
 >
-> Click Modify -- [Mark Current Point]
+> 点击修改\--【标记当前点】
 >
-> Use 5% jog speed, enter Control - Pick-and-Place interface, use first layer, blade 1 for multiple pick-and-place to confirm TCH position accuracy.
+> 使用5%点动速度，进入控制\-\--取放片界面使用第一层，片叉1进行多次取放片确认该TCH位置准确。
 >
-> Use 5% jog speed, enter Control - Pick-and-Place interface, use any layer, any blade for multiple pick-and-place to confirm TCH position accuracy.
+> 使用5%点动速度，进入控制\-\--取放片界面使用任意层，任意片叉进行多次取放片确认该TCH位置准确。
 
-5. TCH position ideal is as follows:
+5.TCH位置理想位置如下：
 
-As shown, yellow line is blade, dashed line is cassette first layer. J4 (blade 1) bottom surface should just contact wafer bottom surface.
+如图，黄线是片叉，虚线是晶圆盒第一层，可以看到J4（片叉1）下表面应该刚好接触晶圆片下表面。
 
 ![](./assets/btjgu3upmalanctxwhh3v.png)
 
-## Appendix 3: Point-to-Point Motion Safety Obstacle Avoidance
+## 附录三、点到点运动安全避障
 
-When robot performs any point-to-point motion, it will first retract blade to HOM point, then move robot body (J1, J2, J3). Examples: return HOM, return zero, move to TCH point, MOVP.
+机器人在进行任何一个点到点运动的时候，都会优先将片叉收回HOM点，再移动机器人本体（J1、J2、J3）。例如回HOM点、回零点、移动到TCH点、MOVP。
 
-## Appendix 4: Host Computer Emergency Stop Safety Obstacle Avoidance
+## 附录四、上位机紧急停止安全避障
 
-When robot is executing pick-and-place task, if emergency occurs requiring pause or stop, using HOMA or HOMH commands can retract blade to safe position. However, if robot stops at pick-and-place lift position, directly retracting blade to HOM may damage wafer due to insufficient height. For this we have the following obstacle avoidance solution:
+机器人在执行取放片任务时，如果发生紧急情况需要暂停或停止，使用HOMA或者HOMH命令能将片叉收回到安全位置，但是如果机器停止在取放片的升降位置，直接使片叉回HOM，由于高度不够可能会将晶圆片撞坏，为此我们有如下避障方案：
 
 ![](./assets/hdcrxwzgioaybxaoaamdy.png)
 
 ![](./assets/zuasfd1vap1r8p4sw6wwg.png)
 
-## Appendix 5: Pick-and-Place Layer Height Obstacle Avoidance
+## 附录五、取放片层高避障
 
-As shown, if a station's maximum layer is 5, using blades 1 and 2 to layer 4 can normally pick and place. However, using blades 1 and 2 simultaneously to layer 5 will exceed maximum layer height. System will automatically calculate and report error to stop.
+如图，若某个工位最高层为5层，那么使用1、2片叉去第四层时能正常取放片，但是使用1、2片叉同时去第五层就会超过最大层高，系统会自动计算并报错停止。
 
 ![](./assets/i_hc4cc1ebcpkmrpjoluf.png)
 
-## Appendix 6: Host Computer Error Code List
+## 附录六、上位机错误码一览表
 
-| errorCode | Message | NoteText | Trigger Condition | Use or Not (Default check) |
+| errorCode | Message | NoteText | Trigger Condition | Use or Not（默认√） |
 | :--- | :--- | :--- | :--- | :--- |
-| 1001 | {Stop Robot run failed, push quick stop button!} | Stop robot motion failed, press emergency stop | - | check |
-| 1002 | {Turn TEACH/RUN/REMOTE switch on the operation panel to RUN.} | Need to switch to run mode | Sending command in non-run mode | check |
-| 2001 | {The Last act command is running, please waiting.} | Wait for previous motion command to finish | Sending another motion command while first is executing | check |
-| 2002 | {This command's checked sum is error, please check it.} | Command checksum error | - | check |
-| 2003 | {This command's parameter is error, please check it.} | Command parameter error | - | check |
-| 2004 | {This command is not exist, please check it.} | Command does not exist | - | check |
-| 2005 | {This command's format is error, please check it.} | Command format error | - | check |
-| 2006 | {Teachbox has uncleaned error, please check teachbox.} | Teach pendant has uncleared error, needs clearing | Error not cleared in run mode | check |
-| 2007 | {Go HOM operation exist error, but cleaned already. Please check it.} | Return HOM operation still has error after clearing | No steps, theoretically one clear is enough | check |
-| 3001 | {At absence check, unexpected wafer is detected. Check Hand_1 and sensor.} | Blade 1 should not have wafer | Pick-and-place first step detection trigger. Pick: check hand should be empty; Place: check hand should have wafer | check |
-| 3002 | {At absence check, expected wafer is not detected. Check Hand_1 and sensor.} | Blade 1 should have wafer | Pick-and-place wafer detection abnormal | check |
-| 3003 | {At absence check, unexpected wafer is detected. Check Hand_2 and sensor.} | Blade 2 should not have wafer | Pick-and-place wafer detection abnormal | check |
-| 3004 | {At absence check, expected wafer is not detected. Check Hand_2 and sensor.} | Blade 2 should have wafer | Pick-and-place wafer detection abnormal | check |
-| 3005 | {At absence check, unexpected wafer is detected. Check Hand_3 and sensor.} | Blade 3 should not have wafer | Pick-and-place wafer detection abnormal | check |
-| 3006 | {At absence check, expected wafer is not detected. Check Hand_3 and sensor.} | Blade 3 should have wafer | Pick-and-place wafer detection abnormal | check |
-| 3007 | {At absence check, unexpected wafer is detected. Check Hand_4 and sensor.} | Blade 4 should not have wafer | Pick-and-place wafer detection abnormal | check |
-| 3008 | {At absence check, expected wafer is not detected. Check Hand_4 and sensor.} | Blade 4 should have wafer | Pick-and-place wafer detection abnormal | check |
-| 3009 | {Destination Location Code [%s] set by [MOVP] command is not permitted from current location.} | MOVP target position unreachable | Triggered based on MOVP command info | x |
-| 3010 | {The destination position is out of range by [MOVA] command.} | MOVA target exceeds limits | Axis exceeds limits in MOVA command | check |
-| 3011 | {The destination position is out of range by [MOVR] command.} | MOVR target exceeds limits | Axis exceeds limits in MOVR command | x |
-| 3012 | {Station's TCH position is not taught. Teach the position.} | Station TCH point not taught, needs teaching first | Station TCH point not taught | check |
-| 3013 | {Robot is running act command, do not modify correlation parameter.} | Robot in motion, cannot modify parameters | Modifying parameters with non-motion command during motion command execution | check |
-| 3014 | {Station interlock abnormal status. Check station interlock.} | Station interlock status abnormal | Interlock signal triggered during pick operation | check |
-| 3015 | {Teach position Error. Current or specified position is out of AREA.} | TCHP/STCH/STXY command calibrated TCH point exceeds limits | - | x |
-| 3016 | {The wafer.json not exist or create failed.} | wafer.json config file does not exist or creation failed, needs check | Triggered when wafer.json does not exist during non-motion command parameter write | check |
-| 3017 | {Some position calculate forward solution failed. Check it.} | Position forward calculation failed, please check | Host command set position conversion failed | check |
-| 3018 | {Some position calculate inverse solution failed. Check it.} | Position inverse calculation failed, please check | Host command set position conversion failed | check |
-| 3019 | {The original position beyond axis limit. Please check TeachBox.} | Motion start point exceeds joint axis limit, please check teach pendant | Before motion command, check if current position exceeds limit | check |
-| 4001 | {Moving to HOM position unexpected stop by [GETS] command. Check it.} | Pick step 1 reaching HOM point, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4002 | {Moving to Ready position unexpected stop by [GETS] command. Check it.} | Pick step 2 reaching Ready point, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4003 | {Moving to other position unexpected stop by [GETS] command. Check it.} | Pick step 3 running entire trajectory, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4004 | {Moving to HOM position unexpected stop by [PUTS] command. Check it.} | Place step 1 reaching HOM point, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4005 | {Moving to Ready position unexpected stop by [PUTS] command. Check it.} | Place step 2 reaching Ready point, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4006 | {Moving to other position unexpected stop by [PUTS] command. Check it.} | Place step 3 running entire trajectory, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4007 | {Moving to position unexpected stop by [MOVP] command. Check it.} | MOVP motion didn't reach target, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4008 | {Moving to position unexpected stop by [MOVA] command. Check it.} | MOVA motion didn't reach target, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4009 | {Moving to position unexpected stop by [HOMA] command. Check it.} | HOMA motion didn't reach target, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4010 | {Moving to position unexpected stop by [HOMH] command. Check it.} | HOMH motion didn't reach target, error stop | Emergency stop/limit exceeded etc. stopping motion | check |
-| 4011 | {Teach position Error. Current or specified position is out of AREA.} | Teach point error, position exceeds limits | TCHP/STCH/STXY TCH point exceeds limits | check |
-| 4012 | {Serial id beyond max records by [QERR] command.} | QERR command serial number exceeds max records | - | check |
-| 4013 | {Pause running command failed. Please check it.} | Pause motion command failed, please check teach pendant | Internal interface call error, not easily triggered | check |
-| 4014 | {Restart running command failed. Please check it.} | Restart motion command failed, please check teach pendant | Internal interface call error, not easily triggered | check |
-| 4015 | {Exist error after clearing command. Please check teach box.} | Still has error after clear command, please check teach pendant | During CERR command, emergency stop or continuous error will trigger | check |
-| 7100 | {GBX position is not created because of calculation error. Please check specified position or [GOFF] parameter.} | Cannot create GBX due to calculation error, related to GOFF offset | - | x |
-| 7101 | {GBX position is not created because of limit error. Please check specified position or [GOFF] parameter.} | Cannot create GBX due to limit exceedance | - | x |
-| 7102 | {GAC position is not created because of calculation error. Please check specified position or [GCNF] parameter.} | Cannot create GAC due to calculation error, related to GCNF parameter | - | x |
-| 7103 | {GAC position is not created because of limit error. Please check specified position or [GCNF] parameter.} | Cannot create GAC due to limit exceedance | - | x |
-| 7104 | {PBX position is not created because of calculation error. Please check specified position or [PADJ] parameter.} | Cannot create PBX due to calculation error, related to PADJ parameter | - | x |
-| 7105 | {PBX position is not created because of limit error. Please check specified position or [PADJ] parameter.} | Cannot create PBX due to limit exceedance | - | x |
-| 7106 | {PAX position is not created because of calculation error. Please check specified position or [POFF,PADJ] parameter.} | Cannot create PAX due to calculation error, related to POFF, PADJ parameters | - | x |
-| 7107 | {PAX position is not created because of limit error. Please check specified position or [POFF,PADJ] parameter.} | Cannot create PAX due to limit exceedance | - | x |
-| 7108 | {PAC position is not created because of calculation error. Please check specified position or [PCNF,PADJ] parameter.} | Cannot create PAC due to calculation error, related to PCNF, PADJ parameters | - | x |
-| 7109 | {PAC position is not created because of limit error. Please check specified position or [PCNF,PADJ] parameter.} | Cannot create PAC due to limit exceedance | - | x |
+| 1001 | \{Stop Robot run failed, push quick stop button!\} | 停止机器人运动失败，拍下急停 | \- | √ |
+| 1002 | \{Turn TEACH/RUN/REMOTE switch on the operation panel to RUN.\} | 需要切换到运行模式 | 非运行模式发送命令时 | √ |
+| 2001 | \{The Last act command is running, please waiting.\} | 等待上条运动命令运行结束 | 第一条运动命令执行时再发一条 | √ |
+| 2002 | \{This command's checked sum is error, please check it.\} | 命令校验和错误 | \- | √ |
+| 2003 | \{This command's parameter is error, please check it.\} | 命令参数错误 | \- | √ |
+| 2004 | \{This command is not exist, please check it.\} | 命令不存在 | \- | √ |
+| 2005 | \{This command's format is error, please check it.\} | 命令格式错误 | \- | √ |
+| 2006 | \{Teachbox has uncleaned error, please check teachbox.\} | 示教器有错误没清除，需要清错 | 运行模式有错误没清除 | √ |
+| 2007 | \{Go HOM operation exist error, but cleaned already. Please check it.\} | 回HOM操作清错后仍然有错 | 无步骤，理论清一次错即可 | √ |
+| 3001 | \{At absence check, unexpected wafer is detected. Check Hand_1 and sensor.\} | 片叉1不应该有晶圆片 | 取放片第一步检测触发。取片先检测手上应该无片；放片先检测手上应该有片 | √ |
+| 3002 | \{At absence check, expected wafer is not detected. Check Hand_1 and sensor.\} | 片叉1应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3003 | \{At absence check, unexpected wafer is detected. Check Hand_2 and sensor.\} | 片叉2不应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3004 | \{At absence check, expected wafer is not detected. Check Hand_2 and sensor.\} | 片叉2应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3005 | \{At absence check, unexpected wafer is detected. Check Hand_3 and sensor.\} | 片叉3不应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3006 | \{At absence check, expected wafer is not detected. Check Hand_3 and sensor.\} | 片叉3应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3007 | \{At absence check, unexpected wafer is detected. Check Hand_4 and sensor.\} | 片叉4不应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3008 | \{At absence check, expected wafer is not detected. Check Hand_4 and sensor.\} | 片叉4应该有晶圆片 | 取放片有无片检测异常 | √ |
+| 3009 | \{Destination Location Code \[%s\] set by \[MOVP\] command is not permitted from current location.\} | MOVP目标点位不可达 | 根据MOVP命令信息来触发 | × |
+| 3010 | \{The destination position is out of range by \[MOVA\] command.\} | MOVA目标点超限 | MOVA命令中的轴超限 | √ |
+| 3011 | \{The destination position is out of range by \[MOVR\] command.\} | MOVR目标点超限 | MOVR命令中的轴超限 | × |
+| 3012 | \{Station's TCH position is not taught. Teach the position.\} | 工位TCH点未示教，需要先示教 | 工位TCH点未示教 | √ |
+| 3013 | \{Robot is running act command, do not modify correlation parameter.\} | 机器人运动中，不能修改参数 | 运动命令执行时，用非运动命令修改参数 | √ |
+| 3014 | \{Station interlock abnormal status. Check station interlock.\} | 工位互锁状态异常 | 取片操作时给工位上锁信号触发 | √ |
+| 3015 | \{Teach position Error. Current or specified position is out of AREA.\} | TCHP/STCH/STXY命令标定的TCH点超限 | \- | × |
+| 3016 | \{The wafer.json not exist or create failed.\} | \{wafer.json配置文件不存在或创建失败，需要检查。\} | 非运动命令写入参数时，wafer.json不存在时会触发 | √ |
+| 3017 | \{Some position calculate forward solution failed. Check it.\} | \{点位计算正解失败，请检查。\} | 上位机命令设置的点位转换失败 | √ |
+| 3018 | \{Some position calculate inverse solution failed. Check it.\} | \{点位计算逆解失败，请检查。\} | 上位机命令设置的点位转换失败 | √ |
+| 3019 | \{The original position beyond axis limit. Please check TeachBox.\} | 运动起始点超出关节轴的限位，请检查示教器 | 运动命令前，检测当前点位是不是超限 | √ |
+| 4001 | \{Moving to HOM position unexpected stop by \[GETS\] command. Check it.\} | 取片第一步到达HOM点，错误停止 | 急停/超限等停止运动 | √ |
+| 4002 | \{Moving to Ready position unexpected stop by \[GETS\] command. Check it.\} | 取片第二步到达Ready点，错误停止 | 急停/超限等停止运动 | √ |
+| 4003 | \{Moving to other position unexpected stop by \[GETS\] command. Check it.\} | 取片第三步走整个流程轨迹，错误停止 | 急停/超限等停止运动 | √ |
+| 4004 | \{Moving to HOM position unexpected stop by \[PUTS\] command. Check it.\} | 放片第一步到达HOM点，错误停止 | 急停/超限等停止运动 | √ |
+| 4005 | \{Moving to Ready position unexpected stop by \[PUTS\] command. Check it.\} | 放片第二步到达Ready点，错误停止 | 急停/超限等停止运动 | √ |
+| 4006 | \{Moving to other position unexpected stop by \[PUTS\] command. Check it.\} | 放片第三步走整个流程轨迹，错误停止 | 急停/超限等停止运动 | √ |
+| 4007 | \{Moving to position unexpected stop by \[MOVP\] command. Check it.\} | MOVP运动未到达目标点，错误停止 | 急停/超限等停止运动 | √ |
+| 4008 | \{Moving to position unexpected stop by \[MOVA\] command. Check it.\} | MOVA运动未到达目标点，错误停止 | 急停/超限等停止运动 | √ |
+| 4009 | \{Moving to position unexpected stop by \[HOMA\] command. Check it.\} | HOMA运动未到达目标点，错误停止 | 急停/超限等停止运动 | √ |
+| 4010 | \{Moving to position unexpected stop by \[HOMH\] command. Check it.\} | HOMH运动未到达目标点，错误停止 | 急停/超限等停止运动 | √ |
+| 4011 | \{Teach position Error. Current or specified position is out of AREA.\} | 示教点错误，位置超限 | 示教命令TCHP/STCH/STXY的TCH点超限 | √ |
+| 4012 | \{Serial id beyond max records by \[QERR\] command.\} | QERR命令的序列号超出最大记录数 | \- | √ |
+| 4013 | \{Pause running command failed. Please check it.\} | 暂停运动命令失败，请检查示教器 | 内部接口调用错误，不易触发 | √ |
+| 4014 | \{Restart running command failed. Please check it.\} | 再启动运动命令失败，请检查示教器 | 内部接口调用错误，不易触发 | √ |
+| 4015 | \{Exist error after clearing command. Please check teach box.\} | 清错命令后还存在错误，请检查示教器 | CERR命令时，急停或者持续报错会触发 | √ |
+| 7100 | \{GBX position is not created because of calculation error. Please check specified position or \[GOFF\] parameter.\} | 无法创建GBX因为计算错误，与GOFF偏移量有关 | \- | × |
+| 7101 | \{GBX position is not created because of limit error. Please check specified position or \[GOFF\] parameter.\} | 无法创建GBX因为超限 | \- | × |
+| 7102 | \{GAC position is not created because of calculation error. Please check specified position or \[GCNF\] parameter.\} | 无法创建GAC因为计算错误，与GCNF参数有关 | \- | × |
+| 7103 | \{GAC position is not created because of limit error. Please check specified position or \[GCNF\] parameter.\} | 无法创建GAC因为超限 | \- | × |
+| 7104 | \{PBX position is not created because of calculation error. Please check specified position or \[PADJ\] parameter.\} | 无法创建PBX因为计算错误，与PADJ参数有关 | \- | × |
+| 7105 | \{PBX position is not created because of limit error. Please check specified position or \[PADJ\] parameter.\} | 无法创建PBX因为超限 | \- | × |
+| 7106 | \{PAX position is not created because of calculation error. Please check specified position or \[POFF,PADJ\] parameter.\} | 无法创建PAX因为计算错误，与POFF、PADJ参数有关 | \- | × |
+| 7107 | \{PAX position is not created because of limit error. Please check specified position or \[POFF,PADJ\] parameter.\} | 无法创建PAX因为超限 | \- | × |
+| 7108 | \{PAC position is not created because of calculation error. Please check specified position or \[PCNF,PADJ\] parameter.\} | 无法创建PAC因为计算错误，与PCNF、PADJ参数有关 | \- | × |
+| 7109 | \{PAC position is not created because of limit error. Please check specified position or \[PCNF,PADJ\] parameter.\} | 无法创建PAC因为超限 | \- | × |
 
-## Appendix 7: Process Configuration File Parameter List (wafer.json)
+## 附录七、工艺配置文件参数一览表（wafer.json）
 
-| Module / Identifier Key | Parameter Name | Meaning |
+| 模块 / 标识键 | 参数名称 | 含义 |
 | :--- | :--- | :--- |
-| **TCP Communication Parameters Tcp_Comm_Params** | chars_time_out | Timeout detection |
-| | port | TCP communication port |
-| | protocol_time_out | Invalid parameter |
-| | response_time_out | Invalid parameter |
-| **Controller ID controllerID** | controllerID | Controller ID |
-| **IO Protrusion Error epsilon** | epsilon | Protrusion detection threshold, 0.3 means HOM coordinate plus/minus 0.3mm stops protrusion detection |
-| **Forward/Reverse Grip grip_type** | grip_type | 0: Forward grip, 1: Reverse grip |
-| **Tool Hand Configuration hand_config** | check_is_exist_wafer_enable | Wafer detection enable |
-| | check_wafer_exist_din | Wafer detection input signal (16 channels per group: 1=1-1, 2=1-2, 17=2-1, same below) |
-| | check_wafer_exist_din_2 | Second group wafer detection input signal |
-| | check_wafer_exist_din_trigger_type | Wafer detection DIN trigger type: 0=low enable has wafer, 1=high enable has wafer |
-| | check_wafer_exist_din_trigger_type_2 | Second group wafer detection DIN trigger type |
-| | check_wafer_protrusion_din | Wafer protrusion check Din list |
-| | check_wafer_protrusion_din_type | Wafer protrusion enable type: 0=low enable protrusion, 1=high enable protrusion |
-| | check_wafer_protrusion_enable | Wafer protrusion check enable |
-| | hand_control_dout | Gripper output IO |
-| | hand_control_dout_trigger_type | Gripper IO output high/low enable: 0=low enable close gripper, 1=high enable close gripper |
-| | mapping_sensor_config | Mapping sensor configuration |
-| | using_mapping_sensor | Whether to use mapping sensor |
-| **Tool Hand Total Count hand_sum** | hand_sum | Total tool hand count |
-| **Tool Hand Type hand_type** | hand_type | 0: Gripper, 1: Suction |
-| **HOM Point Coordinates home_position** | home_position | HOM point joint coordinates |
-| **Current Blade Number inquireHand** | inquireHand | Current tool hand: 0=none, 1=blade 1, 2=blade 2, 3=blade 3, 4=blade 4 |
-| **Joint Speed Parameters joint_speed_params** | go_home_speed_for_host_ | Host control return zero speed |
-| | go_home_speed_for_teach_ | Teach pendant control return zero speed |
-| | low_speed_for_host_ | Host control low speed |
-| | low_speed_for_teach_ | Teach pendant control low speed |
-| | speed_for_host_with_wafer_ | Host control with-wafer speed |
-| | speed_for_host_without_wafer_ | Host control no-wafer speed |
-| | speed_for_teach_with_wafer_ | Teach pendant control with-wafer speed |
-| | speed_for_teach_without_wafer_ | Teach pendant control no-wafer speed |
-| | speed_in_low_area_for_teach_ | Teach pendant control low-speed area speed |
-| | speed_of_low_area_for_host_ | Host control low-speed area speed |
-| **Linear Speed Parameters line_speed_params** | go_home_speed_for_host_ | Host control return zero speed |
-| | go_home_speed_for_teach_ | Teach pendant control return zero speed |
-| | inch_speed_for_teach_ | Teach pendant inch speed |
-| | jog_speed_for_teach_ | Global speed percentage maximum limit |
-| | low_speed_for_host_ | Host control low speed |
-| | low_speed_for_teach_ | Teach pendant control low speed |
-| | speed_for_host_with_wafer_ | Host control with-wafer speed |
-| | speed_for_host_without_wafer_ | Host control no-wafer speed |
-| | speed_for_teach_with_wafer_ | Teach pendant control with-wafer speed |
-| | speed_for_teach_without_wafer_ | Teach pendant control no-wafer speed |
-| | speed_in_low_area_for_teach_ | Teach pendant control low-speed area speed |
-| | speed_of_low_area_for_host_ | Host control low-speed area speed |
-| **Homing Speed pv_speed** | liner_return_speed | Linear return speed |
-| | first_search_speed | First homing speed |
-| | return_speed | Retraction speed |
-| | second_search_speed | Second homing speed |
-| | wait_time_s | Homing wait time (seconds, must complete within 50 seconds or error) |
-| **Homing Parameters search_zero_params_** | go_zero_order | Homing order |
-| | io_trigger_type | IO trigger type: 1=high enable trigger, 0=low enable trigger |
-| | return_distance | Retraction distance |
-| | search_direction | Homing direction: 0=negative limit direction, 1=positive limit direction |
-| | trigger_din | Trigger IO: 0=none, 1=1-1, 17=2-1 |
-| **Station Configuration station_config (Each station)** | TeachParam | TCH point parameter set |
-| | Mcs_position | Cartesian coordinates |
-| | Tch_is_calibration | TCH calibrated or not |
-| | joint_position | Joint coordinates |
-| | inner_layers | Layer count |
-| | interlock_din | Interlock signal Din (17=2-1) |
-| | interlock_din_type | Interlock Din type: 0=low enable interlock, 1=high enable interlock |
-| | interlock_dout | Interlock signal Dout (21=2-5) |
-| | interlock_dout_type | Interlock Dout type: 0=low enable interlock, 1=high enable interlock |
-| | interlock_enable | Interlock enable: 0=disable interlock detection, 1=enable interlock detection |
-| | inverse_grip_gets_offset_group | Reverse grip pick offset |
-| | inverse_grip_puts_offset_group | Reverse grip place offset |
-| | layers_pinch | Layer height |
-| | offset_group | Forward grip offset |
-| | station_type | Station type |
-| **Station Total Count station_sum** | station_sum | Station total count |
-| **Config File Version Number version** | version | Config file version |
+| **TCP通讯参数 Tcp_Comm_Params** | chars_time_out | 超时检测 |
+| | port | TCP通讯端口 |
+| | protocol_time_out | 无效参数 |
+| | response_time_out | 无效参数 |
+| **控制器ID controllerID** | controllerID | 控制器ID |
+| **IO片突误差 epsilon** | epsilon | 片突检测阈值，0.3代表HOM坐标±0.3mm才停止检测片突 |
+| **正夹/反夹 grip_type** | grip_type | 0：正夹，1：反夹 |
+| **工具手配置 hand_config** | check_is_exist_wafer_enable | 检测有无晶圆片使能 |
+| | check_wafer_exist_din | 检测有无晶圆片输入信号（16路一组：1=1-1，2=1-2，17=2-1，下同） |
+| | check_wafer_exist_din_2 | 有无晶圆片第二组输入信号 |
+| | check_wafer_exist_din_trigger_type | 有无晶圆片DIN触发类型：0=低使能有片，1=高使能有片 |
+| | check_wafer_exist_din_trigger_type_2 | 第二组有无晶圆片DIN触发类型 |
+| | check_wafer_protrusion_din | 检查晶圆突出Din列表 |
+| | check_wafer_protrusion_din_type | 晶圆突出使能类型：0=低使能片突，1=高使能片突 |
+| | check_wafer_protrusion_enable | 检查晶圆突出使能 |
+| | hand_control_dout | 夹爪输出IO |
+| | hand_control_dout_trigger_type | 夹爪IO输出高低使能：0=低使能闭合夹爪，1=高使能闭合夹爪 |
+| | mapping_sensor_config | mapping_sensor配置 |
+| | using_mapping_sensor | 是否使用mapping_sensor |
+| **工具手总数 hand_sum** | hand_sum | 工具手总数 |
+| **工具手类型 hand_type** | hand_type | 0：夹爪，1：吸附 |
+| **HOM点坐标 home_position** | home_position | HOM点关节坐标 |
+| **当前片叉号 inquireHand** | inquireHand | 当前工具手：0=无，1=片叉1，2=片叉2，3=片叉3，4=片叉4 |
+| **关节速度参数 joint_speed_params** | go_home_speed_for_host_ | 上位机控制回零速度 |
+| | go_home_speed_for_teach_ | 示教器控制回零速度 |
+| | low_speed_for_host_ | 上位机控制低速速度 |
+| | low_speed_for_teach_ | 示教器控制低速速度 |
+| | speed_for_host_with_wafer_ | 上位机控制带片速度 |
+| | speed_for_host_without_wafer_ | 上位机控制不带片速度 |
+| | speed_for_teach_with_wafer_ | 示教器控制带片速度 |
+| | speed_for_teach_without_wafer_ | 示教器控制不带片速度 |
+| | speed_in_low_area_for_teach_ | 示教器控制低速区域速度 |
+| | speed_of_low_area_for_host_ | 上位机控制低速区域速度 |
+| **直线速度参数 line_speed_params** | go_home_speed_for_host_ | 上位机控制回零速度 |
+| | go_home_speed_for_teach_ | 示教器控制回零速度 |
+| | inch_speed_for_teach_ | 示教器寸动速度 |
+| | jog_speed_for_teach_ | 全局速度百分比最大限制 |
+| | low_speed_for_host_ | 上位机控制低速速度 |
+| | low_speed_for_teach_ | 示教器控制低速速度 |
+| | speed_for_host_with_wafer_ | 上位机控制带片速度 |
+| | speed_for_host_without_wafer_ | 上位机控制不带片速度 |
+| | speed_for_teach_with_wafer_ | 示教器控制带片速度 |
+| | speed_for_teach_without_wafer_ | 示教器控制不带片速度 |
+| | speed_in_low_area_for_teach_ | 示教器控制低速区域速度 |
+| | speed_of_low_area_for_host_ | 上位机控制低速区域速度 |
+| **找零速度 pv_speed** | liner_return_speed | 直线返回速度 |
+| | first_search_speed | 第一次找零速度 |
+| | return_speed | 回退速度 |
+| | second_search_speed | 第二次找零速度 |
+| | wait_time_s | 找零等待时间（秒，50秒内须完成否则报错） |
+| **找零参数 search_zero_params_** | go_zero_order | 找零顺位 |
+| | io_trigger_type | IO触发类型：1=高使能触发，0=低使能触发 |
+| | return_distance | 回退距离 |
+| | search_direction | 找零方向：0=负限位方向，1=正限位方向 |
+| | trigger_din | 触发IO：0=无，1=1-1，17=2-1 |
+| **工位配置 station_config（每个工位）** | TeachParam | TCH点参数集合 |
+| | Mcs_position | 直角坐标 |
+| | Tch_is_calibration | TCH是否标定 |
+| | joint_position | 关节坐标 |
+| | inner_layers | 层数 |
+| | interlock_din | 互锁信号Din（17=2-1） |
+| | interlock_din_type | 互锁Din类型：0=低使能互锁，1=高使能互锁 |
+| | interlock_dout | 互锁信号Dout（21=2-5） |
+| | interlock_dout_type | 互锁Dout类型：0=低使能互锁，1=高使能互锁 |
+| | interlock_enable | 互锁使能：0=关闭互锁检测，1=打开互锁检测 |
+| | inverse_grip_gets_offset_group | 反夹的取片偏移量 |
+| | inverse_grip_puts_offset_group | 反夹的放片偏移量 |
+| | layers_pinch | 层高 |
+| | offset_group | 正夹的偏移量 |
+| | station_type | 工位类型 |
+| **工位总数 station_sum** | station_sum | 工位总数 |
+| **配置文件版本号 version** | version | 配置文件版本 |
 
 ---
 
-## AI Search Q&A
+## AI检索问答
 
-| Serial | Question | Answer |
+| 序号 | 问题 | 答案 |
 | :--- | :--- | :--- |
-| 1 | What main content does the wafer process document include? | Includes wafer cassette configuration, TCH teaching, blade configuration, pick-and-place control interface, communication settings, auto homing, GETS/PUTS pick-and-place action steps, host command protocol (motion/non-motion), TCH teaching steps, safety obstacle avoidance, error code list, process config file parameter table, etc. |
-| 2 | Why do image paths show as `./assets/xxx.png`? | All images are organized in the same directory `assets` folder, paths have been unified to remove `media` subdirectory, ensuring documents and resources correspond one-to-one |
-| 3 | How to set wafer cassette station total count? | Enter [Global Configuration] interface, set in "Total Wafer Cassette Count" parameter, restart after save to take effect |
-| 4 | How to jog axes during TCH calibration? | In order: First jog J1 (travel axis), J2 (lift axis), J3 (rotation axis) to move body close to cassette; then jog J4-J7 (blade 1-4) to extend and align; recommend starting from 5% low speed, use inch speed for fine adjustment |
-| 5 | What are the steps for GETS (pick) action? | Step 1 return HOM; Step 2 to Ready start point (Ready->BHD->ACD->TCH->TCHH->TCH); Step 3 to HOM complete pick, total 3-step action sequence |
-| 6 | What is the difference between PUTS (place) and GETS? | Place steps are same but direction reversed; no-wafer detection checks hand has wafer first; lift action is TCH->PBH->PBG->PBD; error code range is 4004-4006 (pick is 4001-4003) |
-| 7 | What are the default parameters for host-robot communication? | Mode: TCP Server; Local port: 23; IP: 192.168.5.10; Baud rate 115200; Need to send `CMD_IDX` header followed by CR-ending command |
-| 8 | What motion commands does host support? | PUTS (place), GETS (pick), HOMA (full return HOM), HOMH (return HOM except Z-axis), MOVP (move to point), MOVA (single axis move), HOLD (clamp enable), RELS (clamp disable) total 8 commands |
-| 9 | What do error codes 3001 and 3002 represent? | 3001 = Blade 1 should not have wafer but detected (hand should be empty during pick); 3002 = Blade 1 should have wafer but not detected; 3003-3008 correspond to same conditions for blades 2, 3, 4 |
-| 10 | How to handle error code 1002? | 1002 = Need to switch to run mode. Rotate teach pendant operation mode knob to center "RUN" position, allowing host to send motion commands |
-| 11 | How to perform auto homing? | Enter [General Parameter Settings] - [Auto Homing], click corresponding axis to start homing. Process: First fast homing->hit limit->retract->second slow homing->offset compensation |
-| 12 | What is the difference between forward and reverse grip? | Forward grip (grip_type=0): Blade inserts from below wafer and supports; Reverse grip (grip_type=1): Blade presses from above wafer to grip. Need to separately set `offset_group` and `inverse_grip_*_offset_group` offset parameters |
-| 13 | What is the difference between HOMA and HOMH? | HOMA = Full return HOM (all J1-J7); HOMH = Return HOM except Z-axis (J2 lift doesn't move, only retract blade and other body axes), commonly used for maintaining height emergency retraction |
-| 14 | What are GBH/PBH in MOVP command? | GBH = GETS start height point; PBH = PUTS start height point. After MOVP to this point, subsequent GETS/PUTS don't return to HOM, continue directly from start point, improving cycle time |
-| 15 | How to set station interlock signal? | Set interlock Din/Dout and type in [Wafer Cassette Configuration]. interlock_din=17 means Din2-1; type=0 low enable/1 high enable; enable=1 enables interlock detection |
-| 16 | How to switch teach pendant teach mode? How to adjust speed? | Rotate knob left=teach mode; V+/V- each step plus/minus 5%; interface plus/minus fine adjustment plus/minus 1%; recommend first TCH use 5%; inch fine adjustment 0.1 degree/0.1mm; switching to fixed distance move automatically reduces to default 10% |
-| 17 | How to recover after emergency stop? | Unscrew emergency stop button->switch back to teach mode->click [Clear Error] button->click [Servo] to switch to ready state->execute HOMA to return to HOM->switch back to run mode |
-| 18 | What is the safety obstacle avoidance mechanism for point-to-point motion? | Any point-to-point (MOVP/HOMA/zero/move to TCH) will first retract blade J4-J7 to HOM position, then move body J1-J2-J3, avoiding blade collision with cassette or machine when extended |
-| 19 | How does layer height obstacle avoidance work? | If blade number x layer number combination exceeds maximum allowed height (e.g., double blades simultaneously to layer 5 top), system automatically reports error to stop, preventing interference with cassette top or machine |
-| 20 | How to avoid obstacles when blade height is insufficient after emergency stop? | Host emergency stop strategy: If stopped at intermediate lift height, first raise J2 to safe height then retract blade; prevent wafer edge hitting cassette wall due to insufficient height during direct retraction |
-| 21 | What is the process config file wafer.json path and modification notes? | Config file read by system, parameters written in non-motion commands. Save after modification; if not exist or creation failed triggers error code 3016. Cannot modify during motion (error code 3013) |
-| 22 | How to verify TCH calibration accuracy? | Teach mode low speed (5%)->control interface->GETS/PUTS first layer single tool hand verification->any layer any blade multiple verification->confirm card slot fits and no collision before switching to run mode |
-| 23 | What device status does STAT command return? | STAT,R1 returns device status (ready/running/alarm/interlock abnormal); CSTA queries more detailed status; motion commands need interval use with non-motion commands |
-| 24 | What is the meaning of character timeout (chars_time_out) during communication? | If character interval within same frame command exceeds timeout threshold, determined as broken frame; combined with protocol/response timeout ensures TCP command completeness |
-| 25 | What happens when homing wait time wait_time_s exceeds 50 seconds? | Triggers homing timeout alarm, need to check limit trigger direction, trigger Din type, retraction distance/speed are reasonable; confirm search_direction matches io_trigger_type |
+| 1 | 晶圆工艺文档包含哪些主要内容？ | 包含晶圆盒配置、TCH示教、片叉配置、取放片控制界面、通讯设置、自动找零、GETS/PUTS取放片动作步骤、上位机命令协议（运动类/非运动类）、TCH Teaching步骤、安全避障说明、错误码一览表、工艺配置文件参数表等 |
+| 2 | 图片路径为什么显示为 `./assets/xxx.png`？ | 所有图片已整理至同目录 `assets` 文件夹下，路径已统一移除 `media` 子目录，保证文档与资源一一对应 |
+| 3 | 如何设置晶圆盒工位总数？ | 进入【全局配置】界面，在"晶圆盒总个数"参数中设置，保存后重启生效 |
+| 4 | TCH标定时应如何点动轴？ | 按顺序：先点动J1（行走轴）、J2（升降轴）、J3（旋转轴）让本体接近晶圆盒；再点动J4-J7（片叉1-4）伸出对准；建议从5%低速开始，用寸动速度微调 |
+| 5 | GETS（取片）动作的步骤是什么？ | 第一步回HOM；第二步到Ready起始点（Ready→BHD→ACD→TCH→TCHH→TCH）；第三步到HOM完成取片，共三步动作序列 |
+| 6 | PUTS（放片）动作与GETS的区别？ | 放片步骤相同但方向相反；无片检测先手上有片；抬升动作在TCH→PBH→PBG→PBD；错误码区间为4004-4006（取片为4001-4003） |
+| 7 | 上位机与机器人通讯默认参数是什么？ | 模式：TCP Server；本地端口：23；IP：192.168.5.10；波特率115200；需发送 `CMD_IDX` 标识头后接CR结尾指令 |
+| 8 | 上位机支持哪些运动类命令？ | PUTS（放片）、GETS（取片）、HOMA（全回HOM）、HOMH（回HOM除Z轴）、MOVP（移动到某点）、MOVA（单轴移动）、HOLD（夹持使能）、RELS（夹持不使能）共8个 |
+| 9 | 错误码3001和3002分别代表什么？ | 3001 = 片叉1不应有晶圆片却检测到（取片时手部应为空）；3002 = 片叉1应有晶圆片却未检测到；3003-3008对应片叉2、3、4的相同情况 |
+| 10 | 错误码1002如何处理？ | 1002 = 需要切换到运行模式。将示教器操作模式旋钮旋至中间"RUN"位置，即允许上位机发送运动命令 |
+| 11 | 如何进行自动找零？ | 进入【通用参数设置】-【自动找零】，点击对应轴开始找零。流程：第一次快速找正→碰到限位→回退→第二次慢速找正→偏移补偿 |
+| 12 | 正夹与反夹的区别？ | 正夹（grip_type=0）：片叉从晶圆下方插入并支撑；反夹（grip_type=1）：片叉从晶圆上方压住夹取。需要分别设置 `offset_group` 和 `inverse_grip_*_offset_group` 偏移参数 |
+| 13 | HOMA和HOMH的区别？ | HOMA = 全回HOM位（全部J1-J7）；HOMH = 回HOM位除Z轴（J2升降不动，只收回片叉及其他本体轴），常用于保持高度的紧急收回 |
+| 14 | MOVP命令中GBH/PBH是什么？ | GBH = GETS起始高度点；PBH = PUTS起始高度点。MOVP到该点后，随后的GETS/PUTS不再回HOM，直接从起始点运行，提高节拍 |
+| 15 | 工位互锁信号如何设置？ | 在【晶圆盒配置】中设置互锁Din/Dout及类型。interlock_din=17代表Din2-1；type=0低使能/1高使能；enable=1开启互锁检测 |
+| 16 | 示教器示教模式如何切换？速度如何调节？ | 旋钮旋至左=示教模式；V+/V-每档±5%；界面±微调±1%；建议首次TCH用5%；寸动微调0.1°/0.1mm；切换到定距移动自动降为默认10% |
+| 17 | 急停后如何恢复？ | 旋松急停按钮→切换回示教模式→点击【清错】按钮→点击【伺服】切到就绪状态→执行HOMA重新回HOM位→再切回运行模式 |
+| 18 | 点到点运动的安全避障机制？ | 任何点到点（MOVP/HOMA/零点/移动到TCH）均会先将片叉J4-J7收回HOM位置，再移动本体J1-J2-J3，避免片叉突出时碰撞晶圆盒或机台 |
+| 19 | 层高避障如何工作？ | 片叉号 × 层号组合若超出最大允许高度（如双片叉同时到第5层顶部），系统自动报错停止，防止与晶圆盒顶部或机台干涉 |
+| 20 | 紧急停止后片叉高度不够如何避障？ | 上位机紧急停止策略：若停在升降中间高度，先抬升J2到安全高度再收回片叉；防止高度不足直接收回时晶圆边缘撞击盒壁 |
+| 21 | 工艺配置文件 wafer.json 路径与修改注意？ | 配置文件由系统读取，非运动命令中写入参数。修改后保存；不存在或创建失败会触发错误码3016。运动中不可修改（错误码3013） |
+| 22 | 如何验证 TCH 标定是否准确？ | 示教模式低速（5%）→控制界面→GETS/PUTS第一层单工具手验证→任意层任意片叉多次验证→确认卡槽贴合并无碰撞后再切运行模式 |
+| 23 | STAT命令返回哪些设备状态？ | STAT,R1 返回设备状态（就绪/运行/报警/互锁异常）；CSTA 查询更详细状态；需运动命令间隔使用非运动命令 |
+| 24 | 通讯时字符超时（chars_time_out）的意义？ | 同一帧命令字符间隔若超过超时阈值判定为断帧；配合 protocol/response 超时保证TCP命令完整 |
+| 25 | 找零等待时间 wait_time_s 超过50秒会怎样？ | 触发找零超时报警，需检查限位触发方向、触发Din类型、回退距离/速度是否合理；确认 search_direction 与 io_trigger_type 匹配 |
 
 ---
 
-## Version History
+## 版本历史
 
-| Version | Date | Author | Changes |
+| 版本 | 日期 | 作者 | 变更说明 |
 | :--- | :--- | :--- | :--- |
-| 1.0.0 | 2026-07-01 | jmz-09 | Initial version. Completed wafer process manual structuring: Added frontmatter, unified image paths (assets directory), converted all ASCII tables to standard Markdown tables (Global Configuration/TCH/Cassette Configuration/Blade Configuration/Point Offset/Joint Speed/Linear Speed/Pick-and-Place Command Table/Error Code List/Process Config Parameter Table); Added 25 AI search Q&A pairs; Added version history |
+| 1.0.0 | 2026-07-01 | jmz-09 | 初始版本。完成晶圆工艺手册结构化整理：补充Frontmatter、统一图片路径（assets目录）、将ASCII表格全部转换为标准Markdown表格（全局配置/TCH/晶圆盒配置/片叉配置/点位偏移/关节速度/直线速度/取放片命令表/错误码一览表/工艺配置参数表）；补充AI检索问答25条；添加版本历史 |
 | | | | |

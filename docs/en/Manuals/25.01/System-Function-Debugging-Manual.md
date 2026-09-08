@@ -233,7 +233,6 @@ Steps:
 
 ![](./assets/jenqpzzn1e7rtftb-eddr.png)
 
-![](./assets/65jy9ckqi36tlaljuask.png)
 
 ![](./assets/_-cxfjm_vzry7zep1herx.png)
 
