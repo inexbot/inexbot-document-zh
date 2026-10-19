@@ -1,4 +1,14 @@
-﻿# 纳博特机器人自动标定系统 NexAutoCail 标定使用教程
+﻿---
+title: "纳博特机器人自动标定系统 NexAutoCail 标定使用教程"
+description: " NexAutoCail系统标定指南"
+author: "ShenJL"
+date: "2026-10-19"
+tags: ["激光", "NexAUtoCail", "精度"]
+category: "操作手册"
+version: "1.0.0"
+language: "zh-CN"
+---
+# 纳博特机器人自动标定系统 NexAutoCail 标定使用教程
 
 > 规范操作指南
 
