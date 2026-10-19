@@ -1,5 +1,5 @@
 ﻿---
-title: "纳博特机器人自动标定系统 NexAutoCail 标定使用教程"
+title: "纳博特机器人自动标定系统 NexAutoCail 标定操作手册"
 description: " NexAutoCail系统标定指南"
 author: "ShenJL"
 date: "2026-10-19"
@@ -8,7 +8,8 @@ category: "操作手册"
 version: "1.0.0"
 language: "zh-CN"
 ---
-# 纳博特机器人自动标定系统 NexAutoCail 标定使用教程
+# 纳博特机器人自动标定系统 NexAutoCail 标定操作手册
+
 
 
 > 规范操作指南
