@@ -109,6 +109,12 @@ export default defineConfig({
   srcDir: "./docs",
   ignoreDeadLinks: true,
   outDir: "./dist",
+  head: [
+    // Umami 统计
+    ['script', { defer: '', src: 'https://analytics.inexbot.com/script.js', 'data-website-id': 'a1c8ea98-16ff-4d72-b807-2daab1bdbed2' }],
+    // Umami 回放 & 热图
+    ['script', { defer: '', src: 'https://analytics.inexbot.com/recorder.js', 'data-website-id': 'a1c8ea98-16ff-4d72-b807-2daab1bdbed2' }]
+  ],
   sitemap: {
     hostname: 'https://doc.inexbot.com'
   },
