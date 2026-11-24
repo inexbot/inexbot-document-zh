@@ -24,7 +24,7 @@ language: "zh-CN"
 
 4、3D模型一般都是整体step格式，需要拆分成单个关节的obj格式，可使用【CAD Assistant】软件
 
-[安装包](assets/cad_assistant_1.6.1_2022-01-16_win64.exe)
+[安装包](https://www.inexbot.com/api/cms-assets/downloads/software/cad_assistant_1.6.1_2022-01-16_win64.exe)
 
 5、配置config.json机器人模型坐标值，可使用【unity】软件
 

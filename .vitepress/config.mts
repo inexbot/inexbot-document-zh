@@ -1,6 +1,10 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
-import { readdir, stat } from 'fs/promises'
-import { join, extname, basename } from 'path'
+import { readdir, stat, lstat, readFile, copyFile, mkdir } from 'fs/promises'
+import { join, extname, basename, dirname, resolve, relative } from 'path'
+
+// VitePress 默认的 KNOWN_EXTENSIONS 表里没有这些扩展名，会被误判为页面链接而追加 .html。
+// 通过官方环境变量补充，让这类附件链接保持原样。
+process.env.VITE_EXTRA_EXTENSIONS = [process.env.VITE_EXTRA_EXTENSIONS, 'sh', 'py', 'bat', 'ps1', 'docx', 'xlsx', 'pptx', 'xls', '7z', 'rar', 'tar', 'xz', 'bz2', 'log', 'ini'].filter(Boolean).join(',')
 
 // 递归扫描目录生成侧边栏
 async function buildSidebar(dir: string, prefix = '', skipDirs: string[] = []): Promise<DefaultTheme.SidebarItem[]> {
@@ -84,6 +88,61 @@ function chineseTokenizer(text: string): string[] {
 
 const docsDir = join(process.cwd(), 'docs')
 
+// 构建结束后，把 Markdown 中非图片链接引用的附件（pdf/json/sh/mp4 等）按原始
+// 相对路径复制到输出目录，保证页面里 href 指向的文件真实存在。
+// 图片语法 ![](...) 由 Vite 资产管线处理（哈希命名），这里不重复复制。
+async function copyLinkedAttachments(srcDir: string, outDir: string) {
+  const mdFiles: string[] = []
+  const walk = async (dir: string) => {
+    for (const entry of await readdir(dir)) {
+      const full = join(dir, entry)
+      const st = await lstat(full)
+      if (st.isSymbolicLink()) continue
+      if (st.isDirectory()) {
+        if (entry === 'public') continue
+        await walk(full)
+      } else if (entry.endsWith('.md')) {
+        mdFiles.push(full)
+      }
+    }
+  }
+  await walk(srcDir)
+
+  const copied = new Set<string>()
+  // [文本](目标)，捕获组 1 为 ! 时是图片语法
+  const linkRe = /(!?)\[((?:[^\[\]]|\[[^\]]*\])*)\]\(([^)\s]+?)(?:\s+"[^"]*")?\)/g
+  for (const md of mdFiles) {
+    const text = await readFile(md, 'utf-8')
+    for (const m of text.matchAll(linkRe)) {
+      const [, bang, , rawTarget] = m
+      if (bang === '!') continue
+      let target = rawTarget.split('#')[0].split('?')[0]
+      if (!target || /^(https?:)?\/\//.test(target) || /^(mailto|tel):/.test(target)) continue
+      if (/\.(md|html)$/i.test(target) || target.endsWith('/')) continue
+      let decoded: string
+      try { decoded = decodeURIComponent(target) } catch { decoded = target }
+      const abs = target.startsWith('/')
+        ? resolve(srcDir, '.' + decoded)
+        : resolve(dirname(md), decoded)
+      const rel = relative(srcDir, abs)
+      if (!rel || rel.startsWith('..') || rel.startsWith('public/')) continue
+      if (copied.has(rel)) continue
+      let st
+      try { st = await stat(abs) } catch { continue }
+      if (!st.isFile()) continue
+      if (st.size > 20 * 1024 * 1024) {
+        console.warn(`[copy-linked-attachments] 跳过大文件 ${rel}（${(st.size / 1048576).toFixed(1)}MB），大附件请放到官网下载服务器并使用 https://www.inexbot.com/api/cms-assets/downloads/ 链接`)
+        continue
+      }
+      const dest = join(outDir, rel)
+      await mkdir(dirname(dest), { recursive: true })
+      await copyFile(abs, dest)
+      copied.add(rel)
+    }
+  }
+  console.log(`[copy-linked-attachments] 已复制 ${copied.size} 个链接附件到输出目录`)
+}
+
 // 各语言侧边栏
 const zhSidebar = await buildSidebar(join(docsDir, 'zh'), '/zh')
 const enSidebar = await buildSidebar(join(docsDir, 'en'), '/en')
@@ -109,6 +168,9 @@ export default defineConfig({
   srcDir: "./docs",
   ignoreDeadLinks: true,
   outDir: "./dist",
+  async buildEnd() {
+    await copyLinkedAttachments(docsDir, resolve(process.cwd(), 'dist'))
+  },
   head: [
     // Umami 统计
     ['script', { defer: '', src: 'https://analytics.inexbot.com/script.js', 'data-website-id': 'a1c8ea98-16ff-4d72-b807-2daab1bdbed2' }],

@@ -15,6 +15,12 @@ language: "en-US"
 
 The teach pendant first uploads the pkg file, then uploads the other two files. After upload, a wk/vision directory is created under /home/.
 
+Required files:
+
+- [pkg file pkg-pcl-1.12.0-x64-g++-9.tar.gz](https://www.inexbot.com/api/cms-assets/downloads/software/pkg-pcl-1.12.0-x64-g++-9.tar.gz)
+- [runVision3D.sh](assets/runVision3D.sh)
+- [deploy.sh](assets/deploy.sh)
+
 ## Upload Line Laser Program
 
 The teach pendant directly uploads the VSensorLaser3DPointCloud file.

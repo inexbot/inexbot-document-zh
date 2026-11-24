@@ -23,7 +23,7 @@ language: "en-US"
 
 4. 3D models are generally in overall step format and need to be split into individual joint obj formats. You can use [CAD Assistant] software.
 
-[Installation Package](assets/cad_assistant_1.6.1_2022-01-16_win64.exe)
+[Installation Package](https://www.inexbot.com/api/cms-assets/downloads/software/cad_assistant_1.6.1_2022-01-16_win64.exe)
 
 5. To configure the config.json robot model coordinate values, you can use [Unity] software.
 
